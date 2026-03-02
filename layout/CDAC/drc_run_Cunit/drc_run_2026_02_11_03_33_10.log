@@ -1,0 +1,9 @@
+11-Feb-2026 04:33:11 | INFO    | KLayout version detected: 0.30.5
+11-Feb-2026 04:33:11 | INFO    | Using DRC JSON file: /opt/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+11-Feb-2026 04:33:11 | INFO    | Running IHP-SG13G2 main checks on design /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/CDAC/layout/Cunit.gds, topcell: Cunit
+11-Feb-2026 04:33:14 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/CDAC/layout/Cunit.gds, topcell: Cunit
+11-Feb-2026 04:33:17 | INFO    | Completed running Sg13g2_maximal checks.
+11-Feb-2026 04:33:17 | INFO    | =====================================================================================
+11-Feb-2026 04:33:17 | INFO    | ✅ --- KLayout DRC Check Passed: No DRC violations detected in the layout. --- ✅
+11-Feb-2026 04:33:17 | INFO    | =====================================================================================
+11-Feb-2026 04:33:17 | INFO    | Total DRC Run time: 6.72 seconds (including execution, analysis, and reporting)

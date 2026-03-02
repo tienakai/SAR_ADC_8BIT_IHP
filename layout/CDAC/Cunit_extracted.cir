@@ -1,0 +1,5 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 11/02/2026 04:22
+
+.SUBCKT Cunit vref vo
+C$1 vo vref cap_cmim w=5.71u l=5.71u A=32.6041p P=22.84u m=1
+.ENDS Cunit

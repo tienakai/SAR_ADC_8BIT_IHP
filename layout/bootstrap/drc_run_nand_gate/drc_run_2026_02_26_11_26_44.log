@@ -1,0 +1,9 @@
+26-Feb-2026 12:26:44 | INFO    | KLayout version detected: 0.30.5
+26-Feb-2026 12:26:44 | INFO    | Using DRC JSON file: /opt/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+26-Feb-2026 12:26:44 | INFO    | Running IHP-SG13G2 main checks on design /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/bootstrap/layout/nand_gate.gds, topcell: nand_gate
+26-Feb-2026 12:26:47 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/bootstrap/layout/nand_gate.gds, topcell: nand_gate
+26-Feb-2026 12:26:51 | INFO    | Completed running Sg13g2_maximal checks.
+26-Feb-2026 12:26:51 | INFO    | =====================================================================================
+26-Feb-2026 12:26:51 | INFO    | ✅ --- KLayout DRC Check Passed: No DRC violations detected in the layout. --- ✅
+26-Feb-2026 12:26:51 | INFO    | =====================================================================================
+26-Feb-2026 12:26:51 | INFO    | Total DRC Run time: 6.63 seconds (including execution, analysis, and reporting)

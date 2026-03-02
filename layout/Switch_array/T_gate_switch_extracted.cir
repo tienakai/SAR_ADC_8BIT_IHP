@@ -1,0 +1,16 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/02/2026 10:56
+
+.SUBCKT T_gate_switch gnd Control vref Vo \!Control|Control|vo vdd
+M$1 vref \!Control|Control|vo Vo gnd sg13_lv_nmos L=0.13u W=1u AS=0.34p
++ AD=0.34p PS=2.68u PD=2.68u
+M$2 gnd Control Vo gnd sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u
+M$3 gnd Control \!Control|Control|vo gnd sg13_lv_nmos L=0.13u W=0.4u AS=0.136p
++ AD=0.136p PS=1.48u PD=1.48u
+M$4 vdd Control \!Control|Control|vo vdd sg13_lv_pmos L=0.13u W=0.8u AS=0.272p
++ AD=0.272p PS=2.28u PD=2.28u
+M$5 vref Control Vo vdd sg13_lv_pmos L=0.13u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u
+M$6 gnd \!Control|Control|vo Vo vdd sg13_lv_pmos L=0.13u W=2u AS=0.68p AD=0.68p
++ PS=4.68u PD=4.68u
+.ENDS T_gate_switch

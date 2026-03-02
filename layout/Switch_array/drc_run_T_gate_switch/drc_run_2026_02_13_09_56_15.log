@@ -1,0 +1,9 @@
+13-Feb-2026 10:56:15 | INFO    | KLayout version detected: 0.30.5
+13-Feb-2026 10:56:15 | INFO    | Using DRC JSON file: /opt/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+13-Feb-2026 10:56:15 | INFO    | Running IHP-SG13G2 main checks on design /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/layout/T_gate_switch.gds, topcell: T_gate_switch
+13-Feb-2026 10:56:18 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/layout/T_gate_switch.gds, topcell: T_gate_switch
+13-Feb-2026 10:56:23 | INFO    | Completed running Sg13g2_maximal checks.
+13-Feb-2026 10:56:23 | INFO    | =====================================================================================
+13-Feb-2026 10:56:23 | INFO    | ✅ --- KLayout DRC Check Passed: No DRC violations detected in the layout. --- ✅
+13-Feb-2026 10:56:23 | INFO    | =====================================================================================
+13-Feb-2026 10:56:23 | INFO    | Total DRC Run time: 8.08 seconds (including execution, analysis, and reporting)

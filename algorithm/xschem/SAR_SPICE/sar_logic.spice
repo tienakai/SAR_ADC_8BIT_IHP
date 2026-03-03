@@ -1,0 +1,678 @@
+* NGSPICE file created from sar_logic.ext - technology: ihp-sg13g2
+
+.subckt sg13g2_decap_8 VDD VSS
+X0 VDD VSS VDD VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X1 VSS VDD VSS VSS sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X2 VDD VSS VDD VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0 ps=0 w=1u l=1u
+X3 VSS VDD VSS VSS sg13_lv_nmos ad=79.8f pd=0.8u as=0 ps=0 w=0.42u l=1u
+.ends
+
+.subckt sg13g2_a21oi_1 VDD VSS A2 A1 B1 Y
+X0 Y B1 VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X1 a_257_140# A1 Y VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X2 VSS A2 a_257_140# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X3 a_155_412# B1 Y VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X4 VDD A1 a_155_412# VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X5 a_155_412# A2 VDD VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+.ends
+
+.subckt sg13g2_inv_1 Y A VSS VDD
+X0 Y A VSS VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X1 Y A VDD VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+.ends
+
+.subckt sg13g2_dlygate4sd3_1 A VDD VSS X
+X0 VDD A a_56_118# VDD sg13_lv_pmos ad=0.1523p pd=1.38u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X1 VSS a_326_118# a_438_182# VSS sg13_lv_nmos ad=0.1426p pd=1.16u as=0.1428p ps=1.52u w=0.42u l=0.5u
+X2 VDD a_326_118# a_438_182# VDD sg13_lv_pmos ad=0.2254p pd=1.53u as=0.34p ps=2.68u w=1u l=0.5u
+X3 X a_438_182# VDD VDD sg13_lv_pmos ad=0.4256p pd=3u as=0.2254p ps=1.53u w=1.12u l=0.13u
+X4 a_326_118# a_56_118# VDD VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.1523p ps=1.38u w=1u l=0.5u
+X5 VSS A a_56_118# VSS sg13_lv_nmos ad=79.8f pd=0.8u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X6 X a_438_182# VSS VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1426p ps=1.16u w=0.74u l=0.13u
+X7 a_326_118# a_56_118# VSS VSS sg13_lv_nmos ad=0.1428p pd=1.52u as=79.8f ps=0.8u w=0.42u l=0.5u
+.ends
+
+.subckt sg13g2_buf_1 A X VDD VSS
+X0 X a_40_152# VSS VSS sg13_lv_nmos ad=0.2886p pd=2.26u as=0.14875p ps=1.16u w=0.74u l=0.13u
+X1 X a_40_152# VDD VDD sg13_lv_pmos ad=0.42p pd=2.99u as=0.2114p ps=1.54u w=1.12u l=0.13u
+X2 VDD A a_40_152# VDD sg13_lv_pmos ad=0.2114p pd=1.54u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X3 VSS A a_40_152# VSS sg13_lv_nmos ad=0.14875p pd=1.16u as=0.187p ps=1.78u w=0.55u l=0.13u
+.ends
+
+.subckt sg13g2_tiehi L_HI VDD VSS
+X0 L_HI a_222_366# VDD VDD sg13_lv_pmos ad=0.3927p pd=2.99u as=0.76727p ps=3.885u w=1.155u l=0.13u
+X1 VDD a_23_195# a_23_429# VDD sg13_lv_pmos ad=0.76727p pd=3.885u as=0.2442p ps=2.06u w=0.66u l=0.13u
+X2 a_222_366# a_23_429# VSS VSS sg13_lv_nmos ad=0.27427p pd=2.28u as=0.49637p ps=3.565u w=0.795u l=0.13u
+X3 VSS a_23_195# a_23_195# VSS sg13_lv_nmos ad=0.49637p pd=3.565u as=0.111p ps=1.34u w=0.3u l=0.13u
+.ends
+
+.subckt sg13g2_nand4_1 VDD Y B C VSS A D
+X0 Y D VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X1 VDD C Y VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X2 Y B VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X3 VDD A Y VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X4 a_146_122# D VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X5 a_248_122# C a_146_122# VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X6 a_350_122# B a_248_122# VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X7 Y A a_350_122# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+.ends
+
+.subckt sg13g2_o21ai_1 VSS VDD Y B1 A2 A1
+X0 VSS A1 a_22_110# VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.15u
+X1 a_120_432# A1 VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3808p ps=2.92u w=1.12u l=0.15u
+X2 a_22_110# A2 VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.15u
+X3 Y B1 a_22_110# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.15u
+X4 Y A2 a_120_432# VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.15u
+X5 VDD B1 Y VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.15u
+.ends
+
+.subckt sg13g2_nor3_1 A Y B C VDD VSS
+X0 Y A VSS VSS sg13_lv_nmos ad=0.1694p pd=1.21u as=0.2618p ps=2.22u w=0.77u l=0.13u
+X1 a_165_412# A VDD VDD sg13_lv_pmos ad=0.2464p pd=1.56u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X2 VSS B Y VSS sg13_lv_nmos ad=0.1463p pd=1.15u as=0.1694p ps=1.21u w=0.77u l=0.13u
+X3 Y C VSS VSS sg13_lv_nmos ad=0.2618p pd=2.22u as=0.1463p ps=1.15u w=0.77u l=0.13u
+X4 a_279_412# B a_165_412# VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2464p ps=1.56u w=1.12u l=0.13u
+X5 Y C a_279_412# VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+.ends
+
+.subckt sg13g2_dfrbpq_1 VDD D Q CLK VSS RESET_B
+X0 VSS RESET_B a_132_114# VSS sg13_lv_nmos ad=0.1626p pd=1.415u as=60.89999f ps=0.71u w=0.42u l=0.13u
+X1 a_550_127# RESET_B VSS VSS sg13_lv_nmos ad=37.8f pd=0.6u as=0.1701p ps=1.65u w=0.42u l=0.13u
+X2 a_298_337# a_741_93# a_681_505# VDD sg13_lv_pmos ad=79.8f pd=0.8u as=63f ps=0.72u w=0.42u l=0.13u
+X3 a_1840_334# a_1583_191# a_2002_114# VSS sg13_lv_nmos ad=0.1428p pd=1.52u as=37.8f ps=0.6u w=0.42u l=0.13u
+X4 a_38_114# a_843_236# a_298_337# VDD sg13_lv_pmos ad=0.1428p pd=1.52u as=79.8f ps=0.8u w=0.42u l=0.13u
+X5 a_741_93# CLK VSS VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=2.26778p ps=14.665u w=0.74u l=0.13u
+X6 a_38_114# D VDD VDD sg13_lv_pmos ad=79.8f pd=0.8u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X7 a_741_93# CLK VDD VDD sg13_lv_pmos ad=0.4088p pd=2.97u as=1.12285p ps=7.26u w=1.12u l=0.13u
+X8 VSS a_741_93# a_843_236# VSS sg13_lv_nmos ad=2.26778p pd=14.665u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X9 VSS a_1840_334# a_1489_191# VSS sg13_lv_nmos ad=79.8f pd=0.8u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X10 VDD RESET_B a_38_114# VDD sg13_lv_pmos ad=0.36237p pd=2.605u as=79.8f ps=0.8u w=0.42u l=0.13u
+X11 a_324_432# a_298_337# VSS VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1626p ps=1.415u w=0.74u l=0.13u
+X12 VDD a_741_93# a_843_236# VDD sg13_lv_pmos ad=1.12285p pd=7.26u as=0.3864p ps=2.93u w=1.12u l=0.13u
+X13 a_2002_114# RESET_B VSS VSS sg13_lv_nmos ad=37.8f pd=0.6u as=79.8f ps=0.8u w=0.42u l=0.13u
+X14 VDD a_1583_191# a_2250_412# VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3864p ps=2.93u w=1.12u l=0.13u
+X15 Q a_2250_412# VDD VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X16 a_132_114# D a_38_114# VSS sg13_lv_nmos ad=60.89999f pd=0.71u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X17 a_1785_429# a_843_236# a_1583_191# VDD sg13_lv_pmos ad=93.45f pd=0.865u as=0.2048p ps=1.63u w=0.42u l=0.13u
+X18 VDD a_1583_191# a_1840_334# VDD sg13_lv_pmos ad=1.12285p pd=7.26u as=79.8f ps=0.8u w=0.42u l=0.13u
+X19 a_1583_191# a_741_93# a_324_432# VDD sg13_lv_pmos ad=0.2048p pd=1.63u as=0.34p ps=2.68u w=1u l=0.13u
+X20 a_1583_191# a_741_93# a_1489_191# VSS sg13_lv_nmos ad=0.12665p pd=1.145u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X21 VDD a_1840_334# a_1785_429# VDD sg13_lv_pmos ad=1.12285p pd=7.26u as=93.45f ps=0.865u w=0.42u l=0.13u
+X22 a_1840_334# RESET_B VDD VDD sg13_lv_pmos ad=79.8f pd=0.8u as=1.12285p ps=7.26u w=0.42u l=0.13u
+X23 a_324_432# a_843_236# a_1583_191# VSS sg13_lv_nmos ad=0.3473p pd=2.71u as=0.12665p ps=1.145u w=0.74u l=0.13u
+X24 a_298_337# a_741_93# a_38_114# VSS sg13_lv_nmos ad=79.8f pd=0.8u as=0.1296p ps=1.52u w=0.42u l=0.13u
+X25 a_612_127# a_324_432# a_550_127# VSS sg13_lv_nmos ad=0.1428p pd=1.52u as=37.8f ps=0.6u w=0.42u l=0.13u
+X26 a_681_505# a_324_432# VDD VDD sg13_lv_pmos ad=63f pd=0.72u as=0.1563p ps=1.22u w=0.42u l=0.13u
+X27 a_612_127# a_843_236# a_298_337# VSS sg13_lv_nmos ad=0.2373p pd=1.97u as=79.8f ps=0.8u w=0.42u l=0.13u
+X28 VSS a_1583_191# a_2250_412# VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X29 a_324_432# a_298_337# VDD VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.36237p ps=2.605u w=1u l=0.13u
+X30 Q a_2250_412# VSS VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X31 VDD RESET_B a_298_337# VDD sg13_lv_pmos ad=0.1563p pd=1.22u as=0.147p ps=1.54u w=0.42u l=0.13u
+.ends
+
+.subckt sg13g2_nand3_1 VDD Y B C A VSS
+X0 Y C VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X1 VDD B Y VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X2 Y A VDD VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X3 a_146_122# C VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2886p ps=2.26u w=0.74u l=0.13u
+X4 a_248_122# B a_146_122# VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X5 Y A a_248_122# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+.ends
+
+.subckt sg13g2_nand2b_1 VSS A_N Y B VDD
+X0 VSS A_N a_27_156# VSS sg13_lv_nmos ad=0.14505p pd=1.15u as=0.187p ps=1.78u w=0.55u l=0.13u
+X1 VDD a_27_156# Y VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X2 a_229_118# B VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.14505p ps=1.15u w=0.74u l=0.13u
+X3 VDD A_N a_27_156# VDD sg13_lv_pmos ad=0.2198p pd=1.53u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X4 Y B VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2198p ps=1.53u w=1.12u l=0.13u
+X5 Y a_27_156# a_229_118# VSS sg13_lv_nmos ad=0.333p pd=2.38u as=0.1406p ps=1.12u w=0.74u l=0.13u
+.ends
+
+.subckt sg13g2_decap_4 VDD VSS
+X0 VDD VSS VDD VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X1 VSS VDD VSS VSS sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+.ends
+
+.subckt sg13g2_nand2_1 Y VDD A VSS B
+X0 a_154_118# B VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X1 Y A a_154_118# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X2 Y B VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X3 VDD A Y VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+.ends
+
+.subckt sg13g2_and2_1 X VSS VDD B A
+X0 X a_45_160# VDD VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.1918p ps=1.5u w=1.12u l=0.13u
+X1 X a_45_160# VSS VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1331p ps=1.12u w=0.74u l=0.13u
+X2 a_45_160# A VDD VDD sg13_lv_pmos ad=0.1596p pd=1.22u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X3 VDD B a_45_160# VDD sg13_lv_pmos ad=0.1918p pd=1.5u as=0.1596p ps=1.22u w=0.84u l=0.13u
+X4 a_139_160# A a_45_160# VSS sg13_lv_nmos ad=0.1216p pd=1.02u as=0.2176p ps=1.96u w=0.64u l=0.13u
+X5 VSS B a_139_160# VSS sg13_lv_nmos ad=0.1331p pd=1.12u as=0.1216p ps=1.02u w=0.64u l=0.13u
+.ends
+
+.subckt sg13g2_buf_16 A VDD VSS X
+X0 VSS a_116_82# X VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X1 VDD a_116_82# X VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X2 X a_116_82# VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X3 X a_116_82# VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X4 VSS a_116_82# X VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X5 X a_116_82# VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X6 VDD a_116_82# X VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X7 X a_116_82# VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X8 VSS a_116_82# X VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X9 VDD a_116_82# X VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X10 X a_116_82# VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X11 VSS A a_116_82# VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X12 X a_116_82# VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X13 VDD A a_116_82# VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X14 VSS a_116_82# X VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X15 a_116_82# A VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X16 VDD a_116_82# X VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X17 a_116_82# A VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X18 a_116_82# A VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X19 VSS A a_116_82# VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X20 VSS A a_116_82# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X21 a_116_82# A VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X22 VDD A a_116_82# VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X23 VDD A a_116_82# VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X24 a_116_82# A VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X25 X a_116_82# VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X26 a_116_82# A VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X27 X a_116_82# VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3976p ps=2.95u w=1.12u l=0.13u
+X28 VSS a_116_82# X VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X29 X a_116_82# VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X30 VDD a_116_82# X VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X31 X a_116_82# VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X32 VSS a_116_82# X VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X33 X a_116_82# VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X34 VDD a_116_82# X VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X35 VSS a_116_82# X VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X36 X a_116_82# VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X37 VDD a_116_82# X VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X38 X a_116_82# VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X39 VSS a_116_82# X VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X40 X a_116_82# VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X41 VDD a_116_82# X VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X42 X a_116_82# VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X43 X a_116_82# VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+.ends
+
+.subckt sg13g2_nor2_1 A VDD Y VSS B
+X0 Y A VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X1 a_170_412# A VDD VDD sg13_lv_pmos ad=0.1176p pd=1.33u as=0.4032p ps=2.96u w=1.12u l=0.13u
+X2 VSS B Y VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X3 Y B a_170_412# VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.1176p ps=1.33u w=1.12u l=0.13u
+.ends
+
+.subckt sg13g2_and3_1 X B VDD VSS C A
+X0 a_170_160# A a_76_160# VSS sg13_lv_nmos ad=0.1216p pd=1.02u as=0.2176p ps=1.96u w=0.64u l=0.13u
+X1 a_272_160# B a_170_160# VSS sg13_lv_nmos ad=0.1216p pd=1.02u as=0.1216p ps=1.02u w=0.64u l=0.13u
+X2 VSS C a_272_160# VSS sg13_lv_nmos ad=0.1371p pd=1.12u as=0.1216p ps=1.02u w=0.64u l=0.13u
+X3 VDD A a_76_160# VDD sg13_lv_pmos ad=0.1596p pd=1.22u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X4 a_76_160# B VDD VDD sg13_lv_pmos ad=0.1596p pd=1.22u as=0.1596p ps=1.22u w=0.84u l=0.13u
+X5 VDD C a_76_160# VDD sg13_lv_pmos ad=0.36195p pd=1.84u as=0.1596p ps=1.22u w=0.84u l=0.13u
+X6 X a_76_160# VDD VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.36195p ps=1.84u w=1.12u l=0.13u
+X7 X a_76_160# VSS VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1371p ps=1.12u w=0.74u l=0.13u
+.ends
+
+.subckt sg13g2_nand3b_1 A_N Y VDD VSS B C
+X0 a_318_122# C VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.18575p ps=1.26u w=0.74u l=0.13u
+X1 a_420_122# B a_318_122# VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X2 Y a_94_160# a_420_122# VSS sg13_lv_nmos ad=0.3404p pd=2.4u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X3 VSS A_N a_94_160# VSS sg13_lv_nmos ad=0.18575p pd=1.26u as=0.187p ps=1.78u w=0.55u l=0.13u
+X4 VDD A_N a_94_160# VDD sg13_lv_pmos ad=0.2198p pd=1.53u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X5 Y C VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2198p ps=1.53u w=1.12u l=0.13u
+X6 VDD B Y VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X7 Y a_94_160# VDD VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+.ends
+
+.subckt sg13g2_nor2b_1 A B_N VDD Y VSS
+X0 VDD B_N a_46_156# VDD sg13_lv_pmos ad=0.2618p pd=1.63u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X1 VSS B_N a_46_156# VSS sg13_lv_nmos ad=0.17255p pd=1.25u as=0.187p ps=1.78u w=0.55u l=0.13u
+X2 Y a_46_156# VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.17255p ps=1.25u w=0.74u l=0.13u
+X3 a_268_412# a_46_156# VDD VDD sg13_lv_pmos ad=0.1176p pd=1.33u as=0.2618p ps=1.63u w=1.12u l=0.13u
+X4 VSS A Y VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X5 Y A a_268_412# VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.1176p ps=1.33u w=1.12u l=0.13u
+.ends
+
+.subckt sg13g2_a21o_1 B1 X VDD VSS A1 A2
+X0 VSS a_115_308# X VSS sg13_lv_nmos ad=0.15745p pd=1.175u as=0.2351p ps=2.16u w=0.74u l=0.13u
+X1 VDD A1 a_358_436# VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.2125p ps=1.425u w=1u l=0.13u
+X2 VSS A2 a_494_160# VSS sg13_lv_nmos ad=0.2176p pd=1.96u as=81.6f ps=0.895u w=0.64u l=0.13u
+X3 a_358_436# A2 VDD VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X4 a_115_308# B1 VSS VSS sg13_lv_nmos ad=0.1216p pd=1.02u as=0.15745p ps=1.175u w=0.64u l=0.13u
+X5 a_494_160# A1 a_115_308# VSS sg13_lv_nmos ad=81.6f pd=0.895u as=0.1216p ps=1.02u w=0.64u l=0.13u
+X6 a_358_436# B1 a_115_308# VDD sg13_lv_pmos ad=0.2125p pd=1.425u as=0.35p ps=2.7u w=1u l=0.13u
+X7 VDD a_115_308# X VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+.ends
+
+.subckt sg13g2_a22oi_1 Y A2 VDD B1 A1 VSS B2
+X0 Y B2 a_127_96# VSS sg13_lv_nmos ad=0.2664p pd=1.46u as=0.13875p ps=1.115u w=0.74u l=0.13u
+X1 a_398_96# A1 Y VSS sg13_lv_nmos ad=96.2f pd=1u as=0.2664p ps=1.46u w=0.74u l=0.13u
+X2 VDD A2 a_127_436# VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2744p ps=1.61u w=1.12u l=0.13u
+X3 Y B1 a_127_436# VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2716p ps=1.605u w=1.12u l=0.13u
+X4 a_127_436# B2 Y VDD sg13_lv_pmos ad=0.2744p pd=1.61u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X5 a_127_96# B1 VSS VSS sg13_lv_nmos ad=0.13875p pd=1.115u as=0.2553p ps=2.17u w=0.74u l=0.13u
+X6 a_127_436# A1 VDD VDD sg13_lv_pmos ad=0.2716p pd=1.605u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X7 VSS A2 a_398_96# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=96.2f ps=1u w=0.74u l=0.13u
+.ends
+
+.subckt sg13g2_or2_1 A VSS B X VDD
+X0 a_142_492# B a_48_492# VDD sg13_lv_pmos ad=0.1596p pd=1.22u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X1 VDD A a_142_492# VDD sg13_lv_pmos ad=0.2226p pd=1.535u as=0.1596p ps=1.22u w=0.84u l=0.13u
+X2 X a_48_492# VSS VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1469p ps=1.155u w=0.74u l=0.13u
+X3 VSS A a_48_492# VSS sg13_lv_nmos ad=0.1469p pd=1.155u as=0.1045p ps=0.93u w=0.55u l=0.13u
+X4 a_48_492# B VSS VSS sg13_lv_nmos ad=0.1045p pd=0.93u as=0.187p ps=1.78u w=0.55u l=0.13u
+X5 X a_48_492# VDD VDD sg13_lv_pmos ad=0.3976p pd=2.95u as=0.2226p ps=1.535u w=1.12u l=0.13u
+.ends
+
+.subckt sar_logic BN[0] BN[1] BN[2] BN[3] BN[4] BN[5] BN[6] B[0] B[1] B[2] B[3] B[4]
++ B[5] B[6] D[0] D[1] D[2] D[3] D[4] D[5] D[6] D[7] En Om Op VGND VPWR clk rst
+XFILLER_7_7 VPWR VGND sg13g2_decap_8
+XFILLER_12_21 VPWR VGND sg13g2_decap_8
+X_200_ VPWR VGND _035_ net32 net60 _045_ sg13g2_a21oi_1
+X_131_ _063_ net62 VGND VPWR sg13g2_inv_1
+XFILLER_18_42 VPWR VGND sg13g2_decap_8
+Xhold63 net24 VPWR VGND net62 sg13g2_dlygate4sd3_1
+Xhold85 counter\[3\] VPWR VGND net84 sg13g2_dlygate4sd3_1
+Xhold74 net8 VPWR VGND net73 sg13g2_dlygate4sd3_1
+XFILLER_15_21 VPWR VGND sg13g2_decap_8
+Xoutput7 net7 BN[2] VPWR VGND sg13g2_buf_1
+Xoutput20 net20 D[1] VPWR VGND sg13g2_buf_1
+XFILLER_11_0 VPWR VGND sg13g2_decap_8
+XFILLER_3_68 VPWR VGND sg13g2_decap_8
+XFILLER_13_101 VPWR VGND sg13g2_decap_8
+X_252__44 net43 VPWR VGND sg13g2_tiehi
+X_130_ _062_ net61 VGND VPWR sg13g2_inv_1
+XFILLER_0_36 VPWR VGND sg13g2_decap_8
+XFILLER_0_14 VPWR VGND sg13g2_decap_8
+XFILLER_18_98 VPWR VGND sg13g2_decap_8
+XFILLER_18_21 VPWR VGND sg13g2_decap_8
+XFILLER_15_7 VPWR VGND sg13g2_decap_8
+Xhold64 net20 VPWR VGND net63 sg13g2_dlygate4sd3_1
+Xhold75 net15 VPWR VGND net74 sg13g2_dlygate4sd3_1
+XFILLER_6_35 VPWR VGND sg13g2_decap_8
+Xoutput8 net8 BN[3] VPWR VGND sg13g2_buf_1
+Xoutput10 net10 BN[5] VPWR VGND sg13g2_buf_1
+Xoutput21 net21 D[2] VPWR VGND sg13g2_buf_1
+XFILLER_3_25 VPWR VGND sg13g2_decap_8
+XFILLER_9_35 VPWR VGND sg13g2_decap_8
+X_189_ VPWR _040_ _086_ net27 VGND _082_ _097_ sg13g2_nand4_1
+XFILLER_18_77 VPWR VGND sg13g2_decap_8
+XFILLER_1_0 VPWR VGND sg13g2_decap_8
+Xhold65 net21 VPWR VGND net64 sg13g2_dlygate4sd3_1
+XFILLER_6_14 VPWR VGND sg13g2_decap_8
+Xhold76 counter\[0\] VPWR VGND net75 sg13g2_dlygate4sd3_1
+Xoutput9 net9 BN[4] VPWR VGND sg13g2_buf_1
+Xoutput11 net11 BN[6] VPWR VGND sg13g2_buf_1
+Xoutput22 net22 D[3] VPWR VGND sg13g2_buf_1
+XFILLER_5_7 VPWR VGND sg13g2_decap_8
+X_243__35 net34 VPWR VGND sg13g2_tiehi
+XFILLER_3_4 VPWR VGND sg13g2_decap_8
+X_188_ VGND VPWR _039_ _098_ _038_ _093_ sg13g2_o21ai_1
+XFILLER_9_14 VPWR VGND sg13g2_decap_8
+XFILLER_18_56 VPWR VGND sg13g2_decap_8
+Xhold66 net18 VPWR VGND net65 sg13g2_dlygate4sd3_1
+Xhold77 _059_ VPWR VGND net76 sg13g2_dlygate4sd3_1
+Xoutput12 net12 B[0] VPWR VGND sg13g2_buf_1
+Xoutput23 net23 D[4] VPWR VGND sg13g2_buf_1
+XFILLER_15_35 VPWR VGND sg13g2_decap_8
+XFILLER_12_14 VPWR VGND sg13g2_decap_8
+X_187_ _081_ _038_ _085_ _092_ VPWR VGND sg13g2_nor3_1
+XFILLER_18_35 VPWR VGND sg13g2_decap_8
+Xclkload0 clkload0/Y clknet_2_1__leaf_clk VGND VPWR sg13g2_inv_1
+X_239_ VPWR _009_ net21 clknet_2_0__leaf_clk VGND net42 sg13g2_dfrbpq_1
+Xhold78 net14 VPWR VGND net77 sg13g2_dlygate4sd3_1
+Xhold67 net11 VPWR VGND net66 sg13g2_dlygate4sd3_1
+XFILLER_13_7 VPWR VGND sg13g2_decap_8
+Xoutput24 net24 D[5] VPWR VGND sg13g2_buf_1
+Xoutput13 net13 B[1] VPWR VGND sg13g2_buf_1
+XFILLER_15_14 VPWR VGND sg13g2_decap_8
+X_255__56 net55 VPWR VGND sg13g2_tiehi
+XFILLER_0_29 VPWR VGND sg13g2_decap_8
+X_186_ VPWR VGND _037_ _036_ net30 _004_ sg13g2_a21oi_1
+X_255_ VPWR _025_ counter\[3\] clknet_2_2__leaf_clk VGND net55 sg13g2_dfrbpq_1
+X_230__40 net39 VPWR VGND sg13g2_tiehi
+XFILLER_18_14 VPWR VGND sg13g2_decap_8
+Xclkload1 clkload1/Y clknet_2_3__leaf_clk VGND VPWR sg13g2_inv_1
+X_238_ VPWR _008_ net20 clknet_2_0__leaf_clk VGND net44 sg13g2_dfrbpq_1
+X_169_ VPWR _100_ net27 _097_ _085_ VGND sg13g2_nand3_1
+Xhold68 net10 VPWR VGND net67 sg13g2_dlygate4sd3_1
+Xhold79 net13 VPWR VGND net78 sg13g2_dlygate4sd3_1
+XFILLER_19_90 VPWR VGND sg13g2_decap_8
+XFILLER_19_111 VPWR VGND sg13g2_decap_8
+XFILLER_6_28 VPWR VGND sg13g2_decap_8
+Xoutput25 net25 D[6] VPWR VGND sg13g2_buf_1
+Xoutput14 net14 B[2] VPWR VGND sg13g2_buf_1
+XFILLER_3_18 VPWR VGND sg13g2_decap_8
+X_185_ VGND _035_ _037_ net72 VPWR sg13g2_nand2b_1
+XFILLER_9_28 VPWR VGND sg13g2_decap_8
+X_254_ VPWR net81 counter\[2\] clknet_2_2__leaf_clk VGND net47 sg13g2_dfrbpq_1
+X_237_ VPWR _007_ net19 clknet_2_0__leaf_clk VGND net46 sg13g2_dfrbpq_1
+X_168_ VPWR _099_ net27 _096_ VGND _087_ _098_ sg13g2_nand4_1
+Xhold69 net6 VPWR VGND net68 sg13g2_dlygate4sd3_1
+XFILLER_15_49 VPWR VGND sg13g2_decap_4
+Xoutput26 net26 D[7] VPWR VGND sg13g2_buf_1
+Xoutput15 net15 B[3] VPWR VGND sg13g2_buf_1
+X_237__47 net46 VPWR VGND sg13g2_tiehi
+XFILLER_12_28 VPWR VGND sg13g2_decap_8
+X_184_ _036_ VPWR net32 VGND _035_ sg13g2_nand2_1
+X_253_ VPWR _023_ counter\[1\] clknet_2_2__leaf_clk VGND net35 sg13g2_dfrbpq_1
+XFILLER_18_49 VPWR VGND sg13g2_decap_8
+X_236_ VPWR _006_ net18 clknet_2_3__leaf_clk VGND net48 sg13g2_dfrbpq_1
+X_167_ _098_ VGND VPWR _097_ net32 sg13g2_and2_1
+Xhold59 net26 VPWR VGND net58 sg13g2_dlygate4sd3_1
+XFILLER_19_70 VPWR VGND sg13g2_decap_8
+XFILLER_18_0 VPWR VGND sg13g2_decap_8
+X_219_ VGND VPWR _055_ _048_ _038_ _093_ sg13g2_o21ai_1
+Xoutput16 net16 B[4] VPWR VGND sg13g2_buf_1
+XFILLER_15_28 VPWR VGND sg13g2_decap_8
+Xclkbuf_0_clk clk VPWR VGND clknet_0_clk sg13g2_buf_16
+XFILLER_11_7 VPWR VGND sg13g2_decap_8
+XFILLER_13_108 VPWR VGND sg13g2_decap_8
+X_183_ _082_ _035_ _085_ _092_ VPWR VGND sg13g2_nor3_1
+X_252_ VPWR _022_ counter\[0\] clknet_2_2__leaf_clk VGND net43 sg13g2_dfrbpq_1
+XFILLER_18_28 VPWR VGND sg13g2_decap_8
+X_235_ VPWR _005_ net17 clknet_2_3__leaf_clk VGND net50 sg13g2_dfrbpq_1
+X_166_ _076_ VPWR _097_ VGND _077_ sg13g2_nor2_1
+X_218_ _054_ VPWR net67 VGND _040_ sg13g2_nand2_1
+X_149_ _081_ _078_ VPWR VGND _079_ _076_ sg13g2_and3_1
+Xoutput17 net17 B[5] VPWR VGND sg13g2_buf_1
+X_251__52 net51 VPWR VGND sg13g2_tiehi
+Xclkbuf_2_0__f_clk clknet_0_clk VPWR VGND clknet_2_0__leaf_clk sg13g2_buf_16
+X_251_ VPWR _021_ net11 clknet_2_3__leaf_clk VGND net51 sg13g2_dfrbpq_1
+X_182_ VPWR VGND _033_ _031_ net29 _003_ sg13g2_a21oi_1
+Xfanout30 net31 net30 VPWR VGND sg13g2_buf_1
+XFILLER_8_0 VPWR VGND sg13g2_decap_8
+XFILLER_1_7 VPWR VGND sg13g2_decap_8
+XFILLER_1_21 VPWR VGND sg13g2_decap_8
+X_234_ VPWR _004_ net16 clknet_2_1__leaf_clk VGND net52 sg13g2_dfrbpq_1
+X_165_ _096_ VPWR _082_ VGND _086_ sg13g2_nand2_1
+XFILLER_19_104 VPWR VGND sg13g2_decap_8
+XFILLER_19_83 VPWR VGND sg13g2_decap_8
+X_217_ VPWR VGND _053_ _052_ net31 _019_ sg13g2_a21oi_1
+X_148_ _080_ VPWR _078_ VGND _079_ sg13g2_nand2_1
+Xoutput18 net18 B[6] VPWR VGND sg13g2_buf_1
+XFILLER_7_42 VPWR VGND sg13g2_decap_8
+XFILLER_16_84 VPWR VGND sg13g2_decap_8
+XFILLER_8_103 VPWR VGND sg13g2_decap_4
+XFILLER_4_21 VPWR VGND sg13g2_decap_8
+X_250_ VPWR _020_ net10 clknet_2_3__leaf_clk VGND net33 sg13g2_dfrbpq_1
+Xfanout31 net4 net31 VPWR VGND sg13g2_buf_1
+X_181_ _034_ VPWR _068_ VGND _032_ sg13g2_nand2_1
+X_233_ VPWR _003_ net15 clknet_2_0__leaf_clk VGND net54 sg13g2_dfrbpq_1
+X_164_ VPWR VGND _095_ _094_ net30 _000_ sg13g2_a21oi_1
+XFILLER_10_42 VPWR VGND sg13g2_decap_4
+X_147_ counter\[1\] _079_ VPWR VGND net28 counter\[3\] sg13g2_nand3b_1
+X_216_ VPWR _053_ _081_ _086_ VGND net2 _091_ sg13g2_nand4_1
+XFILLER_16_119 VPWR VGND sg13g2_decap_4
+Xoutput19 net19 D[0] VPWR VGND sg13g2_buf_1
+XFILLER_7_21 VPWR VGND sg13g2_decap_8
+XFILLER_16_0 VPWR VGND sg13g2_decap_8
+Xfanout32 net3 net32 VPWR VGND sg13g2_buf_1
+X_180_ _033_ VPWR net74 VGND _032_ sg13g2_nand2_1
+XFILLER_13_53 VPWR VGND sg13g2_decap_4
+X_232_ VPWR _002_ net14 clknet_2_0__leaf_clk VGND net56 sg13g2_dfrbpq_1
+X_163_ VGND VPWR _095_ net79 _092_ _087_ sg13g2_o21ai_1
+XFILLER_19_63 VPWR VGND sg13g2_decap_8
+XFILLER_10_21 VPWR VGND sg13g2_decap_8
+X_215_ VGND _035_ _052_ net71 VPWR sg13g2_nand2b_1
+X_146_ VPWR _078_ _074_ _077_ _073_ VGND sg13g2_nand3_1
+X_249__38 net37 VPWR VGND sg13g2_tiehi
+X_129_ _061_ net73 VGND VPWR sg13g2_inv_1
+XFILLER_16_75 VPWR VGND sg13g2_decap_4
+XFILLER_16_42 VPWR VGND sg13g2_decap_8
+X_233__55 net54 VPWR VGND sg13g2_tiehi
+XFILLER_13_21 VPWR VGND sg13g2_decap_8
+X_231_ VPWR _001_ net13 clknet_2_1__leaf_clk VGND net sg13g2_dfrbpq_1
+X_162_ _094_ VPWR net32 VGND _093_ sg13g2_nand2_1
+XFILLER_6_0 VPWR VGND sg13g2_decap_8
+XFILLER_1_35 VPWR VGND sg13g2_decap_4
+Xinput1 En net1 VPWR VGND sg13g2_buf_1
+XFILLER_19_118 VPWR VGND sg13g2_decap_4
+XFILLER_19_42 VPWR VGND sg13g2_decap_8
+XFILLER_19_97 VPWR VGND sg13g2_decap_8
+X_145_ _077_ VGND VPWR _070_ counter\[1\] sg13g2_and2_1
+X_214_ VGND VPWR _018_ _051_ _034_ _061_ sg13g2_o21ai_1
+XFILLER_7_56 VPWR VGND sg13g2_decap_8
+X_128_ _060_ net80 VGND VPWR sg13g2_inv_1
+XFILLER_16_21 VPWR VGND sg13g2_decap_8
+XFILLER_4_35 VPWR VGND sg13g2_decap_4
+X_230_ VPWR _000_ net12 clknet_2_1__leaf_clk VGND net39 sg13g2_dfrbpq_1
+X_161_ _087_ VPWR _093_ VGND _092_ sg13g2_nor2_1
+XFILLER_1_14 VPWR VGND sg13g2_decap_8
+Xinput2 Om net2 VPWR VGND sg13g2_buf_1
+XFILLER_19_21 VPWR VGND sg13g2_decap_8
+X_144_ VPWR _076_ _073_ _074_ _071_ VGND sg13g2_nand3_1
+X_213_ VPWR _051_ _068_ net27 VGND net2 _030_ sg13g2_nand4_1
+XFILLER_7_35 VPWR VGND sg13g2_decap_8
+X_245__54 net53 VPWR VGND sg13g2_tiehi
+XFILLER_14_0 VPWR VGND sg13g2_decap_8
+XFILLER_4_14 VPWR VGND sg13g2_decap_8
+X_160_ _092_ VPWR _073_ VGND _090_ sg13g2_nand2_1
+Xinput3 Op net3 VPWR VGND sg13g2_buf_1
+X_212_ _050_ _028_ VPWR _017_ VGND sg13g2_nor2b_1
+XFILLER_10_35 VPWR VGND sg13g2_decap_8
+X_143_ _075_ VGND VPWR _074_ _073_ sg13g2_and2_1
+XFILLER_18_7 VPWR VGND sg13g2_decap_8
+XFILLER_7_14 VPWR VGND sg13g2_decap_8
+XFILLER_7_69 VPWR VGND sg13g2_decap_8
+XFILLER_16_56 VPWR VGND sg13g2_decap_8
+XFILLER_13_35 VPWR VGND sg13g2_decap_8
+XFILLER_13_46 VPWR VGND sg13g2_decap_8
+Xinput4 rst net4 VPWR VGND sg13g2_buf_1
+Xclkbuf_2_1__f_clk clknet_0_clk VPWR VGND clknet_2_1__leaf_clk sg13g2_buf_16
+XFILLER_19_56 VPWR VGND sg13g2_decap_8
+X_211_ VGND VPWR _050_ _068_ _027_ net83 sg13g2_o21ai_1
+XFILLER_10_14 VPWR VGND sg13g2_decap_8
+X_142_ VPWR _074_ net28 _070_ counter\[3\] VGND sg13g2_nand3_1
+XFILLER_4_0 VPWR VGND sg13g2_decap_8
+X_248__42 net41 VPWR VGND sg13g2_tiehi
+XFILLER_15_124 VPWR VGND sg13g2_decap_8
+XFILLER_16_68 VPWR VGND sg13g2_decap_8
+XFILLER_16_35 VPWR VGND sg13g2_decap_8
+X_242__37 net36 VPWR VGND sg13g2_tiehi
+XFILLER_13_14 VPWR VGND sg13g2_decap_8
+XFILLER_8_7 VPWR VGND sg13g2_decap_8
+XFILLER_1_28 VPWR VGND sg13g2_decap_8
+XFILLER_19_35 VPWR VGND sg13g2_decap_8
+X_141_ VPWR _073_ counter\[1\] net28 VGND counter\[2\] _069_ sg13g2_nand4_1
+X_210_ VPWR VGND _049_ _047_ net31 _016_ sg13g2_a21oi_1
+XFILLER_7_49 VPWR VGND sg13g2_decap_8
+XFILLER_15_103 VPWR VGND sg13g2_decap_8
+X_239__43 net42 VPWR VGND sg13g2_tiehi
+XFILLER_11_91 VPWR VGND sg13g2_decap_4
+XFILLER_16_14 VPWR VGND sg13g2_decap_8
+XFILLER_4_28 VPWR VGND sg13g2_decap_8
+XFILLER_12_0 VPWR VGND sg13g2_decap_8
+Xfanout27 _091_ net27 VPWR VGND sg13g2_buf_1
+XFILLER_19_14 VPWR VGND sg13g2_decap_8
+XFILLER_18_112 VPWR VGND sg13g2_decap_8
+X_140_ _072_ VPWR counter\[1\] VGND net28 sg13g2_nand2_1
+XFILLER_16_7 VPWR VGND sg13g2_decap_8
+XFILLER_7_28 VPWR VGND sg13g2_decap_8
+XFILLER_8_93 VPWR VGND sg13g2_decap_4
+Xfanout28 net75 net28 VPWR VGND sg13g2_buf_1
+XFILLER_5_61 VPWR VGND sg13g2_decap_4
+XFILLER_10_28 VPWR VGND sg13g2_decap_8
+X_199_ VPWR VGND _031_ _064_ net29 _010_ sg13g2_a21oi_1
+XFILLER_2_0 VPWR VGND sg13g2_decap_8
+XFILLER_16_49 VPWR VGND sg13g2_decap_8
+X_254__48 net47 VPWR VGND sg13g2_tiehi
+XFILLER_17_81 VPWR VGND sg13g2_decap_8
+Xfanout29 net31 net29 VPWR VGND sg13g2_buf_1
+XFILLER_13_28 VPWR VGND sg13g2_decap_8
+XFILLER_6_7 VPWR VGND sg13g2_decap_8
+XFILLER_19_49 VPWR VGND sg13g2_decap_8
+X_198_ VPWR VGND _028_ _065_ net29 _009_ sg13g2_a21oi_1
+XFILLER_16_28 VPWR VGND sg13g2_decap_8
+X_236__49 net48 VPWR VGND sg13g2_tiehi
+XFILLER_17_60 VPWR VGND sg13g2_decap_8
+XFILLER_10_0 VPWR VGND sg13g2_decap_8
+XFILLER_19_28 VPWR VGND sg13g2_decap_8
+X_197_ VPWR VGND _099_ _066_ net29 _008_ sg13g2_a21oi_1
+X_249_ VPWR _019_ net9 clknet_2_3__leaf_clk VGND net37 sg13g2_dfrbpq_1
+XFILLER_14_7 VPWR VGND sg13g2_decap_8
+XFILLER_18_105 VPWR VGND sg13g2_decap_8
+XFILLER_2_21 VPWR VGND sg13g2_decap_8
+X_196_ VPWR VGND _094_ _067_ net29 _007_ sg13g2_a21oi_1
+X_248_ VPWR _018_ net8 clknet_2_2__leaf_clk VGND net41 sg13g2_dfrbpq_1
+X_179_ VGND _072_ _032_ net27 VPWR sg13g2_nand2b_1
+Xclkbuf_2_2__f_clk clknet_0_clk VPWR VGND clknet_2_2__leaf_clk sg13g2_buf_16
+X_235__51 net50 VPWR VGND sg13g2_tiehi
+XFILLER_8_42 VPWR VGND sg13g2_decap_8
+XFILLER_5_21 VPWR VGND sg13g2_decap_8
+XFILLER_4_7 VPWR VGND sg13g2_decap_8
+X_195_ VPWR VGND _044_ _042_ net30 _006_ sg13g2_a21oi_1
+X_247_ VPWR _017_ net7 clknet_2_2__leaf_clk VGND net45 sg13g2_dfrbpq_1
+XFILLER_11_42 VPWR VGND sg13g2_decap_8
+X_178_ VPWR _031_ net27 _030_ net32 VGND sg13g2_nand3_1
+XFILLER_8_21 VPWR VGND sg13g2_decap_8
+XFILLER_17_74 VPWR VGND sg13g2_decap_8
+XFILLER_14_42 VPWR VGND sg13g2_decap_4
+X_194_ _044_ VPWR net65 VGND _043_ sg13g2_nand2_1
+XFILLER_11_21 VPWR VGND sg13g2_decap_8
+X_177_ _076_ _077_ VPWR _030_ VGND sg13g2_nor2b_1
+X_246_ VPWR _016_ net6 clknet_2_3__leaf_clk VGND net49 sg13g2_dfrbpq_1
+X_229_ net31 net84 VPWR _025_ VGND sg13g2_nor2b_1
+XFILLER_19_0 VPWR VGND sg13g2_decap_8
+X_250__34 net33 VPWR VGND sg13g2_tiehi
+XFILLER_17_53 VPWR VGND sg13g2_decap_8
+XFILLER_12_7 VPWR VGND sg13g2_decap_8
+XFILLER_14_21 VPWR VGND sg13g2_decap_8
+XFILLER_18_119 VPWR VGND sg13g2_decap_8
+X_193_ VPWR _043_ _086_ _091_ VGND _082_ _026_ sg13g2_nand4_1
+X_176_ VPWR VGND _029_ _028_ net29 _002_ sg13g2_a21oi_1
+X_245_ VPWR _015_ net5 clknet_2_2__leaf_clk VGND net53 sg13g2_dfrbpq_1
+XFILLER_14_111 VPWR VGND sg13g2_decap_8
+XFILLER_8_56 VPWR VGND sg13g2_decap_4
+X_228_ VPWR VGND _032_ _060_ net31 _024_ sg13g2_a21oi_1
+X_159_ _091_ VGND VPWR _090_ _073_ sg13g2_and2_1
+XFILLER_17_32 VPWR VGND sg13g2_decap_8
+X_232__57 net56 VPWR VGND sg13g2_tiehi
+XFILLER_5_35 VPWR VGND sg13g2_decap_8
+X_192_ VPWR _042_ _076_ _080_ VGND net3 _038_ sg13g2_nand4_1
+XFILLER_2_14 VPWR VGND sg13g2_decap_8
+XFILLER_9_0 VPWR VGND sg13g2_decap_8
+XFILLER_2_7 VPWR VGND sg13g2_decap_8
+X_244_ VPWR _014_ net26 clknet_2_1__leaf_clk VGND net57 sg13g2_dfrbpq_1
+X_175_ VGND _027_ _029_ net77 VPWR sg13g2_nand2b_1
+XFILLER_8_35 VPWR VGND sg13g2_decap_8
+X_227_ _034_ VPWR _023_ VGND net76 sg13g2_nor2_1
+X_158_ _088_ _089_ VPWR _090_ VGND sg13g2_nor2b_1
+XFILLER_17_88 VPWR VGND sg13g2_decap_8
+XFILLER_17_11 VPWR VGND sg13g2_decap_8
+XFILLER_5_14 VPWR VGND sg13g2_decap_8
+X_191_ VPWR VGND _041_ _039_ net30 _005_ sg13g2_a21oi_1
+XFILLER_11_35 VPWR VGND sg13g2_decap_8
+X_243_ VPWR _013_ net25 clknet_2_1__leaf_clk VGND net34 sg13g2_dfrbpq_1
+X_174_ _028_ VPWR net32 VGND _027_ sg13g2_nand2_1
+XFILLER_8_14 VPWR VGND sg13g2_decap_8
+X_226_ VPWR VGND _090_ net75 counter\[1\] _059_ sg13g2_a21oi_1
+X_157_ VPWR VGND net2 net32 counter\[3\] _089_ sg13g2_a21oi_1
+XFILLER_17_67 VPWR VGND sg13g2_decap_8
+X_209_ VPWR _049_ _091_ _096_ VGND _087_ _048_ sg13g2_nand4_1
+XFILLER_10_7 VPWR VGND sg13g2_decap_8
+XFILLER_14_35 VPWR VGND sg13g2_decap_8
+X_190_ _041_ VPWR net69 VGND _040_ sg13g2_nand2_1
+X_242_ VPWR _012_ net24 clknet_2_1__leaf_clk VGND net36 sg13g2_dfrbpq_1
+X_173_ _027_ net27 VPWR VGND _026_ _085_ sg13g2_and3_1
+XFILLER_11_14 VPWR VGND sg13g2_decap_8
+X_156_ VGND VPWR _088_ net1 net2 net32 sg13g2_o21ai_1
+X_225_ VPWR VGND net27 net28 _058_ _022_ sg13g2_a21oi_1
+XFILLER_17_46 VPWR VGND sg13g2_decap_8
+X_139_ net28 _071_ VPWR VGND counter\[3\] _070_ sg13g2_a21o_1
+X_208_ _048_ VGND VPWR _097_ net2 sg13g2_and2_1
+Xclkbuf_2_3__f_clk clknet_0_clk VPWR VGND clknet_2_3__leaf_clk sg13g2_buf_16
+XFILLER_14_14 VPWR VGND sg13g2_decap_8
+XFILLER_17_101 VPWR VGND sg13g2_decap_8
+XFILLER_2_28 VPWR VGND sg13g2_decap_8
+XFILLER_14_104 VPWR VGND sg13g2_decap_8
+X_241_ VPWR _011_ net23 clknet_2_0__leaf_clk VGND net38 sg13g2_dfrbpq_1
+XFILLER_7_0 VPWR VGND sg13g2_decap_8
+X_172_ _026_ _075_ VPWR _078_ _071_ VGND _079_ sg13g2_a22oi_1
+X_253__36 net35 VPWR VGND sg13g2_tiehi
+X_244__58 net57 VPWR VGND sg13g2_tiehi
+XFILLER_0_7 VPWR VGND sg13g2_decap_8
+XFILLER_8_49 VPWR VGND sg13g2_decap_8
+X_155_ VPWR _087_ _078_ _079_ VGND _076_ _085_ sg13g2_nand4_1
+X_224_ VGND VPWR _058_ _068_ _090_ net28 sg13g2_o21ai_1
+XFILLER_17_25 VPWR VGND sg13g2_decap_8
+X_241__39 net38 VPWR VGND sg13g2_tiehi
+X_138_ VPWR _070_ counter\[2\] counter\[1\] counter\[3\] VGND sg13g2_nand3_1
+X_207_ _047_ VPWR net68 VGND _100_ sg13g2_nand2_1
+XFILLER_5_28 VPWR VGND sg13g2_decap_8
+X_240_ VPWR _010_ net22 clknet_2_0__leaf_clk VGND net40 sg13g2_dfrbpq_1
+X_171_ VPWR VGND _101_ _099_ net30 _001_ sg13g2_a21oi_1
+X_238__45 net44 VPWR VGND sg13g2_tiehi
+XFILLER_8_28 VPWR VGND sg13g2_decap_8
+X_223_ VPWR VGND _057_ _056_ net31 _021_ sg13g2_a21oi_1
+X_154_ _086_ _085_ VGND VPWR sg13g2_inv_1
+X_206_ _046_ _094_ VPWR _015_ VGND sg13g2_nor2b_1
+X_137_ _069_ VPWR counter\[3\] VGND counter\[1\] sg13g2_nand2_1
+XFILLER_9_93 VPWR VGND sg13g2_decap_4
+XFILLER_18_91 VPWR VGND sg13g2_decap_8
+XFILLER_15_0 VPWR VGND sg13g2_decap_8
+XFILLER_15_92 VPWR VGND sg13g2_decap_8
+XFILLER_11_28 VPWR VGND sg13g2_decap_8
+X_247__46 net45 VPWR VGND sg13g2_tiehi
+X_170_ _101_ VPWR net78 VGND _100_ sg13g2_nand2_1
+XFILLER_19_7 VPWR VGND sg13g2_decap_8
+X_153_ _083_ VGND _084_ _085_ VPWR sg13g2_or2_1
+X_222_ VPWR _057_ _076_ _080_ VGND net2 _038_ sg13g2_nand4_1
+X_240__41 net40 VPWR VGND sg13g2_tiehi
+X_136_ _068_ net29 VGND VPWR sg13g2_inv_1
+X_205_ VGND VPWR _046_ _068_ _093_ net82 sg13g2_o21ai_1
+XFILLER_17_4 VPWR VGND sg13g2_decap_8
+XFILLER_18_70 VPWR VGND sg13g2_decap_8
+XFILLER_14_28 VPWR VGND sg13g2_decap_8
+Xhold80 net12 VPWR VGND net79 sg13g2_dlygate4sd3_1
+XFILLER_17_115 VPWR VGND sg13g2_decap_8
+XFILLER_14_118 VPWR VGND sg13g2_decap_8
+XFILLER_5_0 VPWR VGND sg13g2_decap_8
+X_152_ _084_ net28 VPWR _069_ counter\[1\] VGND counter\[2\] sg13g2_a22oi_1
+X_221_ _056_ VPWR net66 VGND _043_ sg13g2_nand2_1
+XFILLER_17_39 VPWR VGND sg13g2_decap_8
+X_204_ net30 net58 VPWR _014_ VGND sg13g2_nor2b_1
+X_135_ _067_ net70 VGND VPWR sg13g2_inv_1
+Xhold70 net17 VPWR VGND net69 sg13g2_dlygate4sd3_1
+Xhold81 counter\[2\] VPWR VGND net80 sg13g2_dlygate4sd3_1
+XFILLER_9_7 VPWR VGND sg13g2_decap_8
+X_220_ VPWR VGND _055_ _054_ net31 _020_ sg13g2_a21oi_1
+XFILLER_10_100 VPWR VGND sg13g2_decap_4
+X_151_ VPWR VGND _060_ counter\[3\] _072_ _083_ sg13g2_a21oi_1
+XFILLER_17_18 VPWR VGND sg13g2_decap_8
+X_203_ VPWR VGND _042_ _062_ net30 _013_ sg13g2_a21oi_1
+X_134_ _066_ net63 VGND VPWR sg13g2_inv_1
+XFILLER_0_21 VPWR VGND sg13g2_decap_4
+Xhold60 net22 VPWR VGND net59 sg13g2_dlygate4sd3_1
+Xhold71 net19 VPWR VGND net70 sg13g2_dlygate4sd3_1
+XFILLER_6_42 VPWR VGND sg13g2_decap_8
+Xhold82 _024_ VPWR VGND net81 sg13g2_dlygate4sd3_1
+XFILLER_13_0 VPWR VGND sg13g2_decap_8
+XFILLER_3_32 VPWR VGND sg13g2_decap_8
+X_150_ VPWR _082_ _078_ _079_ _076_ VGND sg13g2_nand3_1
+X_202_ VPWR VGND _039_ _063_ net30 _012_ sg13g2_a21oi_1
+X_133_ _065_ net64 VGND VPWR sg13g2_inv_1
+X_231__33 net VPWR VGND sg13g2_tiehi
+XFILLER_9_42 VPWR VGND sg13g2_decap_8
+XFILLER_9_86 VPWR VGND sg13g2_decap_8
+XFILLER_18_84 VPWR VGND sg13g2_decap_8
+Xhold72 net9 VPWR VGND net71 sg13g2_dlygate4sd3_1
+Xhold61 net23 VPWR VGND net60 sg13g2_dlygate4sd3_1
+XFILLER_6_21 VPWR VGND sg13g2_decap_8
+Xhold83 net5 VPWR VGND net82 sg13g2_dlygate4sd3_1
+Xoutput5 net5 BN[0] VPWR VGND sg13g2_buf_1
+XFILLER_3_11 VPWR VGND sg13g2_decap_8
+X_246__50 net49 VPWR VGND sg13g2_tiehi
+X_234__53 net52 VPWR VGND sg13g2_tiehi
+X_201_ net29 VPWR _011_ VGND _045_ sg13g2_nor2_1
+X_132_ _064_ net59 VGND VPWR sg13g2_inv_1
+XFILLER_9_21 VPWR VGND sg13g2_decap_8
+XFILLER_18_63 VPWR VGND sg13g2_decap_8
+Xhold62 net25 VPWR VGND net61 sg13g2_dlygate4sd3_1
+Xhold84 net7 VPWR VGND net83 sg13g2_dlygate4sd3_1
+Xhold73 net16 VPWR VGND net72 sg13g2_dlygate4sd3_1
+XFILLER_17_108 VPWR VGND sg13g2_decap_8
+Xoutput6 net6 BN[1] VPWR VGND sg13g2_buf_1
+XFILLER_15_42 VPWR VGND sg13g2_decap_8
+.ends

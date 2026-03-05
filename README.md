@@ -1,162 +1,148 @@
-# SAR ADC in IHP SG13G2 (Full Custom Mixed-Signal Flow)
+# SAR ADC 8 bit in IHP SG13G2 
 
-This repository presents a fully custom SAR ADC implemented in the IHP SG13G2 technology node.  
-It demonstrates a complete mixed-signal IC design flow including schematic design, digital verification, analog layout, post-layout extraction, and system-level simulation.
+This repository presents the implementation of a Successive Approximation Register (SAR) Analog-to-Digital Converter using open-source design tools, targeting the **IHP SG13G2 technology node**.
+
+The project illustrates a mixed-signal IC design workflow that includes **schematic design, digital verification, analog layout, and system-level simulation** using open-source EDA tools.
 
 ---
 
 ## 🚀 Overview
 
-This project provides an end-to-end reference implementation of a SAR ADC using open-source tools.  
-It covers both analog and digital domains and emphasizes layout-aware verification and reproducibility.
+This project demonstrates the implementation of a **Successive Approximation Register (SAR) Analog-to-Digital Converter** using open-source design tools.
 
-Key objectives:
-- Full-custom mixed-signal design
-- Hierarchical block-based development
-- Layout and post-layout validation
+The design includes both **analog and digital components** and shows how a mixed-signal system can be developed from individual circuit blocks to form a complete ADC.
 
+### Project goals
 
----
+- Practice full-custom mixed-signal design  
+- Develop circuits using a hierarchical block-based approach  
+- Integrate analog and digital components  
+- Perform verification using open-source EDA tools  
+- Illustrate a simple open-source IC design workflow
 
 ## 🧱 Architecture
 
-Main building blocks:
+The main building blocks of the SAR ADC include:
 
-- Dynamic comparator
-- Capacitive DAC (CDAC)
-- SAR digital logic
-- Bootstrap switching network
-- Mixed-signal integration
+Dynamic Comparator
 
-The design follows a bottom-up hierarchical methodology.
+Capacitive DAC (C-DAC)
+
+SAR Digital Logic
+
+Bootstrap Switch
+
+Switch Array
+
+Mixed-signal integration
+
+The design follows a bottom-up hierarchical methodology, where each block is designed and verified individually before being integrated into the complete system.
 
 ---
 
 ## 📂 Repository Structure
 
 ```bash
-SAR_ADC_12bit_ihp/
-├── Introduction.md
+SAR_ADC_8BIT_IHP/
+├── README.md
 │
-├── part_1_comparator/
-│   ├── schematic/
-│   ├── testbench/
-│   └── comparator.md
-│
-├── part_2_digital_comps/
-│   ├── algorithm/
-│   │   ├── verilog/
-│   │   ├── xschem/
-│   │   └── librelane/
-│   ├── T_gate/
-│   ├── nand_gate/
-│   ├── bootstrap_switch/
-│   └── digital_comps.md
-│
-├── part_3_array_components/
-│   ├── C-DAC/
-│   ├── switch_array/
-│   └── array_comps.md
-│
-├── part_4_SAR_ADC/
-│   ├── simulations/
-│   ├── scripting/
+├── docs
+│   ├── comparator.md
+│   ├── digital_comps.md
 │   └── sar_adc.md
 │
-└── part_5_analog_layout/
-    ├── comparator/
-    ├── CDAC/
-    ├── bootstrap/
-    ├── switch_array/
-    └── pex.md
+├── gds
+│   ├── C-DAC.gds
+│   ├── Cunit.gds
+│   ├── DIFF_COMPARATOR.gds
+│   ├── T_gate.gds
+│   ├── T_gate_switch.gds
+│   ├── bootstrap_switch.gds
+│   ├── inverter.gds
+│   ├── nand_gate.gds
+│   ├── sar_logic.gds
+│   └── switch_array.gds
+│
+├── rtl
+│   └── verilog
+│       ├── Makefile
+│       ├── conf.gtkw
+│       ├── sar_logic.v
+│       └── sar_logic_tb.v
+│
+├── scripts
+│   └── python
+│       └── generate_sym.py
+│
+└── xschem
+    ├── SAR_ADC.sch
+    ├── SAR_ADC_tb.sch
+    ├── dynamic_comparator.sch
+    ├── C-DAC.sch
+    ├── switch_array.sch
+    ├── bootstrap_switch.sch
+    ├── nand_gate.sch
+    ├── inverter.sch
+    ├── T_gate.sch
+    └── simulations
+  ```
 
-```
----
-
-## 🛠 Tools and Technologies
-
-- **xschem** — schematic capture and cosimulation
-- **ngspice** — analog simulation
-- **Verilator + GTKWave** — digital verification
-- **LibreLane /** — digital flow
-- **Magic / KLayout** — layout and DRC
-- **Python** — automation and post-processing
-
-Technology:
-- IHP SG13G2 Open PDK
-
----
 
 ## ▶️ Run the Simulation
 
 This project can be reproduced using open-source analog tools on Linux or WSL.
 
----
+## Clone the Repository
+git clone https://github.com/tienakai/SAR_ADC_8BIT_IHP.git
 
-- Clone the Repository
-``` bash
-git clone https://github.com/tienakai/SAR_ADC_12bit_ihp.git
-
-cd SAR_ADC_12bit_ihp 
-``` 
-- Run Xschem (GUI)
+cd SAR_ADC_8BIT_IHP
+## Run Xschem (GUI)
 
 Example: run SAR ADC testbench simulation
-``` bash
-cd part_4_SAR_ADC
+```bash
+cd xschem
 xschem SAR_ADC_tb.sch
 ```
+
 Inside Xschem:
 
-Click Netlist
+- Click Netlist
 
-Click Simulate
-- Digital Simulation
-``` bash
-cd part_2_digital_comps/algorithm/verilog
-make full
-```
-Run LibreLane (Digital Implementation)
-- Example: synthesize and implement SAR logic using LibreLane
+- Click Simulate
 
+## Digital Simulation
+
+Run SAR logic simulation:
 ```bash
-cd part_2_digital_comps/algorithm/librelane
-librelane \
-  --manual-pdk \
-  --pdk-root $PDK_ROOT \
-  -p ihp-sg13g2 \
-  -s sg13g2_stdcell \
-  --design-dir . \
-  config.json
-  ```      
-## 🧪 Block-Level Simulation
-
-Each block includes standalone testbenches.
-
-**Examples:**
-
-**Comparator**
-
-part_1_comparator/testbench
+cd rtl/verilog
+make
+```
+Waveforms can be viewed using GTKWave.
 
 
-**Switches**
 
-part_2_digital_comps/*/testbench
+## 🧠 Layout and GDS
 
+All layout data is located in:
+```bash
+gds/
+```
+Includes layout GDS files for:
 
----
+- Comparator
 
-## 🧠 Layout and Post-Layout
+- Capacitor DAC
 
-All layout work is located in:
+- SAR logic
 
+- Bootstrap switch
 
-part_5_analog_layout/
+- Switch array
 
+- Basic digital gates
 
-Includes:
-- Comparator layout and extraction
-- CDAC layout
-- Bootstrap switch layout
-- SAR logic GDS
+Layouts can be viewed using:
+
+- Magic
+
+- KLayout

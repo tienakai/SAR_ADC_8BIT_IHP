@@ -151,4 +151,4 @@ KLayout
 | Switch Array | DAC switching network | ✅ | ✅ |
 | Basic Digital Gates | Inverter, NAND | ✅ | ✅ |
 
---- KLayout
+

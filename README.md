@@ -124,25 +124,31 @@ Waveforms can be viewed using GTKWave.
 ## 🧠 Layout and GDS
 
 All layout data is located in:
+
 ```bash
 gds/
 ```
-Includes layout GDS files for:
 
-- Comparator
 
-- Capacitor DAC
+Integration status
 
-- SAR logic
+- Individual modules have passed DRC and LVS verification.
 
-- Bootstrap switch
-
-- Switch array
-
-- Basic digital gates
+-  Current work focuses on top-level layout integration, including module interconnection and pad ring connectivity.
 
 Layouts can be viewed using:
 
-- Magic
+Magic
 
-- KLayout
+KLayout
+
+| Module | Description | DRC | LVS |
+|------|-------------|------|------|
+| Comparator | Dynamic comparator layout | ✅ | ✅ |
+| Capacitive DAC | Capacitor DAC array | ✅ | ✅ |
+| SAR Logic | Digital SAR control logic | ✅ | ✅ |
+| Bootstrap Switch | Sampling switch | ✅ | ✅ |
+| Switch Array | DAC switching network | ✅ | ✅ |
+| Basic Digital Gates | Inverter, NAND | ✅ | ✅ |
+
+--- KLayout

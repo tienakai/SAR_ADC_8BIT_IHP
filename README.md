@@ -1,24 +1,37 @@
-# SAR ADC 8 bit in IHP SG13G2 
+# Introduction to SAR ADCs
 
-This repository presents the implementation of a Successive Approximation Register (SAR) Analog-to-Digital Converter using open-source design tools, targeting the **IHP SG13G2 technology node**.
+Successive Approximation Register (SAR) Analog-to-Digital Converters (ADCs) are a type of Nyquist-rate ADC known for their excellent balance between **resolution, power efficiency, and area**. Unlike flash or integrating ADCs, SAR ADCs determine the digital output using a **sequential binary search algorithm**, making them well suited for **moderate-speed and low-power applications**, particularly in deep submicron CMOS technologies where digital circuits scale efficiently.
 
-The project illustrates a mixed-signal IC design workflow that includes **schematic design, digital verification, analog layout, and system-level simulation** using open-source EDA tools.
+A SAR ADC typically consists of three main components: a **comparator**, a **capacitive DAC (C-DAC)**, and **SAR control logic**. These blocks operate together to iteratively approximate the input voltage during the conversion process.
+
+Below is a simplified block diagram of a differential SAR ADC architecture:
+
+<p align="center">
+<img src=".media/diff_sar_block.png" width="950" height="350" /> 
+</p>
+
+
+A commonly used technique in SAR ADCs is **charge redistribution in the capacitive DAC**. Conventional switching schemes can lead to significant energy consumption due to repeated charging and discharging of capacitors. To improve efficiency, **monotonic switching schemes** are often adopted. These approaches allow direct sampling on the top plates, reducing the total capacitance and significantly lowering switching energy—sometimes to as little as **18.7% of the energy required by conventional methods**.
+
+However, top-plate sampling can introduce **common-mode variation at the comparator input**, which may affect linearity due to input-referred offset. This trade-off must therefore be carefully considered in practical SAR ADC designs.
+
+This repository demonstrates the **design workflow of a SAR ADC implemented using open-source EDA tools**, targeting the **IHP SG13G2 technology node**. The project covers schematic design, digital verification, layout development, and system-level simulation within a mixed-signal IC design flow.
 
 ---
 
 ## 🚀 Overview
 
-This project demonstrates the implementation of a **Successive Approximation Register (SAR) Analog-to-Digital Converter** using open-source design tools.
+The project presents a practical implementation of a **Successive Approximation Register (SAR) Analog-to-Digital Converter** using open-source design tools.
 
-The design includes both **analog and digital components** and shows how a mixed-signal system can be developed from individual circuit blocks to form a complete ADC.
+Both **analog and digital circuit blocks** are included, illustrating how a mixed-signal system can be developed and integrated into a complete ADC.
 
 ### Project goals
 
-- Practice full-custom mixed-signal design  
-- Develop circuits using a hierarchical block-based approach  
-- Integrate analog and digital components  
-- Perform verification using open-source EDA tools  
-- Illustrate a simple open-source IC design workflow
+- Practice **full-custom mixed-signal circuit design**
+- Develop circuits using a **hierarchical block-based methodology**
+- Integrate **analog and digital components**
+- Perform verification using **open-source EDA tools**
+- Demonstrate a **reproducible open-source IC design workflow**
 
 ## 🧱 Architecture
 
@@ -115,7 +128,7 @@ Inside Xschem:
 Run SAR logic simulation:
 ```bash
 cd rtl/verilog
-make
+make full
 ```
 Waveforms can be viewed using GTKWave.
 

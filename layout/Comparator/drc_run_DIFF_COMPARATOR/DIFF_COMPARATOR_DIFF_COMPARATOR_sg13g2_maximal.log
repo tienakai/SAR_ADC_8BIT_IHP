@@ -1,9 +1,0 @@
-# Logfile created on 2026-02-28 16:20:32 +0100 by logger.rb/v1.4.3
-2026-02-28 16:20:32 +0100: Memory Usage (427344K) : Starting running IHP-SG13G2 Klayout DRC maximum runset on /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/comparator/layout/DIFF_COMPARATOR.gds
-2026-02-28 16:20:32 +0100: Memory Usage (427344K) : Ruby Version for klayout: 3.0.2
-2026-02-28 16:20:32 +0100: Memory Usage (428496K) : Loading database to memory is complete.
-2026-02-28 16:20:32 +0100: Memory Usage (428496K) : IHP-SG13G2 Klayout DRC maximum runset output at: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/comparator/layout/drc_run_DIFF_COMPARATOR/DIFF_COMPARATOR_DIFF_COMPARATOR_sg13g2_maximal.lyrdb
-2026-02-28 16:20:32 +0100: Memory Usage (428624K) : Evaluate switches.
-2026-02-28 16:20:32 +0100: Memory Usage (428624K) : Klayout will use  thread(s)
-2026-02-28 16:20:32 +0100: Memory Usage (428624K) : deep mode is enabled for sg13g2_maximal runset.
-2026-02-28 16:21:22 +0100: Memory Usage (460368K) : KLayout DRC run for maximum ruleSet completed in 49.29 seconds

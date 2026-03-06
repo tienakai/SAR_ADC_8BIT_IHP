@@ -1,0 +1,32 @@
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/bootstrap/schematic/bootstrap_switch.sch
+.subckt bootstrap_switch vdd vi vo clk gnd
+*.PININFO gnd:B vdd:B vi:B vo:B clk:B
+M1 vdd net2 net1 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+M3 vdd net1 net2 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+M4 net7 net10 net3 net3 sg13_lv_pmos w=500n l=0.13u ng=1 m=1
+M2 vdd net2 net3 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+M6 net5 gp vdd vdd sg13_lv_pmos w=500n l=130n ng=1 m=1
+M5 net5 vdd net4 gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+M7 net4 clk_not gnd gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+C5 net2 clk_not cap_cmim w=4.665e-6 l=6.99e-6 m=1
+C6 net3 net6 cap_cmim w=9.39e-6 l=6.99e-6 m=1
+M8 net6 net5 vi gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+M9 vo net7 vi gnd sg13_lv_nmos w=2.5u l=0.13u ng=1 m=1
+M10 net8 vdd net7 gnd sg13_lv_nmos w=500n l=0.13u ng=1 m=1
+M11 gnd clk_not net8 gnd sg13_lv_nmos w=500n l=0.13u ng=1 m=1
+M12 net6 clk_not gnd gnd sg13_lv_nmos w=1.3u l=0.4u ng=1 m=1
+C1 net1 net9 cap_cmim w=4.665e-6 l=6.99e-6 m=1
+x1 vdd clk_not net9 gnd inverter
+x2 vdd clk clk_not gnd inverter
+x3 vdd gp net10 gnd inverter
+.ends
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/bootstrap/schematic/inverter.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/bootstrap/schematic/inverter.sch
+.subckt inverter vdd vi vo gnd
+*.PININFO vi:B vo:B gnd:B vdd:B
+M5 vo vi vdd vdd sg13_lv_pmos w=800n l=130n ng=1 m=1
+M7 vo vi gnd gnd sg13_lv_nmos w=400n l=130n ng=1 m=1
+.ends
+

@@ -1,0 +1,6 @@
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/T_gate.sch
+.subckt T_gate !Control Vin Vout gnd Control vdd
+*.PININFO Vout:B Vin:B !Control:B Control:B gnd:B vdd:B
+M1 Vin Control Vout gnd sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+M2 Vin !Control Vout vdd sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+.ends

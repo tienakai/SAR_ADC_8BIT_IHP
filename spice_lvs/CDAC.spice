@@ -1,0 +1,15 @@
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/CDAC/schematic/CDAC.sch
+.subckt CDAC vin vo C6 C5 C4 C3 C2 C1 vref C_MSB
+*.PININFO vin:B vo:B C6:B C5:B C4:B C3:B C2:B C1:B vref:B C_MSB:B
+C1 vo vref cap_cmim w=5.71e-6 l=5.71e-6 m=1
+C2 vo C1 cap_cmim w=5.71e-6 l=5.71e-6 m=1
+C3 vo C2 cap_cmim w=5.71e-6 l=5.71e-6 m=2
+C4 vo C3 cap_cmim w=5.71e-6 l=5.71e-6 m=4
+C5 vo C4 cap_cmim w=5.71e-6 l=5.71e-6 m=8
+C6 vo C5 cap_cmim w=5.71e-6 l=5.71e-6 m=16
+C7 vo C6 cap_cmim w=5.71e-6 l=5.71e-6 m=32
+C8 vo C_MSB cap_cmim w=5.71e-6 l=5.71e-6 m=64
+C9 net1 net2 cap_cmim w=5.71e-6 l=5.71e-6 m=40
+* noconn #net1
+* noconn #net2
+.ends

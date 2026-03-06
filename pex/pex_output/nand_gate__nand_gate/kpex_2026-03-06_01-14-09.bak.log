@@ -1,0 +1,86 @@
+[2026-03-06 01:14:09,102] [INFO]    GDS input file passed, running in LVS mode
+[2026-03-06 01:14:09,104] [INFO]    No explicit top cell specified, using top cell 'nand_gate'
+[2026-03-06 01:14:09,124] [INFO]    Calling MAGIC
+[2026-03-06 01:14:09,126] [SUBPROCESS]    magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Script.tcl, output file: ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Output.txt
+[2026-03-06 01:14:09,149] [SUBPROCESS]    
+[2026-03-06 01:14:09,150] [SUBPROCESS]    Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+[2026-03-06 01:14:09,151] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-03-06 01:14:09,152] [SUBPROCESS]    Using the terminal as the console.
+[2026-03-06 01:14:09,153] [SUBPROCESS]    Using NULL graphics device.
+[2026-03-06 01:14:09,183] [SUBPROCESS]    Processing system .magicrc file
+[2026-03-06 01:14:09,195] [SUBPROCESS]    Switching to WIRING tool.
+[2026-03-06 01:14:09,196] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-03-06 01:14:09,197] [SUBPROCESS]    Switching to PICK tool.
+[2026-03-06 01:14:09,198] [SUBPROCESS]    Switching to BOX tool.
+[2026-03-06 01:14:09,198] [SUBPROCESS]    Sourcing design .magicrc for technology ihp-sg13g2 ...
+[2026-03-06 01:14:09,199] [SUBPROCESS]    2 Magic internal units = 1 Lambda
+[2026-03-06 01:14:09,235] [SUBPROCESS]    Input style sg13g2(): scaleFactor=2, multiplier=2
+[2026-03-06 01:14:09,394] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-03-06 01:14:09,396] [SUBPROCESS]        pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+[2026-03-06 01:14:09,402] [SUBPROCESS]    Scaled tech values by 2 / 1 to match internal grid scaling
+[2026-03-06 01:14:09,403] [SUBPROCESS]    Loading ihp-sg13g2 Device Generator Menu ...
+[2026-03-06 01:14:09,407] [SUBPROCESS]    Loading "./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Script.tcl" from command line.
+[2026-03-06 01:14:09,408] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-03-06 01:14:09,409] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-03-06 01:14:09,410] [SUBPROCESS]    Library name: LIB
+[2026-03-06 01:14:09,411] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2026-03-06 01:14:09,412] [SUBPROCESS]    Reading "nmos$1".
+[2026-03-06 01:14:09,412] [SUBPROCESS]    Reading "pmos$1".
+[2026-03-06 01:14:09,413] [SUBPROCESS]    Reading "nand_gate".
+[2026-03-06 01:14:09,414] [SUBPROCESS]    Extracting nand_gate into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/nand_gate__nand_gate/magic_RC/nand_gate.ext:
+[2026-03-06 01:14:09,415] [SUBPROCESS]    exttosim finished.
+[2026-03-06 01:14:09,416] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 01:14:09,417] [SUBPROCESS]    Location is (-181, -410); drivepoint (-182, -411)
+[2026-03-06 01:14:09,418] [SUBPROCESS]    Port: name = B exists, forcing drivepoint
+[2026-03-06 01:14:09,419] [SUBPROCESS]    Location is (-90, -54); drivepoint (-91, -55)
+[2026-03-06 01:14:09,420] [SUBPROCESS]    Port: name = A exists, forcing drivepoint
+[2026-03-06 01:14:09,421] [SUBPROCESS]    Location is (79, -53); drivepoint (79, -54)
+[2026-03-06 01:14:09,422] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 01:14:09,423] [SUBPROCESS]    Location is (-148, 257); drivepoint (-149, 257)
+[2026-03-06 01:14:09,424] [SUBPROCESS]    Port: name = Vo exists, forcing drivepoint
+[2026-03-06 01:14:09,425] [SUBPROCESS]    Location is (7, -124); drivepoint (7, -125)
+[2026-03-06 01:14:09,426] [SUBPROCESS]    Total Nets: 6
+[2026-03-06 01:14:09,427] [SUBPROCESS]    Nets extracted: 6 (1.000000)
+[2026-03-06 01:14:09,428] [SUBPROCESS]    Nets output: 6 (1.000000)
+[2026-03-06 01:14:09,429] [SUBPROCESS]    exttospice finished.
+[2026-03-06 01:14:09,431] [INFO]    MAGIC succeeded after 0.3015s
+[2026-03-06 01:14:09,446] [SUBPROCESS]    Report DB saved at: ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_report.rdb.gz
+[2026-03-06 01:14:09,448] [SUBPROCESS]    SPICE netlist saved at: ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate.pex.spice
+[2026-03-06 01:14:09,449] [SUBPROCESS]    * NGSPICE file created from nand_gate.ext - technology: ihp-sg13g2
+
+.subckt nand_gate gnd B A vdd Vo
+X0 a_n15_n246.t0 B.t0 gnd.t2 gnd.t1 sg13_lv_nmos ad=62.5f pd=0.74u as=0.1075p ps=1.34u w=0.25u l=0.13u
+X1 vdd.t1 A.t0 Vo.t1 vdd.t0 sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X2 Vo.t1 B.t0 vdd.t2 vdd.t0 sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X3 Vo.t0 A.t0 a_n15_n246.t0 gnd.t0 sg13_lv_nmos ad=0.1075p pd=1.34u as=62.5f ps=0.74u w=0.25u l=0.13u
+C0 A Vo 0.15477f
+C1 B Vo 0.07214f
+C2 A B 0.05121f
+C3 vdd Vo 0.13452f
+C4 A vdd 0.08588f
+C5 B vdd 0.09489f
+R0 B B.t0 15.0687
+R1 gnd.n0 gnd.t1 149.24
+R2 gnd.n0 gnd.t0 125.602
+R3 gnd.n1 gnd.t2 17.2409
+R4 gnd.n1 gnd.n0 6.88979
+R5 gnd gnd.n1 0.0923197
+R6 A A.t0 15.0665
+R7 Vo.n0 Vo.t1 17.7224
+R8 Vo.n0 Vo.t0 17.6641
+R9 Vo Vo.n0 0.117375
+R10 Vo.n0 Vo 0.0468158
+R11 vdd.n1 vdd.t1 17.5381
+R12 vdd.n0 vdd.t2 17.4749
+R13 vdd.n3 vdd.n2 17.0005
+R14 vdd.n2 vdd.n1 5.64075
+R15 vdd.n2 vdd.t0 4.2505
+R16 vdd.n1 vdd.n0 0.137308
+R17 vdd vdd.n3 0.0569602
+R18 vdd.n3 vdd.n0 0.0121814
+C6 Vo gnd 0.12333f
+C7 A gnd 0.20741f
+C8 B gnd 0.23365f
+C9 vdd gnd 0.17173f
+.ends
+

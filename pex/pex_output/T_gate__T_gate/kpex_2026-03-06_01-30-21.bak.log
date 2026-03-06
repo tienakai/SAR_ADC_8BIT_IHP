@@ -1,0 +1,80 @@
+[2026-03-06 01:30:21,564] [INFO]    GDS input file passed, running in LVS mode
+[2026-03-06 01:30:21,567] [INFO]    No explicit top cell specified, using top cell 'T_gate'
+[2026-03-06 01:30:21,587] [INFO]    Calling MAGIC
+[2026-03-06 01:30:21,588] [SUBPROCESS]    magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/T_gate__T_gate/magic_RC/T_gate_MAGIC_RC_Script.tcl, output file: ./pex_output/T_gate__T_gate/magic_RC/T_gate_MAGIC_RC_Output.txt
+[2026-03-06 01:30:21,613] [SUBPROCESS]    
+[2026-03-06 01:30:21,614] [SUBPROCESS]    Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+[2026-03-06 01:30:21,615] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-03-06 01:30:21,616] [SUBPROCESS]    Using the terminal as the console.
+[2026-03-06 01:30:21,617] [SUBPROCESS]    Using NULL graphics device.
+[2026-03-06 01:30:21,666] [SUBPROCESS]    Processing system .magicrc file
+[2026-03-06 01:30:21,693] [SUBPROCESS]    Switching to WIRING tool.
+[2026-03-06 01:30:21,695] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-03-06 01:30:21,696] [SUBPROCESS]    Switching to PICK tool.
+[2026-03-06 01:30:21,696] [SUBPROCESS]    Switching to BOX tool.
+[2026-03-06 01:30:21,697] [SUBPROCESS]    Sourcing design .magicrc for technology ihp-sg13g2 ...
+[2026-03-06 01:30:21,698] [SUBPROCESS]    2 Magic internal units = 1 Lambda
+[2026-03-06 01:30:21,739] [SUBPROCESS]    Input style sg13g2(): scaleFactor=2, multiplier=2
+[2026-03-06 01:30:21,908] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-03-06 01:30:21,909] [SUBPROCESS]        pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+[2026-03-06 01:30:21,915] [SUBPROCESS]    Scaled tech values by 2 / 1 to match internal grid scaling
+[2026-03-06 01:30:21,916] [SUBPROCESS]    Loading ihp-sg13g2 Device Generator Menu ...
+[2026-03-06 01:30:21,922] [SUBPROCESS]    Loading "./pex_output/T_gate__T_gate/magic_RC/T_gate_MAGIC_RC_Script.tcl" from command line.
+[2026-03-06 01:30:21,923] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-03-06 01:30:21,924] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-03-06 01:30:21,925] [SUBPROCESS]    Library name: LIB
+[2026-03-06 01:30:21,926] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2026-03-06 01:30:21,926] [SUBPROCESS]    Reading "pmos$1".
+[2026-03-06 01:30:21,927] [SUBPROCESS]    Reading "nmos$1".
+[2026-03-06 01:30:21,928] [SUBPROCESS]    Reading "T_gate".
+[2026-03-06 01:30:21,929] [SUBPROCESS]    Error while reading cell "T_gate" (byte position 5996): Unknown layer/datatype in boundary, layer=46 type=0
+[2026-03-06 01:30:21,930] [SUBPROCESS]    Extracting T_gate into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/T_gate__T_gate/magic_RC/T_gate.ext:
+[2026-03-06 01:30:21,932] [SUBPROCESS]    exttosim finished.
+[2026-03-06 01:30:21,933] [SUBPROCESS]    Port: name = Vin exists, forcing drivepoint
+[2026-03-06 01:30:21,933] [SUBPROCESS]    Location is (-108, -135); drivepoint (-109, -136)
+[2026-03-06 01:30:21,935] [SUBPROCESS]    Port: name = Vout exists, forcing drivepoint
+[2026-03-06 01:30:21,935] [SUBPROCESS]    Location is (347, -137); drivepoint (347, -138)
+[2026-03-06 01:30:21,937] [SUBPROCESS]    Port: name = !Control exists, forcing drivepoint
+[2026-03-06 01:30:21,938] [SUBPROCESS]    Location is (24, 547); drivepoint (24, 547)
+[2026-03-06 01:30:21,939] [SUBPROCESS]    Port: name = Control exists, forcing drivepoint
+[2026-03-06 01:30:21,940] [SUBPROCESS]    Location is (25, -590); drivepoint (25, -591)
+[2026-03-06 01:30:21,941] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 01:30:21,942] [SUBPROCESS]    Location is (177, -306); drivepoint (177, -307)
+[2026-03-06 01:30:21,943] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 01:30:21,944] [SUBPROCESS]    Location is (246, 361); drivepoint (246, 361)
+[2026-03-06 01:30:21,945] [SUBPROCESS]    Total Nets: 6
+[2026-03-06 01:30:21,946] [SUBPROCESS]    Nets extracted: 6 (1.000000)
+[2026-03-06 01:30:21,947] [SUBPROCESS]    Nets output: 6 (1.000000)
+[2026-03-06 01:30:21,948] [SUBPROCESS]    exttospice finished.
+[2026-03-06 01:30:21,949] [INFO]    MAGIC succeeded after 0.3579s
+[2026-03-06 01:30:21,961] [SUBPROCESS]    Report DB saved at: ./pex_output/T_gate__T_gate/magic_RC/T_gate_MAGIC_report.rdb.gz
+[2026-03-06 01:30:21,962] [SUBPROCESS]    SPICE netlist saved at: ./pex_output/T_gate__T_gate/magic_RC/T_gate.pex.spice
+[2026-03-06 01:30:21,964] [SUBPROCESS]    * NGSPICE file created from T_gate.ext - technology: ihp-sg13g2
+
+.subckt T_gate Vin Vout Control gnd vdd
+X0 Vout.t1 Control.t0 Vin.t1 gnd.t0 sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X1 Vout.t0 Control.t0 Vin.t0 vdd.t0 sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+C0 Control Vin 0.01009f
+C1 Control vdd 0.06532f
+C2 Vin Vout 0.44023f
+C3 Vin vdd 0.01888f
+C4 Vout vdd 0.19552f
+R0 Control Control.t0 15.0225
+R1 Vin.n0 Vin.t1 6.32304
+R2 Vin.n0 Vin.t0 3.74651
+R3 Vin Vin.n0 0.255378
+R4 Vout.n0 Vout.t1 6.32648
+R5 Vout.n0 Vout.t0 3.74651
+R6 Vout Vout.n0 0.71275
+R7 gnd gnd.t0 810.898
+R8 Control Control.t0 15.0243
+R9 vdd vdd.n0 17.0173
+R10 vdd vdd.n0 5.79683
+R11 vdd.n0 vdd.t0 4.25112
+C5 Control gnd 0.26277f
+C6 Vout gnd 0.30897f
+C7 Vin gnd 0.22881f
+C8 Control gnd 0.30202f
+C9 vdd gnd 0.09029f
+.ends
+

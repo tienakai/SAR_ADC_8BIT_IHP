@@ -1,0 +1,32 @@
+timestamp 0
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11 7000 260000 1360000
+parameters sg13_lv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_lv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+port "Control" 5 25 -591 48 -568 m1
+port "Vout" 3 347 -138 376 -104 m1
+port "Vin" 2 -109 -136 -77 -103 m1
+port "!Control" 4 24 547 51 573 m1
+port "vdd" 7 246 361 278 393 m1
+port "gnd" 6 177 -307 210 -275 m1
+node "Control" 0 262.766 25 -591 m1 0 0 0 0 3840 248 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vout" 4 308.971 347 -138 m1 0 0 0 0 39776 2412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vin" 3 228.809 -109 -136 m1 0 0 0 0 32139 2026 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "!Control" 0 302.015 24 547 m1 0 0 0 0 3840 248 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd" 0 90.2939 246 361 m1 0 0 0 0 48000 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "gnd" 0 0 177 -307 m1 0 0 0 0 12200 522 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "!Control" "Vout" 9.8698
+cap "Control" "Vout" 6.51832
+cap "Control" "!Control" 4.15777
+cap "Vin" "Vout" 440.235
+cap "Vout" "vdd" 195.523
+cap "Vin" "!Control" 10.0902
+cap "!Control" "vdd" 65.322
+cap "Control" "Vin" 6.71079
+cap "Control" "vdd" 1.12232
+cap "Vin" "vdd" 18.8799
+device msubckt sg13_lv_nmos 24 -463 25 -462 l=26 w=200 "gnd" "Control" 52 0 "Vin" 200 13600,536 "Vout" 200 13600,536
+device msubckt sg13_lv_pmos 24 35 25 36 l=26 w=400 "vdd" "!Control" 52 0 "Vin" 400 27200,936 "Vout" 400 27200,936

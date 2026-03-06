@@ -1,0 +1,49 @@
+[2026-03-06 01:52:07,922] [INFO]    GDS input file passed, running in LVS mode
+[2026-03-06 01:52:07,925] [INFO]    No explicit top cell specified, using top cell 'inverter'
+[2026-03-06 01:52:07,945] [INFO]    Calling MAGIC
+[2026-03-06 01:52:07,946] [SUBPROCESS]    magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/inverter__inverter/magic_CC/inverter_MAGIC_CC_Script.tcl, output file: ./pex_output/inverter__inverter/magic_CC/inverter_MAGIC_CC_Output.txt
+[2026-03-06 01:52:07,972] [SUBPROCESS]    
+[2026-03-06 01:52:07,973] [SUBPROCESS]    Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+[2026-03-06 01:52:07,974] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-03-06 01:52:07,975] [SUBPROCESS]    Using the terminal as the console.
+[2026-03-06 01:52:07,976] [SUBPROCESS]    Using NULL graphics device.
+[2026-03-06 01:52:08,025] [SUBPROCESS]    Processing system .magicrc file
+[2026-03-06 01:52:08,053] [SUBPROCESS]    Switching to WIRING tool.
+[2026-03-06 01:52:08,054] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-03-06 01:52:08,055] [SUBPROCESS]    Switching to PICK tool.
+[2026-03-06 01:52:08,055] [SUBPROCESS]    Switching to BOX tool.
+[2026-03-06 01:52:08,056] [SUBPROCESS]    Sourcing design .magicrc for technology ihp-sg13g2 ...
+[2026-03-06 01:52:08,057] [SUBPROCESS]    2 Magic internal units = 1 Lambda
+[2026-03-06 01:52:08,098] [SUBPROCESS]    Input style sg13g2(): scaleFactor=2, multiplier=2
+[2026-03-06 01:52:08,267] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-03-06 01:52:08,268] [SUBPROCESS]        pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+[2026-03-06 01:52:08,274] [SUBPROCESS]    Scaled tech values by 2 / 1 to match internal grid scaling
+[2026-03-06 01:52:08,276] [SUBPROCESS]    Loading ihp-sg13g2 Device Generator Menu ...
+[2026-03-06 01:52:08,281] [SUBPROCESS]    Loading "./pex_output/inverter__inverter/magic_CC/inverter_MAGIC_CC_Script.tcl" from command line.
+[2026-03-06 01:52:08,282] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-03-06 01:52:08,283] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-03-06 01:52:08,284] [SUBPROCESS]    Library name: LIB
+[2026-03-06 01:52:08,285] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2026-03-06 01:52:08,286] [SUBPROCESS]    Reading "nmos$1".
+[2026-03-06 01:52:08,287] [SUBPROCESS]    Reading "pmos".
+[2026-03-06 01:52:08,287] [SUBPROCESS]    Reading "inverter".
+[2026-03-06 01:52:08,288] [SUBPROCESS]    Error while reading cell "inverter" (byte position 4978): Unknown layer/datatype in boundary, layer=46 type=0
+[2026-03-06 01:52:08,290] [SUBPROCESS]    Extracting inverter into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/inverter__inverter/magic_CC/inverter.ext:
+[2026-03-06 01:52:08,291] [SUBPROCESS]    Devs merged: 0
+[2026-03-06 01:52:08,292] [SUBPROCESS]    exttospice finished.
+[2026-03-06 01:52:08,294] [INFO]    MAGIC succeeded after 0.3445s
+[2026-03-06 01:52:08,301] [SUBPROCESS]    Report DB saved at: ./pex_output/inverter__inverter/magic_CC/inverter_MAGIC_report.rdb.gz
+[2026-03-06 01:52:08,302] [SUBPROCESS]    SPICE netlist saved at: ./pex_output/inverter__inverter/magic_CC/inverter.pex.spice
+[2026-03-06 01:52:08,304] [SUBPROCESS]    * NGSPICE file created from inverter.ext - technology: ihp-sg13g2
+
+.subckt inverter vi vdd gnd vo
+X0 vo vi vdd vdd sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
+X1 vo vi gnd gnd sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
+C0 vo vdd 0.12375f
+C1 vo vi 0.06195f
+C2 vi vdd 0.09004f
+C3 vo gnd 0.20432f
+C4 vi gnd 0.35463f
+C5 vdd gnd 0.1104f
+.ends
+

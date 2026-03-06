@@ -1,0 +1,44 @@
+
+Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "./pex_output/T_gate__T_gate/magic_RC/T_gate_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "pmos$1".
+Reading "nmos$1".
+Reading "T_gate".
+Error while reading cell "T_gate" (byte position 5996): Unknown layer/datatype in boundary, layer=46 type=0
+Extracting T_gate into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/T_gate__T_gate/magic_RC/T_gate.ext:
+exttosim finished.
+Port: name = Vin exists, forcing drivepoint
+Location is (-108, -135); drivepoint (-109, -136)
+Port: name = Vout exists, forcing drivepoint
+Location is (347, -137); drivepoint (347, -138)
+Port: name = !Control exists, forcing drivepoint
+Location is (24, 547); drivepoint (24, 547)
+Port: name = Control exists, forcing drivepoint
+Location is (25, -590); drivepoint (25, -591)
+Port: name = gnd exists, forcing drivepoint
+Location is (177, -306); drivepoint (177, -307)
+Port: name = vdd exists, forcing drivepoint
+Location is (246, 361); drivepoint (246, 361)
+Total Nets: 6
+Nets extracted: 6 (1.000000)
+Nets output: 6 (1.000000)
+exttospice finished.

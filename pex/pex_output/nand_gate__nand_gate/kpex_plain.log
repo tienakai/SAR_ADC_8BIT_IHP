@@ -1,0 +1,86 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'nand_gate'
+Calling MAGIC
+magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Script.tcl, output file: ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Output.txt
+
+Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "nmos$1".
+Reading "pmos$1".
+Reading "nand_gate".
+Extracting nand_gate into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/nand_gate__nand_gate/magic_RC/nand_gate.ext:
+exttosim finished.
+Port: name = gnd exists, forcing drivepoint
+Location is (-181, -410); drivepoint (-182, -411)
+Port: name = B exists, forcing drivepoint
+Location is (-90, -54); drivepoint (-91, -55)
+Port: name = A exists, forcing drivepoint
+Location is (79, -53); drivepoint (79, -54)
+Port: name = vdd exists, forcing drivepoint
+Location is (-148, 257); drivepoint (-149, 257)
+Port: name = Vo exists, forcing drivepoint
+Location is (7, -124); drivepoint (7, -125)
+Total Nets: 6
+Nets extracted: 6 (1.000000)
+Nets output: 6 (1.000000)
+exttospice finished.
+MAGIC succeeded after 0.3571s
+Report DB saved at: ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_report.rdb.gz
+SPICE netlist saved at: ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate.pex.spice
+* NGSPICE file created from nand_gate.ext - technology: ihp-sg13g2
+
+.subckt nand_gate gnd B A vdd Vo
+X0 a_n15_n246.t0 B.t0 gnd.t2 gnd.t1 sg13_lv_nmos ad=62.5f pd=0.74u as=0.1075p ps=1.34u w=0.25u l=0.13u
+X1 vdd.t1 A.t0 Vo.t1 vdd.t0 sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X2 Vo.t1 B.t0 vdd.t2 vdd.t0 sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X3 Vo.t0 A.t0 a_n15_n246.t0 gnd.t0 sg13_lv_nmos ad=0.1075p pd=1.34u as=62.5f ps=0.74u w=0.25u l=0.13u
+C0 vdd Vo 0.13452f
+C1 A vdd 0.08588f
+C2 B vdd 0.09489f
+C3 A Vo 0.15477f
+C4 B Vo 0.07214f
+C5 A B 0.05121f
+R0 B B.t0 15.0687
+R1 gnd.n0 gnd.t1 149.24
+R2 gnd.n0 gnd.t0 125.602
+R3 gnd.n1 gnd.t2 17.2409
+R4 gnd.n1 gnd.n0 6.88979
+R5 gnd gnd.n1 0.0923197
+R6 A A.t0 15.0665
+R7 Vo.n0 Vo.t1 17.7224
+R8 Vo.n0 Vo.t0 17.6641
+R9 Vo Vo.n0 0.117375
+R10 Vo.n0 Vo 0.0468158
+R11 vdd.n1 vdd.t1 17.5381
+R12 vdd.n0 vdd.t2 17.4749
+R13 vdd.n3 vdd.n2 17.0005
+R14 vdd.n2 vdd.n1 5.64075
+R15 vdd.n2 vdd.t0 4.2505
+R16 vdd.n1 vdd.n0 0.137308
+R17 vdd vdd.n3 0.0569602
+R18 vdd.n3 vdd.n0 0.0121814
+C6 Vo gnd 0.12333f
+C7 A gnd 0.20741f
+C8 B gnd 0.23365f
+C9 vdd gnd 0.17173f
+.ends
+

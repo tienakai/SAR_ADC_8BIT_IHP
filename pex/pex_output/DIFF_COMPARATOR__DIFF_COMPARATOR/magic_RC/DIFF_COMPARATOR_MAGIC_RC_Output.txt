@@ -1,0 +1,423 @@
+
+Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "./pex_output/DIFF_COMPARATOR__DIFF_COMPARATOR/magic_RC/DIFF_COMPARATOR_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "M3_M2_CDNS_7532598768410$5$4".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$4
+Reading "M4_M3_CDNS_753259876849$5$4".
+Saving contents of cell M4_M3_CDNS_753259876849$5$4
+Reading "M5_M4_CDNS_753259876848$5$4".
+Saving contents of cell M5_M4_CDNS_753259876848$5$4
+Reading "TM1_M5_CDNS_753259876847$3$4".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$4
+Reading "M2_M1_CDNS_753259876846$5$4".
+Saving contents of cell M2_M1_CDNS_753259876846$5$4
+Reading "M3_M2_CDNS_7532598768410$5$2$2".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$2$2
+Reading "M4_M3_CDNS_753259876849$5$2$2".
+Saving contents of cell M4_M3_CDNS_753259876849$5$2$2
+Reading "M5_M4_CDNS_753259876848$5$2$2".
+Saving contents of cell M5_M4_CDNS_753259876848$5$2$2
+Reading "TM1_M5_CDNS_753259876847$3$2$2".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$2$2
+Reading "M2_M1_CDNS_753259876846$5$2$2".
+Saving contents of cell M2_M1_CDNS_753259876846$5$2$2
+Reading "M3_M2_CDNS_7532598768410$5$1$1$2".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$1$2
+Reading "M4_M3_CDNS_753259876849$5$1$1$2".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$1$2
+Reading "M5_M4_CDNS_753259876848$5$1$1$2".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$1$2
+Reading "TM1_M5_CDNS_753259876847$3$1$1$2".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$1$2
+Reading "M2_M1_CDNS_753259876846$5$1$1$2".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$1$2
+Reading "M3_M2_CDNS_7532598768410$5$1$3".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$3
+Reading "M4_M3_CDNS_753259876849$5$1$3".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$3
+Reading "M5_M4_CDNS_753259876848$5$1$3".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$3
+Reading "TM1_M5_CDNS_753259876847$3$1$3".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$3
+Reading "M2_M1_CDNS_753259876846$5$1$3".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$3
+Reading "M3_M2_CDNS_7532598768410$5$3".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$3
+Reading "M4_M3_CDNS_753259876849$5$3".
+Saving contents of cell M4_M3_CDNS_753259876849$5$3
+Reading "M5_M4_CDNS_753259876848$5$3".
+Saving contents of cell M5_M4_CDNS_753259876848$5$3
+Reading "TM1_M5_CDNS_753259876847$3$3".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$3
+Reading "M2_M1_CDNS_753259876846$5$3".
+Saving contents of cell M2_M1_CDNS_753259876846$5$3
+Reading "M3_M2_CDNS_7532598768410$5$2$1".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$2$1
+Reading "M4_M3_CDNS_753259876849$5$2$1".
+Saving contents of cell M4_M3_CDNS_753259876849$5$2$1
+Reading "M5_M4_CDNS_753259876848$5$2$1".
+Saving contents of cell M5_M4_CDNS_753259876848$5$2$1
+Reading "TM1_M5_CDNS_753259876847$3$2$1".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$2$1
+Reading "M2_M1_CDNS_753259876846$5$2$1".
+Saving contents of cell M2_M1_CDNS_753259876846$5$2$1
+Reading "M3_M2_CDNS_7532598768410$5$1$1$1".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$1$1
+Reading "M4_M3_CDNS_753259876849$5$1$1$1".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$1$1
+Reading "M5_M4_CDNS_753259876848$5$1$1$1".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$1$1
+Reading "TM1_M5_CDNS_753259876847$3$1$1$1".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$1$1
+Reading "M2_M1_CDNS_753259876846$5$1$1$1".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$1$1
+Reading "M3_M2_CDNS_7532598768410$5$1$2".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$2
+Reading "M4_M3_CDNS_753259876849$5$1$2".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$2
+Reading "M5_M4_CDNS_753259876848$5$1$2".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$2
+Reading "TM1_M5_CDNS_753259876847$3$1$2".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$2
+Reading "M2_M1_CDNS_753259876846$5$1$2".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$2
+Reading "M3_M2_CDNS_7532598768410$5$2".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$2
+Reading "M4_M3_CDNS_753259876849$5$2".
+Saving contents of cell M4_M3_CDNS_753259876849$5$2
+Reading "M5_M4_CDNS_753259876848$5$2".
+Saving contents of cell M5_M4_CDNS_753259876848$5$2
+Reading "TM1_M5_CDNS_753259876847$3$2".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$2
+Reading "M2_M1_CDNS_753259876846$5$2".
+Saving contents of cell M2_M1_CDNS_753259876846$5$2
+Reading "M3_M2_CDNS_7532598768410$5$1$1".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$1
+Reading "M4_M3_CDNS_753259876849$5$1$1".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$1
+Reading "M5_M4_CDNS_753259876848$5$1$1".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$1
+Reading "TM1_M5_CDNS_753259876847$3$1$1".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$1
+Reading "M2_M1_CDNS_753259876846$5$1$1".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$1
+Reading "M3_M2_CDNS_7532598768410$5$1".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1
+Reading "M4_M3_CDNS_753259876849$5$1".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1
+Reading "M5_M4_CDNS_753259876848$5$1".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1
+Reading "TM1_M5_CDNS_753259876847$3$1".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1
+Reading "M2_M1_CDNS_753259876846$5$1".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1
+Reading "M2_M1_CDNS_753259876846$5".
+Saving contents of cell M2_M1_CDNS_753259876846$5
+Reading "TM1_M5_CDNS_753259876847$3".
+Saving contents of cell TM1_M5_CDNS_753259876847$3
+Reading "M5_M4_CDNS_753259876848$5".
+Saving contents of cell M5_M4_CDNS_753259876848$5
+Reading "M4_M3_CDNS_753259876849$5".
+Saving contents of cell M4_M3_CDNS_753259876849$5
+Reading "M3_M2_CDNS_7532598768410$5".
+Saving contents of cell M3_M2_CDNS_7532598768410$5
+Reading "M4_M3_CDNS_753259876845$1".
+Saving contents of cell M4_M3_CDNS_753259876845$1
+Reading "M5_M4_CDNS_753259876844$1".
+Saving contents of cell M5_M4_CDNS_753259876844$1
+Reading "TM1_M5_CDNS_753259876843$1".
+Saving contents of cell TM1_M5_CDNS_753259876843$1
+Reading "TM2_TM1_CDNS_753259876842$1".
+Saving contents of cell TM2_TM1_CDNS_753259876842$1
+Reading "M3_M2_CDNS_753259876841$1".
+Saving contents of cell M3_M2_CDNS_753259876841$1
+Reading "M2_M1_CDNS_753259876840$1".
+Saving contents of cell M2_M1_CDNS_753259876840$1
+Reading "via_stack$4".
+Reading "via_stack".
+Reading "nmos$1$1".
+Reading "gring$1".
+Reading "via_stack$8$1".
+Reading "via_stack$12".
+Reading "via_stack$11".
+Reading "nmos".
+Reading "pmos".
+Reading "pmos$1".
+Reading "via_stack$1".
+Reading "via_stack$1$2".
+Reading "via_stack$13".
+Reading "via_stack$3".
+Reading "via_stack$2".
+Reading "gring$1$1".
+Reading "via_stack$2$1".
+Reading "via_stack$3$1".
+Reading "via_stack$14".
+Reading "pmos$3".
+Reading "via_stack$6".
+Reading "via_stack$8".
+Reading "via_stack$16".
+Reading "cont_via2".
+Reading "cont_via2$2".
+Reading "via_stack$18".
+Reading "cont_via2$3".
+Reading "via_stack$20".
+Reading "M2_M1_CDNS_753259876840$1$4".
+Saving contents of cell M2_M1_CDNS_753259876840$1$4
+Reading "M3_M2_CDNS_753259876841$1$4".
+Saving contents of cell M3_M2_CDNS_753259876841$1$4
+Reading "TM2_TM1_CDNS_753259876842$1$4".
+Saving contents of cell TM2_TM1_CDNS_753259876842$1$4
+Reading "TM1_M5_CDNS_753259876843$1$4".
+Saving contents of cell TM1_M5_CDNS_753259876843$1$4
+Reading "M5_M4_CDNS_753259876844$1$4".
+Saving contents of cell M5_M4_CDNS_753259876844$1$4
+Reading "M4_M3_CDNS_753259876845$1$4".
+Saving contents of cell M4_M3_CDNS_753259876845$1$4
+Reading "via_stack$21".
+Reading "TM1_M5_CDNS_753259876847$3$1$1$2$3".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$1$2$3
+Reading "M5_M4_CDNS_753259876848$5$1$1$2$3".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$1$2$3
+Reading "TM1_M5_CDNS_753259876847$3$2$2$3".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$2$2$3
+Reading "M5_M4_CDNS_753259876848$5$2$2$3".
+Saving contents of cell M5_M4_CDNS_753259876848$5$2$2$3
+Reading "M3_M2_CDNS_7532598768410$5$1$4".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$4
+Reading "M2_M1_CDNS_753259876846$5$1$1$3".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$1$3
+Reading "TM1_M5_CDNS_753259876847$3$1$1$3".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$1$3
+Reading "M5_M4_CDNS_753259876848$5$1$1$3".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$1$3
+Reading "M4_M3_CDNS_753259876849$5$1$1$3".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$1$3
+Reading "M3_M2_CDNS_7532598768410$5$1$1$3".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$1$3
+Reading "M2_M1_CDNS_753259876846$5$2$3".
+Saving contents of cell M2_M1_CDNS_753259876846$5$2$3
+Reading "TM1_M5_CDNS_753259876847$3$2$3".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$2$3
+Reading "M5_M4_CDNS_753259876848$5$2$3".
+Saving contents of cell M5_M4_CDNS_753259876848$5$2$3
+Reading "M4_M3_CDNS_753259876849$5$2$3".
+Saving contents of cell M4_M3_CDNS_753259876849$5$2$3
+Reading "M3_M2_CDNS_7532598768410$5$2$3".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$2$3
+Reading "M2_M1_CDNS_753259876846$5$1$2$2".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$2$2
+Reading "TM1_M5_CDNS_753259876847$3$1$2$2".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$2$2
+Reading "M5_M4_CDNS_753259876848$5$1$2$2".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$2$2
+Reading "M4_M3_CDNS_753259876849$5$1$2$2".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$2$2
+Reading "M3_M2_CDNS_7532598768410$5$1$2$2".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$2$2
+Reading "M2_M1_CDNS_753259876846$5$1$1$1$2".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$1$1$2
+Reading "TM1_M5_CDNS_753259876847$3$1$1$1$2".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$1$1$2
+Reading "M5_M4_CDNS_753259876848$5$1$1$1$2".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$1$1$2
+Reading "M4_M3_CDNS_753259876849$5$1$1$1$2".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$1$1$2
+Reading "M3_M2_CDNS_7532598768410$5$1$1$1$2".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$1$1$2
+Reading "M2_M1_CDNS_753259876846$5$2$1$2".
+Saving contents of cell M2_M1_CDNS_753259876846$5$2$1$2
+Reading "TM1_M5_CDNS_753259876847$3$2$1$2".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$2$1$2
+Reading "M5_M4_CDNS_753259876848$5$2$1$2".
+Saving contents of cell M5_M4_CDNS_753259876848$5$2$1$2
+Reading "M4_M3_CDNS_753259876849$5$2$1$2".
+Saving contents of cell M4_M3_CDNS_753259876849$5$2$1$2
+Reading "M3_M2_CDNS_7532598768410$5$2$1$2".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$2$1$2
+Reading "M2_M1_CDNS_753259876846$5$3$2".
+Saving contents of cell M2_M1_CDNS_753259876846$5$3$2
+Reading "TM1_M5_CDNS_753259876847$3$3$2".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$3$2
+Reading "M5_M4_CDNS_753259876848$5$3$2".
+Saving contents of cell M5_M4_CDNS_753259876848$5$3$2
+Reading "M4_M3_CDNS_753259876849$5$3$2".
+Saving contents of cell M4_M3_CDNS_753259876849$5$3$2
+Reading "M3_M2_CDNS_7532598768410$5$3$2".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$3$2
+Reading "M2_M1_CDNS_753259876846$5$1$3$1".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$3$1
+Reading "M2_M1_CDNS_753259876846$5$5".
+Saving contents of cell M2_M1_CDNS_753259876846$5$5
+Reading "TM1_M5_CDNS_753259876847$3$5".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$5
+Reading "M5_M4_CDNS_753259876848$5$5".
+Saving contents of cell M5_M4_CDNS_753259876848$5$5
+Reading "M4_M3_CDNS_753259876849$5$5".
+Saving contents of cell M4_M3_CDNS_753259876849$5$5
+Reading "M3_M2_CDNS_7532598768410$5$5".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$5
+Reading "TM1_M5_CDNS_753259876847$3$1$3$1".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$3$1
+Reading "M5_M4_CDNS_753259876848$5$1$3$1".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$3$1
+Reading "M4_M3_CDNS_753259876849$5$1$3$1".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$3$1
+Reading "M3_M2_CDNS_7532598768410$5$1$3$1".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$3$1
+Reading "M2_M1_CDNS_753259876846$5$1$1$2$3".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$1$2$3
+Reading "M2_M1_CDNS_753259876846$5$1$4".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$4
+Reading "TM1_M5_CDNS_753259876847$3$1$4".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$4
+Reading "M4_M3_CDNS_753259876849$5$1$1$2$3".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$1$2$3
+Reading "M3_M2_CDNS_7532598768410$5$1$1$2$3".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$1$2$3
+Reading "M2_M1_CDNS_753259876846$5$2$2$3".
+Saving contents of cell M2_M1_CDNS_753259876846$5$2$2$3
+Reading "M5_M4_CDNS_753259876848$5$1$4".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$4
+Reading "M4_M3_CDNS_753259876849$5$1$4".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$4
+Reading "M4_M3_CDNS_753259876849$5$2$2$3".
+Saving contents of cell M4_M3_CDNS_753259876849$5$2$2$3
+Reading "M3_M2_CDNS_7532598768410$5$2$2$3".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$2$2$3
+Reading "M2_M1_CDNS_753259876846$5$4$1".
+Saving contents of cell M2_M1_CDNS_753259876846$5$4$1
+Reading "TM1_M5_CDNS_753259876847$3$4$1".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$4$1
+Reading "M5_M4_CDNS_753259876848$5$4$1".
+Saving contents of cell M5_M4_CDNS_753259876848$5$4$1
+Reading "M4_M3_CDNS_753259876849$5$4$1".
+Saving contents of cell M4_M3_CDNS_753259876849$5$4$1
+Reading "M3_M2_CDNS_7532598768410$5$4$1".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$4$1
+Reading "M2_M1_CDNS_753259876840$1$5".
+Saving contents of cell M2_M1_CDNS_753259876840$1$5
+Reading "M3_M2_CDNS_753259876841$1$5".
+Saving contents of cell M3_M2_CDNS_753259876841$1$5
+Reading "TM2_TM1_CDNS_753259876842$1$5".
+Saving contents of cell TM2_TM1_CDNS_753259876842$1$5
+Reading "TM1_M5_CDNS_753259876843$1$5".
+Saving contents of cell TM1_M5_CDNS_753259876843$1$5
+Reading "M5_M4_CDNS_753259876844$1$5".
+Saving contents of cell M5_M4_CDNS_753259876844$1$5
+Reading "M4_M3_CDNS_753259876845$1$5".
+Saving contents of cell M4_M3_CDNS_753259876845$1$5
+Reading "M2_M1_CDNS_753259876840$1$4$1".
+Saving contents of cell M2_M1_CDNS_753259876840$1$4$1
+Reading "M3_M2_CDNS_753259876841$1$4$1".
+Saving contents of cell M3_M2_CDNS_753259876841$1$4$1
+Reading "TM2_TM1_CDNS_753259876842$1$4$1".
+Saving contents of cell TM2_TM1_CDNS_753259876842$1$4$1
+Reading "TM1_M5_CDNS_753259876843$1$4$1".
+Saving contents of cell TM1_M5_CDNS_753259876843$1$4$1
+Reading "M5_M4_CDNS_753259876844$1$4$1".
+Saving contents of cell M5_M4_CDNS_753259876844$1$4$1
+Reading "M4_M3_CDNS_753259876845$1$4$1".
+Saving contents of cell M4_M3_CDNS_753259876845$1$4$1
+Reading "TM1_M5_CDNS_753259876847$3$1$1$2$4".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$1$2$4
+Reading "M5_M4_CDNS_753259876848$5$1$1$2$5".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$1$2$5
+Reading "TM1_M5_CDNS_753259876847$3$2$2$4".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$2$2$4
+Reading "M5_M4_CDNS_753259876848$5$2$2$5".
+Saving contents of cell M5_M4_CDNS_753259876848$5$2$2$5
+Reading "M2_M1_CDNS_753259876846$5$1$1$2$5".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$1$2$5
+Reading "M4_M3_CDNS_753259876849$5$1$1$2$5".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$1$2$5
+Reading "M3_M2_CDNS_7532598768410$5$1$1$2$5".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$1$2$5
+Reading "M2_M1_CDNS_753259876846$5$2$2$5".
+Saving contents of cell M2_M1_CDNS_753259876846$5$2$2$5
+Reading "M4_M3_CDNS_753259876849$5$2$2$5".
+Saving contents of cell M4_M3_CDNS_753259876849$5$2$2$5
+Reading "M3_M2_CDNS_7532598768410$5$2$2$5".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$2$2$5
+Reading "TM1_M5_CDNS_753259876847$3$1$1$2$4$1".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$1$1$2$4$1
+Reading "M5_M4_CDNS_753259876848$5$1$1$2$5$1".
+Saving contents of cell M5_M4_CDNS_753259876848$5$1$1$2$5$1
+Reading "TM1_M5_CDNS_753259876847$3$2$2$4$1".
+Saving contents of cell TM1_M5_CDNS_753259876847$3$2$2$4$1
+Reading "M5_M4_CDNS_753259876848$5$2$2$5$1".
+Saving contents of cell M5_M4_CDNS_753259876848$5$2$2$5$1
+Reading "M2_M1_CDNS_753259876846$5$1$1$2$5$1".
+Saving contents of cell M2_M1_CDNS_753259876846$5$1$1$2$5$1
+Reading "M4_M3_CDNS_753259876849$5$1$1$2$5$1".
+Saving contents of cell M4_M3_CDNS_753259876849$5$1$1$2$5$1
+Reading "M3_M2_CDNS_7532598768410$5$1$1$2$5$1".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$1$1$2$5$1
+Reading "M2_M1_CDNS_753259876846$5$2$2$5$1".
+Saving contents of cell M2_M1_CDNS_753259876846$5$2$2$5$1
+Reading "M4_M3_CDNS_753259876849$5$2$2$5$1".
+Saving contents of cell M4_M3_CDNS_753259876849$5$2$2$5$1
+Reading "M3_M2_CDNS_7532598768410$5$2$2$5$1".
+Saving contents of cell M3_M2_CDNS_7532598768410$5$2$2$5$1
+Reading "via_stack$22".
+Reading "DIFF_COMPARATOR".
+Error while reading cell "DIFF_COMPARATOR" (byte position 160374): Warning: cell "via_stack$13" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "DIFF_COMPARATOR" (byte position 163358): Warning: cell "via_stack$18" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "DIFF_COMPARATOR" (byte position 164656): Warning: cell "nmos$1$1" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "DIFF_COMPARATOR" (byte position 165182): Warning: cell "nmos$1$1" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "DIFF_COMPARATOR" (byte position 165214): Warning: cell "nmos$1$1" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "DIFF_COMPARATOR" (byte position 166344): Warning: cell "nmos$1$1" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "DIFF_COMPARATOR" (byte position 166570): Warning: cell "nmos$1$1" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "DIFF_COMPARATOR" (byte position 168464): Warning: cell "nmos$1$1" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "DIFF_COMPARATOR" (byte position 168640): Warning: cell "nmos$1$1" placed on top of itself.  Ignoring the extra one.
+Extracting DIFF_COMPARATOR into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/DIFF_COMPARATOR__DIFF_COMPARATOR/magic_RC/DIFF_COMPARATOR.ext:
+DIFF_COMPARATOR: 4 warnings
+Total of 4 warnings.
+exttosim finished.
+Port: name = V+ exists, forcing drivepoint
+Location is (979, 6959); drivepoint (979, 6959)
+Port: name = V- exists, forcing drivepoint
+Location is (3313, 6717); drivepoint (3313, 6717)
+Port: name = vbias exists, forcing drivepoint
+Location is (2148, -578); drivepoint (2148, -579)
+Port: name = out- exists, forcing drivepoint
+Location is (-1818, 2721); drivepoint (-1819, 2721)
+Port: name = out+ exists, forcing drivepoint
+Location is (6037, 2710); drivepoint (6037, 2710)
+Port: name = clk exists, forcing drivepoint
+Location is (1620, -949); drivepoint (1620, -950)
+Port: name = vdd exists, forcing drivepoint
+Location is (127, 335); drivepoint (127, 335)
+Port: name = gnd exists, forcing drivepoint
+Location is (-512, -439); drivepoint (-513, -440)
+Adding  vbias; Tnew = 0.01ns, Told = 0.00ns
+Adding  a_687_2445#; Tnew = 0.48ns, Told = 0.00ns
+Adding  V-; Tnew = 0.06ns, Told = 0.00ns
+Adding  a_1752_817#; Tnew = 0.15ns, Told = 0.00ns
+Adding  clk; Tnew = 0.01ns, Told = 0.00ns
+Adding  vdd; Tnew = 0.15ns, Told = 0.00ns
+Adding  a_1245_3300#; Tnew = 0.32ns, Told = 0.00ns
+Adding  a_944_1911#; Tnew = 0.36ns, Told = 0.00ns
+Adding  V+; Tnew = 0.04ns, Told = 0.00ns
+Total Nets: 29
+Nets extracted: 12 (0.413793)
+Nets output: 12 (0.413793)
+exttospice finished.

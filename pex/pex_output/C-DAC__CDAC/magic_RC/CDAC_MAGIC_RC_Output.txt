@@ -1,0 +1,57 @@
+
+Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "./pex_output/C-DAC__CDAC/magic_RC/CDAC_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "cmim$2".
+Reading "cmim$1".
+Reading "CDAC".
+Extracting CDAC into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/C-DAC__CDAC/magic_RC/CDAC.ext:
+exttosim finished.
+Port: name = C_MSB exists, forcing drivepoint
+Location is (17492, -1149); drivepoint (17492, -1150)
+Port: name = C6 exists, forcing drivepoint
+Location is (17499, -2480); drivepoint (17499, -2481)
+Port: name = C5 exists, forcing drivepoint
+Location is (17520, -3912); drivepoint (17520, -3913)
+Port: name = C4 exists, forcing drivepoint
+Location is (17475, -5381); drivepoint (17475, -5382)
+Port: name = C3 exists, forcing drivepoint
+Location is (17468, -6676); drivepoint (17468, -6677)
+Port: name = C2 exists, forcing drivepoint
+Location is (17447, -8164); drivepoint (17447, -8165)
+Port: name = C1 exists, forcing drivepoint
+Location is (17437, -9592); drivepoint (17437, -9593)
+Port: name = vref exists, forcing drivepoint
+Location is (17437, -10976); drivepoint (17437, -10977)
+Port: name = vo exists, forcing drivepoint
+Location is (17528, -12328); drivepoint (17528, -12329)
+Adding  C2; Tnew = 0.00ns, Told = 0.00ns
+Adding  C4; Tnew = 0.00ns, Told = 0.00ns
+Adding  C3; Tnew = 0.00ns, Told = 0.00ns
+Adding  C5; Tnew = 0.01ns, Told = 0.00ns
+Adding  C_MSB; Tnew = 0.06ns, Told = 0.00ns
+Adding  m5_n184_n15649#; Tnew = 0.04ns, Told = 0.00ns
+Adding  C6; Tnew = 0.03ns, Told = 0.00ns
+Adding  vo; Tnew = 0.02ns, Told = 0.00ns
+Total Nets: 24
+Nets extracted: 10 (0.416667)
+Nets output: 10 (0.416667)
+exttospice finished.

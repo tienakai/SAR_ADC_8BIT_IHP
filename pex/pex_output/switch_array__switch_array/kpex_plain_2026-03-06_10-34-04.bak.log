@@ -1,0 +1,222 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'switch_array'
+Calling MAGIC
+magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/switch_array__switch_array/magic_RC/switch_array_MAGIC_RC_Script.tcl, output file: ./pex_output/switch_array__switch_array/magic_RC/switch_array_MAGIC_RC_Output.txt
+
+Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "./pex_output/switch_array__switch_array/magic_RC/switch_array_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "nmos$1".
+Reading "pmos".
+Reading "pmos$1".
+Reading "nmos$1$1".
+Reading "inverter".
+Error while reading cell "inverter" (byte position 7056): Unknown layer/datatype in boundary, layer=46 type=0
+Reading "T_gate".
+Error while reading cell "T_gate" (byte position 9140): Unknown layer/datatype in boundary, layer=46 type=0
+Reading "T_gate_switch".
+Error while reading cell "T_gate_switch" (byte position 15498): Unknown layer/datatype in boundary, layer=46 type=0
+Reading "switch_array".
+Error while reading cell "switch_array" (byte position 107262): Unknown layer/datatype in boundary, layer=46 type=0
+Extracting switch_array into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/switch_array__switch_array/magic_RC/switch_array.ext:
+Warning:  Ports "vo" and "!Control" are electrically shorted.
+Warning:  Ports "vo" and "Control" are electrically shorted.
+Warning:  Ports "vo" and "!Control" are electrically shorted.
+Warning:  Ports "vo" and "Control" are electrically shorted.
+Warning:  Ports "vo" and "!Control" are electrically shorted.
+Warning:  Ports "vo" and "Control" are electrically shorted.
+Warning:  Ports "vo" and "!Control" are electrically shorted.
+Warning:  Ports "vo" and "Control" are electrically shorted.
+Warning:  Ports "vo" and "!Control" are electrically shorted.
+Warning:  Ports "vo" and "Control" are electrically shorted.
+Warning:  Ports "vo" and "!Control" are electrically shorted.
+Warning:  Ports "vo" and "Control" are electrically shorted.
+switch_array: 37 warnings
+Total of 37 warnings.
+Warning:  Ports "vo" and "!Control" are electrically shorted.
+Warning:  Ports "vo" and "Control" are electrically shorted.
+exttosim finished.
+Port: name = S_MSB exists, forcing drivepoint
+Location is (485, -1972); drivepoint (485, -1973)
+Port: name = S6 exists, forcing drivepoint
+Location is (2586, -1971); drivepoint (2586, -1972)
+Port: name = S5 exists, forcing drivepoint
+Location is (4684, -1971); drivepoint (4684, -1972)
+Port: name = S4 exists, forcing drivepoint
+Location is (6784, -1973); drivepoint (6784, -1974)
+Port: name = S3 exists, forcing drivepoint
+Location is (8880, -1974); drivepoint (8880, -1975)
+Port: name = S2 exists, forcing drivepoint
+Location is (10988, -1975); drivepoint (10988, -1976)
+Port: name = S1 exists, forcing drivepoint
+Location is (13085, -1976); drivepoint (13085, -1977)
+Port: name = Control is new node 0x30fddd0
+Location is (1533, -190); drivepoint (1533, -190)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (1754, 762)
+Port: name = !Control is new node 0x2a90190
+Location is (2883, 949); drivepoint (2883, 949)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (3105, 763)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (2207, 784)
+Port: name = vo exists, forcing drivepoint
+Location is (12940, 393); drivepoint (2441, 389)
+Port: name = Control exists, forcing drivepoint
+Location is (1533, -190); drivepoint (3629, -184)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (3850, 768)
+Port: name = !Control exists, forcing drivepoint
+Location is (2883, 949); drivepoint (4979, 955)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (5201, 769)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (4303, 790)
+Port: name = vo exists, forcing drivepoint
+Location is (12940, 393); drivepoint (4537, 395)
+Port: name = Control exists, forcing drivepoint
+Location is (1533, -190); drivepoint (5730, -184)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (5951, 768)
+Port: name = !Control exists, forcing drivepoint
+Location is (2883, 949); drivepoint (7080, 955)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (7302, 769)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (6404, 790)
+Port: name = vo exists, forcing drivepoint
+Location is (12940, 393); drivepoint (6638, 395)
+Port: name = Control exists, forcing drivepoint
+Location is (1533, -190); drivepoint (7829, -184)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (8050, 768)
+Port: name = !Control exists, forcing drivepoint
+Location is (2883, 949); drivepoint (9179, 955)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (9401, 769)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (8503, 790)
+Port: name = vo exists, forcing drivepoint
+Location is (12940, 393); drivepoint (8737, 395)
+Port: name = Control exists, forcing drivepoint
+Location is (1533, -190); drivepoint (9935, -182)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (10156, 770)
+Port: name = !Control exists, forcing drivepoint
+Location is (2883, 949); drivepoint (11285, 957)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (11507, 771)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (10609, 792)
+Port: name = vo exists, forcing drivepoint
+Location is (12940, 393); drivepoint (10843, 397)
+Port: name = Control exists, forcing drivepoint
+Location is (1533, -190); drivepoint (12032, -186)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (12253, 766)
+Port: name = !Control exists, forcing drivepoint
+Location is (2883, 949); drivepoint (13382, 953)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (13604, 767)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (12706, 788)
+Port: name = vo exists, forcing drivepoint
+Location is (12940, 393); drivepoint (12940, 393)
+Port: name = D_MSB exists, forcing drivepoint
+Location is (-576, 2695); drivepoint (-577, 2695)
+Port: name = D6 exists, forcing drivepoint
+Location is (1524, 2686); drivepoint (1524, 2686)
+Port: name = D5 exists, forcing drivepoint
+Location is (3620, 2686); drivepoint (3620, 2686)
+Port: name = D4 exists, forcing drivepoint
+Location is (5720, 2687); drivepoint (5720, 2687)
+Port: name = D3 exists, forcing drivepoint
+Location is (7820, 2690); drivepoint (7820, 2690)
+Port: name = D2 exists, forcing drivepoint
+Location is (9925, 2690); drivepoint (9925, 2690)
+Port: name = D1 exists, forcing drivepoint
+Location is (12025, 2695); drivepoint (12025, 2695)
+Port: name = vref exists, forcing drivepoint
+Location is (11830, 256); drivepoint (-1039, 244)
+Port: name = gnd exists, forcing drivepoint
+Location is (-2288, -1690); drivepoint (1687, -298)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (3106, 1045)
+Port: name = vref exists, forcing drivepoint
+Location is (11830, 256); drivepoint (1331, 252)
+Port: name = gnd exists, forcing drivepoint
+Location is (-2288, -1690); drivepoint (3783, -292)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (5202, 1051)
+Port: name = vref exists, forcing drivepoint
+Location is (11830, 256); drivepoint (3427, 258)
+Port: name = gnd exists, forcing drivepoint
+Location is (-2288, -1690); drivepoint (5884, -292)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (7303, 1051)
+Port: name = vref exists, forcing drivepoint
+Location is (11830, 256); drivepoint (5528, 258)
+Port: name = gnd exists, forcing drivepoint
+Location is (-2288, -1690); drivepoint (7983, -292)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (9402, 1051)
+Port: name = vref exists, forcing drivepoint
+Location is (11830, 256); drivepoint (7627, 258)
+Port: name = gnd exists, forcing drivepoint
+Location is (-2288, -1690); drivepoint (10089, -290)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (11508, 1053)
+Port: name = vref exists, forcing drivepoint
+Location is (11830, 256); drivepoint (9733, 260)
+Port: name = gnd exists, forcing drivepoint
+Location is (-2288, -1690); drivepoint (12186, -294)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (13605, 1049)
+Port: name = vref exists, forcing drivepoint
+Location is (11830, 256); drivepoint (11830, 256)
+Port: name = vdd exists, forcing drivepoint
+Location is (-1502, -900); drivepoint (-1503, -901)
+Port: name = gnd exists, forcing drivepoint
+Location is (-2288, -1690); drivepoint (-2289, -1691)
+Adding  vo; Tnew = 0.02ns, Told = 0.00ns
+Missing terminal connection of device at (6505 557) on net vo
+Missing terminal connection of device at (6505 259) on net vo
+Missing terminal connection of device at (2308 253) on net vo
+Missing terminal connection of device at (2308 551) on net vo
+Missing terminal connection of device at (8604 259) on net vo
+Missing terminal connection of device at (8604 557) on net vo
+Missing terminal connection of device at (12807 257) on net vo
+Missing terminal connection of device at (12807 555) on net vo
+Missing terminal connection of device at (4404 557) on net vo
+Missing terminal connection of device at (4404 259) on net vo
+Missing gate connection of device at (7080 443) on net vo
+Missing gate connection of device at (2883 437) on net vo
+Missing gate connection of device at (5729 -56) on net vo
+Missing gate connection of device at (7828 -56) on net vo
+Missing gate connection of device at (9179 443) on net vo
+Missing gate connection of device at (13382 441) on net vo
+Missing gate connection of device at (12031 -58) on net vo
+Missing gate connection of device at (1532 -62) on net vo
+Missing gate connection of device at (3628 -56) on net vo
+Missing gate connection of device at (4979 443) on net vo
+Total Nets: 42
+Nets extracted: 19 (0.452381)
+Nets output: 19 (0.452381)
+Devs merged: 0

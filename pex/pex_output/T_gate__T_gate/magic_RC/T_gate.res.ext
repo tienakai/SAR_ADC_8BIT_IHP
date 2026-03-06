@@ -1,0 +1,32 @@
+scale 1000 1 0.5
+rnode "vdd.t0" 0 0 261 86 0
+rnode "vdd.n0" 0 0 262 174 0
+rnode "vdd" 0 0 246 361 0
+resist "vdd.n0" "vdd.t0" 4.25062
+resist "vdd" "vdd.n0" 5.79633
+resist "vdd" "vdd.n0" 17.0168
+rnode "!Control.t0" 0 0 37 235 0
+rnode "!Control" 0 0 24 547 0
+resist "!Control" "!Control.t0" 15.0238
+rnode "gnd.t0" 0 0 37 -363 0
+rnode "gnd" 0 0 177 -307 0
+resist "gnd" "gnd.t0" 810.897
+rnode "Vout.t0" 0 0 88 337 0
+rnode "Vout.t1" 0 0 88 -293 0
+rnode "Vout.n0" 0 0 88 -100 0
+rnode "Vout" 0 0 347 -138 0
+resist "Vout" "Vout.n0" 0.71225
+resist "Vout.n0" "Vout.t0" 3.74601
+resist "Vout.n0" "Vout.t1" 6.32598
+rnode "Vin.t0" 0 0 -14 337 0
+rnode "Vin.t1" 0 0 -14 -293 0
+rnode "Vin.n0" 0 0 -14 -100 0
+rnode "Vin" 0 0 -109 -136 0
+resist "Vin" "Vin.n0" 0.254878
+resist "Vin.n0" "Vin.t0" 3.74601
+resist "Vin.n0" "Vin.t1" 6.32254
+rnode "Control.t0" 0 0 37 -363 0
+rnode "Control" 0 0 25 -591 0
+resist "Control" "Control.t0" 15.022
+device msubckt sg13_lv_pmos 24 35 25 36  "vdd.t0" "!Control.t0" 52 0 "Vin.t0" 400 27200,936 "Vout.t0" 400 27200,936
+device msubckt sg13_lv_nmos 24 -463 25 -462  "gnd.t0" "Control.t0" 52 0 "Vin.t1" 200 13600,536 "Vout.t1" 200 13600,536

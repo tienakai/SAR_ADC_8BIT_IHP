@@ -1,0 +1,28 @@
+* NGSPICE file created from T_gate.ext - technology: ihp-sg13g2
+
+.subckt T_gate Vin Vout Control gnd vdd
+X0 Vout.t1 Control.t0 Vin.t1 gnd.t0 sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X1 Vout.t0 Control.t0 Vin.t0 vdd.t0 sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+C0 Control Vin 0.01009f
+C1 Control vdd 0.06532f
+C2 Vin Vout 0.44023f
+C3 Vin vdd 0.01888f
+C4 Vout vdd 0.19552f
+R0 Control Control.t0 15.0225
+R1 Vin.n0 Vin.t1 6.32304
+R2 Vin.n0 Vin.t0 3.74651
+R3 Vin Vin.n0 0.255378
+R4 Vout.n0 Vout.t1 6.32648
+R5 Vout.n0 Vout.t0 3.74651
+R6 Vout Vout.n0 0.71275
+R7 gnd gnd.t0 810.898
+R8 Control Control.t0 15.0243
+R9 vdd vdd.n0 17.0173
+R10 vdd vdd.n0 5.79683
+R11 vdd.n0 vdd.t0 4.25112
+C5 Control gnd 0.26277f
+C6 Vout gnd 0.30897f
+C7 Vin gnd 0.22881f
+C8 Control gnd 0.30202f
+C9 vdd gnd 0.09029f
+.ends

@@ -1,0 +1,37 @@
+* NGSPICE file created from nand_gate.ext - technology: ihp-sg13g2
+
+.subckt nand_gate_pex vdd Vo B A gnd
+X0 a_n15_n246.t0 B.t0 gnd.t2 gnd.t1 sg13_lv_nmos ad=62.5f pd=0.74u as=0.1075p ps=1.34u w=0.25u l=0.13u
+X1 vdd.t1 A.t0 Vo.t1 vdd.t0 sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X2 Vo.t1 B.t0 vdd.t2 vdd.t0 sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X3 Vo.t0 A.t0 a_n15_n246.t0 gnd.t0 sg13_lv_nmos ad=0.1075p pd=1.34u as=62.5f ps=0.74u w=0.25u l=0.13u
+C0 vdd Vo 0.13452f
+C1 A vdd 0.08588f
+C2 B vdd 0.09489f
+C3 A Vo 0.15477f
+C4 B Vo 0.07214f
+C5 A B 0.05121f
+R0 B B.t0 15.0687
+R1 gnd.n0 gnd.t1 149.24
+R2 gnd.n0 gnd.t0 125.602
+R3 gnd.n1 gnd.t2 17.2409
+R4 gnd.n1 gnd.n0 6.88979
+R5 gnd gnd.n1 0.0923197
+R6 A A.t0 15.0665
+R7 Vo.n0 Vo.t1 17.7224
+R8 Vo.n0 Vo.t0 17.6641
+R9 Vo Vo.n0 0.117375
+R10 Vo.n0 Vo 0.0468158
+R11 vdd.n1 vdd.t1 17.5381
+R12 vdd.n0 vdd.t2 17.4749
+R13 vdd.n3 vdd.n2 17.0005
+R14 vdd.n2 vdd.n1 5.64075
+R15 vdd.n2 vdd.t0 4.2505
+R16 vdd.n1 vdd.n0 0.137308
+R17 vdd vdd.n3 0.0569602
+R18 vdd.n3 vdd.n0 0.0121814
+C6 Vo gnd 0.12333f
+C7 A gnd 0.20741f
+C8 B gnd 0.23365f
+C9 vdd gnd 0.17173f
+.ends

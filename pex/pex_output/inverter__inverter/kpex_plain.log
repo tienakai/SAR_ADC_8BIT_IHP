@@ -1,0 +1,49 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'inverter'
+Calling MAGIC
+magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/inverter__inverter/magic_CC/inverter_MAGIC_CC_Script.tcl, output file: ./pex_output/inverter__inverter/magic_CC/inverter_MAGIC_CC_Output.txt
+
+Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "./pex_output/inverter__inverter/magic_CC/inverter_MAGIC_CC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "nmos$1".
+Reading "pmos".
+Reading "inverter".
+Error while reading cell "inverter" (byte position 4978): Unknown layer/datatype in boundary, layer=46 type=0
+Extracting inverter into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/inverter__inverter/magic_CC/inverter.ext:
+Devs merged: 0
+exttospice finished.
+MAGIC succeeded after 0.3445s
+Report DB saved at: ./pex_output/inverter__inverter/magic_CC/inverter_MAGIC_report.rdb.gz
+SPICE netlist saved at: ./pex_output/inverter__inverter/magic_CC/inverter.pex.spice
+* NGSPICE file created from inverter.ext - technology: ihp-sg13g2
+
+.subckt inverter vi vdd gnd vo
+X0 vo vi vdd vdd sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
+X1 vo vi gnd gnd sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
+C0 vo vdd 0.12375f
+C1 vo vi 0.06195f
+C2 vi vdd 0.09004f
+C3 vo gnd 0.20432f
+C4 vi gnd 0.35463f
+C5 vdd gnd 0.1104f
+.ends
+

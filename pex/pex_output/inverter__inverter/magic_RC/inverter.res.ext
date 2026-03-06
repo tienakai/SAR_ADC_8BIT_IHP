@@ -1,0 +1,27 @@
+scale 1000 1 0.5
+rnode "gnd.t1" 0 0 -20 -195 0
+rnode "gnd.t0" 0 0 -7 -195 0
+rnode "gnd.n0" 0 0 -84 -348 0
+rnode "gnd" 0 0 -119 -379 0
+resist "gnd" "gnd.n0" 0.079213
+resist "gnd.n0" "gnd.t1" 17.374
+resist "gnd.n0" "gnd.t0" 1381.52
+rnode "vo.t0" 0 0 44 193 0
+rnode "vo.t1" 0 0 6 -195 0
+rnode "vo.n0" 0 0 44 -60 0
+rnode "vo" 0 0 113 -99 0
+resist "vo" "vo.n0" 0.18975
+resist "vo.n0" "vo.t0" 9.11101
+resist "vo.n0" "vo.t1" 17.2847
+rnode "vdd.t1" 0 0 -58 93 0
+rnode "vdd.t0" 0 0 72 326 0
+rnode "vdd.n0" 0 0 72 326 0
+rnode "vdd" 0 0 -121 296 0
+resist "vdd" "vdd.n0" 0.0803279
+resist "vdd.n0" "vdd.t1" 8.93668
+resist "vdd.n0" "vdd.t0" 11.3703
+rnode "vi.t0" 0 0 -7 143 0
+rnode "vi" 0 0 -78 -96 0
+resist "vi" "vi.t0" 15.0289
+device msubckt sg13_lv_nmos -20 -235 -19 -234  "gnd.t0" "vi.t0" 52 0 "gnd.t1" 80 5440,296 "vo.t1" 80 5440,296
+device msubckt sg13_lv_pmos -20 63 -19 64  "vdd.t0" "vi.t0" 52 0 "vdd.t1" 160 10880,456 "vo.t0" 160 10880,456

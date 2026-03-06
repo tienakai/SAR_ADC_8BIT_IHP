@@ -1,0 +1,44 @@
+[2026-03-06 01:49:33,431] [INFO]    GDS input file passed, running in LVS mode
+[2026-03-06 01:49:33,432] [INFO]    No explicit top cell specified, using top cell 'inverter'
+[2026-03-06 01:49:33,446] [INFO]    Calling MAGIC
+[2026-03-06 01:49:33,448] [SUBPROCESS]    magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/inverter__inverter/magic_RC/inverter_MAGIC_RC_Script.tcl, output file: ./pex_output/inverter__inverter/magic_RC/inverter_MAGIC_RC_Output.txt
+[2026-03-06 01:49:33,473] [SUBPROCESS]    
+[2026-03-06 01:49:33,473] [SUBPROCESS]    Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+[2026-03-06 01:49:33,475] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-03-06 01:49:33,475] [SUBPROCESS]    Using the terminal as the console.
+[2026-03-06 01:49:33,476] [SUBPROCESS]    Using NULL graphics device.
+[2026-03-06 01:49:33,526] [SUBPROCESS]    Processing system .magicrc file
+[2026-03-06 01:49:33,554] [SUBPROCESS]    Switching to WIRING tool.
+[2026-03-06 01:49:33,555] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-03-06 01:49:33,556] [SUBPROCESS]    Switching to PICK tool.
+[2026-03-06 01:49:33,557] [SUBPROCESS]    Switching to BOX tool.
+[2026-03-06 01:49:33,557] [SUBPROCESS]    Sourcing design .magicrc for technology ihp-sg13g2 ...
+[2026-03-06 01:49:33,558] [SUBPROCESS]    2 Magic internal units = 1 Lambda
+[2026-03-06 01:49:33,601] [SUBPROCESS]    Input style sg13g2(): scaleFactor=2, multiplier=2
+[2026-03-06 01:49:33,770] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-03-06 01:49:33,771] [SUBPROCESS]        pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+[2026-03-06 01:49:33,777] [SUBPROCESS]    Scaled tech values by 2 / 1 to match internal grid scaling
+[2026-03-06 01:49:33,778] [SUBPROCESS]    Loading ihp-sg13g2 Device Generator Menu ...
+[2026-03-06 01:49:33,784] [SUBPROCESS]    Loading "./pex_output/inverter__inverter/magic_RC/inverter_MAGIC_RC_Script.tcl" from command line.
+[2026-03-06 01:49:33,785] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-03-06 01:49:33,786] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-03-06 01:49:33,787] [SUBPROCESS]    Library name: LIB
+[2026-03-06 01:49:33,788] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2026-03-06 01:49:33,789] [SUBPROCESS]    Reading "nmos$1".
+[2026-03-06 01:49:33,790] [SUBPROCESS]    Reading "pmos".
+[2026-03-06 01:49:33,791] [SUBPROCESS]    Reading "inverter".
+[2026-03-06 01:49:33,791] [SUBPROCESS]    Error while reading cell "inverter" (byte position 4978): Unknown layer/datatype in boundary, layer=46 type=0
+[2026-03-06 01:49:33,793] [SUBPROCESS]    Extracting inverter into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/inverter__inverter/magic_RC/inverter.ext:
+[2026-03-06 01:49:33,794] [SUBPROCESS]    exttosim finished.
+[2026-03-06 01:49:33,795] [SUBPROCESS]    Port: name = vi exists, forcing drivepoint
+[2026-03-06 01:49:33,796] [SUBPROCESS]    Location is (-77, -95); drivepoint (-78, -96)
+[2026-03-06 01:49:33,797] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 01:49:33,798] [SUBPROCESS]    Location is (-120, 296); drivepoint (-121, 296)
+[2026-03-06 01:49:33,799] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 01:49:33,800] [SUBPROCESS]    Location is (-118, -378); drivepoint (-119, -379)
+[2026-03-06 01:49:33,801] [SUBPROCESS]    Port: name = vo exists, forcing drivepoint
+[2026-03-06 01:49:33,802] [SUBPROCESS]    Location is (113, -98); drivepoint (113, -99)
+[2026-03-06 01:49:33,804] [SUBPROCESS]    Total Nets: 4
+[2026-03-06 01:49:33,804] [SUBPROCESS]    Nets extracted: 4 (1.000000)
+[2026-03-06 01:49:33,805] [SUBPROCESS]    Nets output: 4 (1.000000)
+[2026-03-06 01:49:33,806] [SUBPROCESS]    Devs merged: 0

@@ -1,0 +1,302 @@
+timestamp 0
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11 7000 260000 1360000
+parameters sg13_lv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_lv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+port "gnd" 21 -2289 -1691 -1962 -1339 m7
+port "S1" 8 13085 -1977 13148 -1900 m1
+port "vo" 12 12940 393 12975 430 m1
+port "!Control" 11 13382 953 13409 979 m1
+port "Control" 9 12032 -186 12055 -163 m1
+port "S2" 7 10988 -1976 11049 -1900 m1
+port "S3" 6 8880 -1975 8945 -1901 m1
+port "D1" 19 12025 2695 12069 2735 m2
+port "vo" 12 10843 397 10878 434 m1
+port "!Control" 11 11285 957 11312 983 m1
+port "Control" 9 9935 -182 9958 -159 m1
+port "D2" 18 9925 2690 9970 2735 m2
+port "vo" 12 8737 395 8772 432 m1
+port "!Control" 11 9179 955 9206 981 m1
+port "Control" 9 7829 -184 7852 -161 m1
+port "S4" 5 6784 -1974 6844 -1900 m1
+port "D3" 17 7820 2690 7865 2735 m2
+port "vo" 12 6638 395 6673 432 m1
+port "!Control" 11 7080 955 7107 981 m1
+port "Control" 9 5730 -184 5753 -161 m1
+port "S5" 4 4684 -1972 4742 -1900 m1
+port "S6" 3 2586 -1972 2648 -1900 m1
+port "D4" 16 5720 2687 5765 2730 m2
+port "vo" 12 4537 395 4572 432 m1
+port "!Control" 11 4979 955 5006 981 m1
+port "Control" 9 3629 -184 3652 -161 m1
+port "D5" 15 3620 2686 3664 2730 m2
+port "vo" 12 2441 389 2476 426 m1
+port "!Control" 11 2883 949 2910 975 m1
+port "Control" 9 1533 -190 1556 -167 m1
+port "S_MSB" 2 485 -1973 547 -1903 m1
+port "vref" 20 11830 256 11883 308 m2
+port "vref" 20 9733 260 9786 312 m2
+port "vref" 20 7627 258 7680 310 m2
+port "vref" 20 5528 258 5581 310 m2
+port "vref" 20 3427 258 3480 310 m2
+port "vref" 20 1331 252 1384 304 m2
+port "vref" 20 -1039 244 -959 317 m2
+port "D6" 14 1524 2686 1570 2730 m2
+port "D_MSB" 13 -577 2695 -530 2737 m2
+port "vdd" 10 -1503 -901 -1222 -612 m6
+port "vdd" 10 13605 1049 13649 1098 m2
+port "vdd" 10 11508 1053 11552 1102 m2
+port "vdd" 10 9402 1051 9446 1100 m2
+port "vdd" 10 7303 1051 7347 1100 m2
+port "vdd" 10 5202 1051 5246 1100 m2
+port "vdd" 10 3106 1045 3150 1094 m2
+port "vdd" 10 12706 788 12751 846 m1
+port "vdd" 10 13604 767 13636 799 m1
+port "vdd" 10 12253 766 12285 798 m1
+port "vdd" 10 10609 792 10654 850 m1
+port "vdd" 10 11507 771 11539 803 m1
+port "vdd" 10 10156 770 10188 802 m1
+port "vdd" 10 8503 790 8548 848 m1
+port "vdd" 10 9401 769 9433 801 m1
+port "vdd" 10 8050 768 8082 800 m1
+port "vdd" 10 6404 790 6449 848 m1
+port "vdd" 10 7302 769 7334 801 m1
+port "vdd" 10 5951 768 5983 800 m1
+port "vdd" 10 4303 790 4348 848 m1
+port "vdd" 10 5201 769 5233 801 m1
+port "vdd" 10 3850 768 3882 800 m1
+port "vdd" 10 2207 784 2252 842 m1
+port "vdd" 10 3105 763 3137 795 m1
+port "vdd" 10 1754 762 1786 794 m1
+port "gnd" 21 12186 -294 12240 -235 m2
+port "gnd" 21 10089 -290 10143 -231 m2
+port "gnd" 21 7983 -292 8037 -233 m2
+port "gnd" 21 5884 -292 5938 -233 m2
+port "gnd" 21 3783 -292 3837 -233 m2
+port "gnd" 21 1687 -298 1741 -239 m2
+node "gnd" 1 13877.2 -2289 -1691 m7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16712000 83560 0 0 0 0 0 0
+node "S1" 15 2634.6 13085 -1977 m1 0 0 0 0 312951 12992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vo" 10 1682.13 12940 393 m1 0 0 0 0 233731 9528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "vo" "!Control"
+equiv "vo" "Control"
+node "S2" 15 2658.52 10988 -1976 m1 0 0 0 0 313231 13000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "S3" 15 2661.5 8880 -1975 m1 0 0 0 0 313091 12996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "D1" 10 2040.35 12025 2695 m2 0 0 0 0 145656 5934 96228 3816 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vo" 10 1652.78 10843 397 m1 0 0 0 0 233731 9528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "vo" "!Control"
+equiv "vo" "Control"
+node "D2" 10 2070.08 9925 2690 m2 0 0 0 0 145656 5934 96024 3808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vo" 10 1651.37 8737 395 m1 0 0 0 0 233731 9528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "vo" "!Control"
+equiv "vo" "Control"
+node "S4" 15 2659.48 6784 -1974 m1 0 0 0 0 313091 12996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "D3" 10 2073.1 7820 2690 m2 0 0 0 0 145656 5934 96126 3812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vo" 10 1651.77 6638 395 m1 0 0 0 0 233731 9528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "vo" "!Control"
+equiv "vo" "Control"
+node "S5" 15 2659.75 4684 -1972 m1 0 0 0 0 313091 12996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "S6" 15 2658.89 2586 -1972 m1 0 0 0 0 312671 12984 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "D4" 10 2073.26 5720 2687 m2 0 0 0 0 145656 5934 96126 3812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vo" 10 1651.23 4537 395 m1 0 0 0 0 233731 9528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "vo" "!Control"
+equiv "vo" "Control"
+node "D5" 10 2073.01 3620 2686 m2 0 0 0 0 145656 5934 96126 3812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vo" 10 1649.63 2441 389 m1 0 0 0 0 233731 9528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "vo" "!Control"
+equiv "vo" "Control"
+node "S_MSB" 15 2675.37 485 -1973 m1 0 0 0 0 312881 12990 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vref" 39 4749.1 -1039 244 m2 0 0 0 0 276094 15890 1025461 26102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "vref" "T_gate_switch_0.vref"
+node "D6" 10 2076.85 1524 2686 m2 0 0 0 0 145656 5934 96228 3816 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "T_gate_switch_0.Control" 10 1886.28 -588 -206 p 0 0 0 0 233731 9528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "T_gate_switch_0.Control" "T_gate_switch_0.inverter_0.vo"
+equiv "T_gate_switch_0.Control" "T_gate_switch_0.T_gate_0.!Control"
+node "D_MSB" 10 2169.03 -577 2695 m2 0 0 0 0 145656 5934 96279 3818 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd" 50 20332.4 1754 762 m1 0 0 0 0 839146 22008 1370405 39540 457800 7378 457800 7378 457800 7378 11710178 71404 0 0 0 0 0 0 0 0
+equiv "vdd" "T_gate_switch_0.inverter_0.vdd"
+equiv "vdd" "T_gate_switch_0.T_gate_0.vdd"
+equiv "vdd" "T_gate_switch_0.vdd"
+substrate "gnd" 0 0 1687 -298 m2 0 0 0 0 852446 36820 1643798 52868 150400 1552 150400 1552 150400 1552 150400 1552 0 0 0 0 0 0 0 0
+equiv "gnd" "T_gate_switch_0.inverter_0.gnd"
+equiv "gnd" "T_gate_switch_0.T_gate_0.gnd"
+equiv "gnd" "T_gate_switch_0.gnd"
+cap "S5" "D4" 0.0482417
+cap "S5" "vref" 577.476
+cap "vo" "D4" 3.91209
+cap "vo" "vo" 18.1557
+cap "vo" "T_gate_switch_0.Control" 17.737
+cap "vo" "vo" 17.7048
+cap "D5" "vo" 3.101
+cap "vo" "vref" 284.87
+cap "S4" "D5" 0.0173679
+cap "D1" "vdd" 723.733
+cap "S4" "vdd" 463.147
+cap "gnd" "vo" 10.5096
+cap "gnd" "T_gate_switch_0.Control" 16.1878
+cap "vo" "vdd" 785.345
+cap "gnd" "D5" 19.2301
+cap "D3" "D4" 0.00940639
+cap "vo" "D3" 3.85303
+cap "gnd" "vdd" 3129.77
+cap "D3" "vref" 89.791
+cap "vo" "S6" 362.458
+cap "D_MSB" "D6" 0.0375952
+cap "D5" "S6" 0.0481321
+cap "S6" "vdd" 463.313
+cap "S3" "D4" 0.0174198
+cap "S3" "vo" 295.789
+cap "S3" "vref" 577.679
+cap "vo" "S5" 328.016
+cap "vo" "vo" 18.018
+cap "D2" "vo" 3.14416
+cap "gnd" "D1" 20.0486
+cap "vo" "vo" 17.7929
+cap "vo" "vref" 238.522
+cap "gnd" "vo" 10.482
+cap "gnd" "S4" 16.8202
+cap "vo" "D3" 3.17192
+cap "S_MSB" "D6" 0.0502046
+cap "S2" "vo" 28.2013
+cap "S2" "vref" 577.955
+cap "vo" "S5" 28.2013
+cap "D5" "S5" 1094.26
+cap "S_MSB" "D_MSB" 1094.26
+cap "S5" "vdd" 463.196
+cap "vref" "D6" 90.6024
+cap "S6" "vo" 28.2013
+cap "vo" "vdd" 783.918
+cap "gnd" "S6" 16.9049
+cap "D2" "S3" 0.0471234
+cap "vref" "D_MSB" 90.1691
+cap "vo" "S1" 28.2013
+cap "D3" "vdd" 715.249
+cap "S2" "S1" 3.79034
+cap "vo" "D2" 3.80564
+cap "S2" "D2" 1094.26
+cap "S3" "vdd" 463.185
+cap "S5" "vo" 0.0023912
+cap "S4" "S5" 3.84512
+cap "vref" "S_MSB" 576.55
+cap "vo" "S4" 342.425
+cap "gnd" "S5" 16.8202
+cap "gnd" "vo" 10.5096
+cap "vref" "D4" 89.7888
+cap "vo" "vref" 284.735
+cap "vo" "vdd" 793.387
+cap "S4" "D3" 0.0484476
+cap "S2" "vdd" 463.052
+cap "S5" "S6" 3.99439
+cap "vo" "D6" 3.78552
+cap "gnd" "D3" 19.2301
+cap "T_gate_switch_0.Control" "D6" 3.09524
+cap "D6" "vdd" 716.926
+cap "T_gate_switch_0.Control" "D_MSB" 525.894
+cap "S3" "S4" 3.85621
+cap "D_MSB" "vdd" 641.904
+cap "gnd" "S3" 16.8202
+cap "S1" "vref" 443.608
+cap "vo" "D1" 526.392
+cap "vo" "D4" 525.894
+cap "vo" "vref" 284.946
+cap "D2" "vo" 525.894
+cap "S2" "D1" 0.0511563
+cap "D2" "vref" 89.4868
+cap "vo" "gnd" 11.8602
+cap "T_gate_switch_0.Control" "S_MSB" 28.2013
+cap "S2" "gnd" 16.8215
+cap "vo" "D6" 525.894
+cap "S_MSB" "vdd" 466.531
+cap "vo" "D4" 3.1629
+cap "D5" "D4" 0.00939124
+cap "gnd" "D6" 19.2286
+cap "vref" "T_gate_switch_0.Control" 287.986
+cap "vo" "vref" 285.234
+cap "vo" "D_MSB" 3.81299
+cap "D5" "vref" 89.7886
+cap "vo" "D3" 525.894
+cap "vo" "vdd" 778.475
+cap "D4" "vdd" 714.877
+cap "vref" "vdd" 1856.84
+cap "gnd" "D_MSB" 23.409
+cap "D2" "S1" 0.020181
+cap "S6" "D6" 1094.26
+cap "vo" "S3" 28.2013
+cap "S6" "D_MSB" 0.0194111
+cap "vo" "S_MSB" 336.977
+cap "S3" "D3" 1094.26
+cap "vo" "vo" 17.9273
+cap "gnd" "S_MSB" 17.3534
+cap "S1" "vdd" 492.631
+cap "D1" "vo" 3.08445
+cap "vo" "D5" 3.89652
+cap "D1" "vref" 14.29
+cap "S4" "D4" 1094.26
+cap "vref" "vo" 287.136
+cap "vo" "vdd" 781.988
+cap "S4" "vref" 577.396
+cap "S2" "vo" 0.000466551
+cap "D2" "vdd" 715.291
+cap "gnd" "D4" 19.2301
+cap "gnd" "vo" 10.5189
+cap "gnd" "vref" 29.391
+cap "S5" "D6" 0.0186932
+cap "S6" "S_MSB" 3.79327
+cap "S2" "D3" 0.0169441
+cap "vo" "D5" 525.894
+cap "vref" "S6" 575.425
+cap "T_gate_switch_0.Control" "vdd" 590.98
+cap "vo" "vdd" 787.339
+cap "D5" "vdd" 715.43
+cap "S1" "D1" 1094.64
+cap "S2" "S3" 3.85784
+cap "D2" "D1" 0.047108
+cap "vo" "S4" 28.2013
+cap "gnd" "S1" 24.6241
+cap "gnd" "vo" 10.5096
+cap "gnd" "D2" 19.2276
+cap "vo" "S2" 360.935
+device msubckt sg13_lv_nmos 13382 -57 13383 -56 l=26 w=200 "gnd" "D1" 52 0 "gnd" 200 13600,536 "S1" 200 13600,536
+device msubckt sg13_lv_nmos 12031 -58 12032 -57 l=26 w=200 "gnd" "vo" 52 0 "vref" 200 13600,536 "S1" 200 13600,536
+device msubckt sg13_lv_nmos 11285 -53 11286 -52 l=26 w=200 "gnd" "D2" 52 0 "gnd" 200 13600,536 "S2" 200 13600,536
+device msubckt sg13_lv_nmos 9934 -54 9935 -53 l=26 w=200 "gnd" "vo" 52 0 "vref" 200 13600,536 "S2" 200 13600,536
+device msubckt sg13_lv_nmos 9179 -55 9180 -54 l=26 w=200 "gnd" "D3" 52 0 "gnd" 200 13600,536 "S3" 200 13600,536
+device msubckt sg13_lv_nmos 7828 -56 7829 -55 l=26 w=200 "gnd" "vo" 52 0 "vref" 200 13600,536 "S3" 200 13600,536
+device msubckt sg13_lv_nmos 7080 -55 7081 -54 l=26 w=200 "gnd" "D4" 52 0 "gnd" 200 13600,536 "S4" 200 13600,536
+device msubckt sg13_lv_nmos 5729 -56 5730 -55 l=26 w=200 "gnd" "vo" 52 0 "vref" 200 13600,536 "S4" 200 13600,536
+device msubckt sg13_lv_nmos 4979 -55 4980 -54 l=26 w=200 "gnd" "D5" 52 0 "gnd" 200 13600,536 "S5" 200 13600,536
+device msubckt sg13_lv_nmos 3628 -56 3629 -55 l=26 w=200 "gnd" "vo" 52 0 "vref" 200 13600,536 "S5" 200 13600,536
+device msubckt sg13_lv_nmos 2883 -61 2884 -60 l=26 w=200 "gnd" "D6" 52 0 "gnd" 200 13600,536 "S6" 200 13600,536
+device msubckt sg13_lv_nmos 1532 -62 1533 -61 l=26 w=200 "gnd" "vo" 52 0 "vref" 200 13600,536 "S6" 200 13600,536
+device msubckt sg13_lv_nmos 783 -58 784 -57 l=26 w=200 "gnd" "D_MSB" 52 0 "gnd" 200 13600,536 "S_MSB" 200 13600,536
+device msubckt sg13_lv_nmos -568 -59 -567 -58 l=26 w=200 "gnd" "T_gate_switch_0.Control" 52 0 "vref" 200 13600,536 "S_MSB" 200 13600,536
+device msubckt sg13_lv_nmos 12807 257 12808 258 l=26 w=80 "gnd" "D1" 52 0 "gnd" 80 5440,296 "vo" 80 5440,296
+device msubckt sg13_lv_nmos 10710 261 10711 262 l=26 w=80 "gnd" "D2" 52 0 "gnd" 80 5440,296 "vo" 80 5440,296
+device msubckt sg13_lv_nmos 8604 259 8605 260 l=26 w=80 "gnd" "D3" 52 0 "gnd" 80 5440,296 "vo" 80 5440,296
+device msubckt sg13_lv_nmos 6505 259 6506 260 l=26 w=80 "gnd" "D4" 52 0 "gnd" 80 5440,296 "vo" 80 5440,296
+device msubckt sg13_lv_nmos 4404 259 4405 260 l=26 w=80 "gnd" "D5" 52 0 "gnd" 80 5440,296 "vo" 80 5440,296
+device msubckt sg13_lv_nmos 2308 253 2309 254 l=26 w=80 "gnd" "D6" 52 0 "gnd" 80 5440,296 "vo" 80 5440,296
+device msubckt sg13_lv_nmos 208 256 209 257 l=26 w=80 "gnd" "D_MSB" 52 0 "gnd" 80 5440,296 "T_gate_switch_0.Control" 80 5440,296
+device msubckt sg13_lv_pmos 13382 441 13383 442 l=26 w=400 "vdd" "vo" 52 0 "gnd" 400 27200,936 "S1" 400 27200,936
+device msubckt sg13_lv_pmos 12807 555 12808 556 l=26 w=160 "vdd" "D1" 52 0 "vdd" 160 10880,456 "vo" 160 10880,456
+device msubckt sg13_lv_pmos 12031 440 12032 441 l=26 w=400 "vdd" "D1" 52 0 "vref" 400 27200,936 "S1" 400 27200,936
+device msubckt sg13_lv_pmos 11285 445 11286 446 l=26 w=400 "vdd" "vo" 52 0 "gnd" 400 27200,936 "S2" 400 27200,936
+device msubckt sg13_lv_pmos 10710 559 10711 560 l=26 w=160 "vdd" "D2" 52 0 "vdd" 160 10880,456 "vo" 160 10880,456
+device msubckt sg13_lv_pmos 9934 444 9935 445 l=26 w=400 "vdd" "D2" 52 0 "vref" 400 27200,936 "S2" 400 27200,936
+device msubckt sg13_lv_pmos 9179 443 9180 444 l=26 w=400 "vdd" "vo" 52 0 "gnd" 400 27200,936 "S3" 400 27200,936
+device msubckt sg13_lv_pmos 8604 557 8605 558 l=26 w=160 "vdd" "D3" 52 0 "vdd" 160 10880,456 "vo" 160 10880,456
+device msubckt sg13_lv_pmos 7828 442 7829 443 l=26 w=400 "vdd" "D3" 52 0 "vref" 400 27200,936 "S3" 400 27200,936
+device msubckt sg13_lv_pmos 7080 443 7081 444 l=26 w=400 "vdd" "vo" 52 0 "gnd" 400 27200,936 "S4" 400 27200,936
+device msubckt sg13_lv_pmos 6505 557 6506 558 l=26 w=160 "vdd" "D4" 52 0 "vdd" 160 10880,456 "vo" 160 10880,456
+device msubckt sg13_lv_pmos 5729 442 5730 443 l=26 w=400 "vdd" "D4" 52 0 "vref" 400 27200,936 "S4" 400 27200,936
+device msubckt sg13_lv_pmos 4979 443 4980 444 l=26 w=400 "vdd" "vo" 52 0 "gnd" 400 27200,936 "S5" 400 27200,936
+device msubckt sg13_lv_pmos 4404 557 4405 558 l=26 w=160 "vdd" "D5" 52 0 "vdd" 160 10880,456 "vo" 160 10880,456
+device msubckt sg13_lv_pmos 3628 442 3629 443 l=26 w=400 "vdd" "D5" 52 0 "vref" 400 27200,936 "S5" 400 27200,936
+device msubckt sg13_lv_pmos 2883 437 2884 438 l=26 w=400 "vdd" "vo" 52 0 "gnd" 400 27200,936 "S6" 400 27200,936
+device msubckt sg13_lv_pmos 2308 551 2309 552 l=26 w=160 "vdd" "D6" 52 0 "vdd" 160 10880,456 "vo" 160 10880,456
+device msubckt sg13_lv_pmos 1532 436 1533 437 l=26 w=400 "vdd" "D6" 52 0 "vref" 400 27200,936 "S6" 400 27200,936
+device msubckt sg13_lv_pmos 783 440 784 441 l=26 w=400 "vdd" "T_gate_switch_0.Control" 52 0 "gnd" 400 27200,936 "S_MSB" 400 27200,936
+device msubckt sg13_lv_pmos 208 554 209 555 l=26 w=160 "vdd" "D_MSB" 52 0 "vdd" 160 10880,456 "T_gate_switch_0.Control" 160 10880,456
+device msubckt sg13_lv_pmos -568 439 -567 440 l=26 w=400 "vdd" "D_MSB" 52 0 "vref" 400 27200,936 "S_MSB" 400 27200,936

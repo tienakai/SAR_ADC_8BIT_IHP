@@ -1,0 +1,45 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'nand_gate'
+Calling MAGIC
+magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Script.tcl, output file: ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Output.txt
+
+Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "nmos$1".
+Reading "pmos$1".
+Reading "nand_gate".
+Extracting nand_gate into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/nand_gate__nand_gate/magic_RC/nand_gate.ext:
+exttosim finished.
+Port: name = gnd exists, forcing drivepoint
+Location is (-181, -410); drivepoint (-182, -411)
+Port: name = B exists, forcing drivepoint
+Location is (-90, -54); drivepoint (-91, -55)
+Port: name = A exists, forcing drivepoint
+Location is (79, -53); drivepoint (79, -54)
+Port: name = vdd exists, forcing drivepoint
+Location is (-148, 257); drivepoint (-149, 257)
+Port: name = Vo exists, forcing drivepoint
+Location is (7, -124); drivepoint (7, -125)
+Total Nets: 6
+Nets extracted: 6 (1.000000)
+Nets output: 6 (1.000000)
+Devs merged: 0

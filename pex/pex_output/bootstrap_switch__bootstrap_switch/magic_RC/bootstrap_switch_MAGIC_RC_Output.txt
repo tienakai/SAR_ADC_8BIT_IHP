@@ -1,0 +1,55 @@
+
+Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "./pex_output/bootstrap_switch__bootstrap_switch/magic_RC/bootstrap_switch_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "pmos".
+Reading "nmos$1".
+Reading "nmos$7".
+Reading "inverter".
+Error while reading cell "inverter" (byte position 8964): Unknown layer/datatype in boundary, layer=46 type=0
+Reading "inverter2".
+Error while reading cell "inverter2" (byte position 16594): Unknown layer/datatype in boundary, layer=46 type=0
+Reading "cmim".
+Reading "cmim$1".
+Reading "nmos$2".
+Reading "pmos$2".
+Reading "pmos$3".
+Reading "nmos$3".
+Reading "nmos$4".
+Reading "nmos$5".
+Reading "bootstrap_switch".
+Error while reading cell "bootstrap_switch" (byte position 48810): Unknown layer/datatype in boundary, layer=46 type=0
+Extracting bootstrap_switch into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/bootstrap_switch__bootstrap_switch/magic_RC/bootstrap_switch.ext:
+exttosim finished.
+Port: name = vi exists, forcing drivepoint
+Location is (-1337, -1411); drivepoint (-1338, -1412)
+Port: name = clk exists, forcing drivepoint
+Location is (3791, -4194); drivepoint (3791, -4195)
+Port: name = vo exists, forcing drivepoint
+Location is (-1336, -1566); drivepoint (-1337, -1567)
+Port: name = vdd exists, forcing drivepoint
+Location is (-239, 6); drivepoint (-240, 6)
+Port: name = gnd exists, forcing drivepoint
+Location is (-1062, 3); drivepoint (-1063, 3)
+Total Nets: 31
+Nets extracted: 16 (0.516129)
+Nets output: 16 (0.516129)
+exttospice finished.

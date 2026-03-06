@@ -1,0 +1,222 @@
+[2026-03-06 10:34:04,019] [INFO]    GDS input file passed, running in LVS mode
+[2026-03-06 10:34:04,021] [INFO]    No explicit top cell specified, using top cell 'switch_array'
+[2026-03-06 10:34:04,030] [INFO]    Calling MAGIC
+[2026-03-06 10:34:04,031] [SUBPROCESS]    magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/switch_array__switch_array/magic_RC/switch_array_MAGIC_RC_Script.tcl, output file: ./pex_output/switch_array__switch_array/magic_RC/switch_array_MAGIC_RC_Output.txt
+[2026-03-06 10:34:04,054] [SUBPROCESS]    
+[2026-03-06 10:34:04,055] [SUBPROCESS]    Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+[2026-03-06 10:34:04,056] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-03-06 10:34:04,056] [SUBPROCESS]    Using the terminal as the console.
+[2026-03-06 10:34:04,057] [SUBPROCESS]    Using NULL graphics device.
+[2026-03-06 10:34:04,108] [SUBPROCESS]    Processing system .magicrc file
+[2026-03-06 10:34:04,136] [SUBPROCESS]    Switching to WIRING tool.
+[2026-03-06 10:34:04,137] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-03-06 10:34:04,138] [SUBPROCESS]    Switching to PICK tool.
+[2026-03-06 10:34:04,138] [SUBPROCESS]    Switching to BOX tool.
+[2026-03-06 10:34:04,139] [SUBPROCESS]    Sourcing design .magicrc for technology ihp-sg13g2 ...
+[2026-03-06 10:34:04,139] [SUBPROCESS]    2 Magic internal units = 1 Lambda
+[2026-03-06 10:34:04,181] [SUBPROCESS]    Input style sg13g2(): scaleFactor=2, multiplier=2
+[2026-03-06 10:34:04,350] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-03-06 10:34:04,351] [SUBPROCESS]        pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+[2026-03-06 10:34:04,357] [SUBPROCESS]    Scaled tech values by 2 / 1 to match internal grid scaling
+[2026-03-06 10:34:04,358] [SUBPROCESS]    Loading ihp-sg13g2 Device Generator Menu ...
+[2026-03-06 10:34:04,364] [SUBPROCESS]    Loading "./pex_output/switch_array__switch_array/magic_RC/switch_array_MAGIC_RC_Script.tcl" from command line.
+[2026-03-06 10:34:04,365] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-03-06 10:34:04,365] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-03-06 10:34:04,366] [SUBPROCESS]    Library name: LIB
+[2026-03-06 10:34:04,366] [SUBPROCESS]    Reading "nmos$1".
+[2026-03-06 10:34:04,367] [SUBPROCESS]    Reading "pmos".
+[2026-03-06 10:34:04,367] [SUBPROCESS]    Reading "pmos$1".
+[2026-03-06 10:34:04,369] [SUBPROCESS]    Reading "nmos$1$1".
+[2026-03-06 10:34:04,370] [SUBPROCESS]    Reading "inverter".
+[2026-03-06 10:34:04,370] [SUBPROCESS]    Error while reading cell "inverter" (byte position 7056): Unknown layer/datatype in boundary, layer=46 type=0
+[2026-03-06 10:34:04,371] [SUBPROCESS]    Reading "T_gate".
+[2026-03-06 10:34:04,372] [SUBPROCESS]    Error while reading cell "T_gate" (byte position 9140): Unknown layer/datatype in boundary, layer=46 type=0
+[2026-03-06 10:34:04,373] [SUBPROCESS]    Reading "T_gate_switch".
+[2026-03-06 10:34:04,374] [SUBPROCESS]    Error while reading cell "T_gate_switch" (byte position 15498): Unknown layer/datatype in boundary, layer=46 type=0
+[2026-03-06 10:34:04,377] [SUBPROCESS]    Reading "switch_array".
+[2026-03-06 10:34:04,381] [SUBPROCESS]    Error while reading cell "switch_array" (byte position 107262): Unknown layer/datatype in boundary, layer=46 type=0
+[2026-03-06 10:34:04,427] [SUBPROCESS]    Extracting switch_array into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/switch_array__switch_array/magic_RC/switch_array.ext:
+[2026-03-06 10:34:04,480] [SUBPROCESS]    Warning:  Ports "vo" and "!Control" are electrically shorted.
+[2026-03-06 10:34:04,480] [SUBPROCESS]    Warning:  Ports "vo" and "Control" are electrically shorted.
+[2026-03-06 10:34:04,481] [SUBPROCESS]    Warning:  Ports "vo" and "!Control" are electrically shorted.
+[2026-03-06 10:34:04,481] [SUBPROCESS]    Warning:  Ports "vo" and "Control" are electrically shorted.
+[2026-03-06 10:34:04,482] [SUBPROCESS]    Warning:  Ports "vo" and "!Control" are electrically shorted.
+[2026-03-06 10:34:04,483] [SUBPROCESS]    Warning:  Ports "vo" and "Control" are electrically shorted.
+[2026-03-06 10:34:04,483] [SUBPROCESS]    Warning:  Ports "vo" and "!Control" are electrically shorted.
+[2026-03-06 10:34:04,484] [SUBPROCESS]    Warning:  Ports "vo" and "Control" are electrically shorted.
+[2026-03-06 10:34:04,484] [SUBPROCESS]    Warning:  Ports "vo" and "!Control" are electrically shorted.
+[2026-03-06 10:34:04,485] [SUBPROCESS]    Warning:  Ports "vo" and "Control" are electrically shorted.
+[2026-03-06 10:34:04,486] [SUBPROCESS]    Warning:  Ports "vo" and "!Control" are electrically shorted.
+[2026-03-06 10:34:04,486] [SUBPROCESS]    Warning:  Ports "vo" and "Control" are electrically shorted.
+[2026-03-06 10:34:04,487] [SUBPROCESS]    switch_array: 37 warnings
+[2026-03-06 10:34:04,487] [SUBPROCESS]    Total of 37 warnings.
+[2026-03-06 10:34:04,488] [SUBPROCESS]    Warning:  Ports "vo" and "!Control" are electrically shorted.
+[2026-03-06 10:34:04,488] [SUBPROCESS]    Warning:  Ports "vo" and "Control" are electrically shorted.
+[2026-03-06 10:34:04,489] [SUBPROCESS]    exttosim finished.
+[2026-03-06 10:34:04,489] [SUBPROCESS]    Port: name = S_MSB exists, forcing drivepoint
+[2026-03-06 10:34:04,490] [SUBPROCESS]    Location is (485, -1972); drivepoint (485, -1973)
+[2026-03-06 10:34:04,491] [SUBPROCESS]    Port: name = S6 exists, forcing drivepoint
+[2026-03-06 10:34:04,491] [SUBPROCESS]    Location is (2586, -1971); drivepoint (2586, -1972)
+[2026-03-06 10:34:04,492] [SUBPROCESS]    Port: name = S5 exists, forcing drivepoint
+[2026-03-06 10:34:04,492] [SUBPROCESS]    Location is (4684, -1971); drivepoint (4684, -1972)
+[2026-03-06 10:34:04,493] [SUBPROCESS]    Port: name = S4 exists, forcing drivepoint
+[2026-03-06 10:34:04,493] [SUBPROCESS]    Location is (6784, -1973); drivepoint (6784, -1974)
+[2026-03-06 10:34:04,494] [SUBPROCESS]    Port: name = S3 exists, forcing drivepoint
+[2026-03-06 10:34:04,495] [SUBPROCESS]    Location is (8880, -1974); drivepoint (8880, -1975)
+[2026-03-06 10:34:04,495] [SUBPROCESS]    Port: name = S2 exists, forcing drivepoint
+[2026-03-06 10:34:04,496] [SUBPROCESS]    Location is (10988, -1975); drivepoint (10988, -1976)
+[2026-03-06 10:34:04,496] [SUBPROCESS]    Port: name = S1 exists, forcing drivepoint
+[2026-03-06 10:34:04,497] [SUBPROCESS]    Location is (13085, -1976); drivepoint (13085, -1977)
+[2026-03-06 10:34:04,498] [SUBPROCESS]    Port: name = Control is new node 0x30fddd0
+[2026-03-06 10:34:04,498] [SUBPROCESS]    Location is (1533, -190); drivepoint (1533, -190)
+[2026-03-06 10:34:04,499] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,499] [SUBPROCESS]    Location is (-1502, -900); drivepoint (1754, 762)
+[2026-03-06 10:34:04,500] [SUBPROCESS]    Port: name = !Control is new node 0x2a90190
+[2026-03-06 10:34:04,501] [SUBPROCESS]    Location is (2883, 949); drivepoint (2883, 949)
+[2026-03-06 10:34:04,501] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,502] [SUBPROCESS]    Location is (-1502, -900); drivepoint (3105, 763)
+[2026-03-06 10:34:04,503] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,503] [SUBPROCESS]    Location is (-1502, -900); drivepoint (2207, 784)
+[2026-03-06 10:34:04,504] [SUBPROCESS]    Port: name = vo exists, forcing drivepoint
+[2026-03-06 10:34:04,504] [SUBPROCESS]    Location is (12940, 393); drivepoint (2441, 389)
+[2026-03-06 10:34:04,505] [SUBPROCESS]    Port: name = Control exists, forcing drivepoint
+[2026-03-06 10:34:04,505] [SUBPROCESS]    Location is (1533, -190); drivepoint (3629, -184)
+[2026-03-06 10:34:04,506] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,507] [SUBPROCESS]    Location is (-1502, -900); drivepoint (3850, 768)
+[2026-03-06 10:34:04,507] [SUBPROCESS]    Port: name = !Control exists, forcing drivepoint
+[2026-03-06 10:34:04,508] [SUBPROCESS]    Location is (2883, 949); drivepoint (4979, 955)
+[2026-03-06 10:34:04,508] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,509] [SUBPROCESS]    Location is (-1502, -900); drivepoint (5201, 769)
+[2026-03-06 10:34:04,510] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,510] [SUBPROCESS]    Location is (-1502, -900); drivepoint (4303, 790)
+[2026-03-06 10:34:04,511] [SUBPROCESS]    Port: name = vo exists, forcing drivepoint
+[2026-03-06 10:34:04,511] [SUBPROCESS]    Location is (12940, 393); drivepoint (4537, 395)
+[2026-03-06 10:34:04,512] [SUBPROCESS]    Port: name = Control exists, forcing drivepoint
+[2026-03-06 10:34:04,512] [SUBPROCESS]    Location is (1533, -190); drivepoint (5730, -184)
+[2026-03-06 10:34:04,513] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,514] [SUBPROCESS]    Location is (-1502, -900); drivepoint (5951, 768)
+[2026-03-06 10:34:04,514] [SUBPROCESS]    Port: name = !Control exists, forcing drivepoint
+[2026-03-06 10:34:04,515] [SUBPROCESS]    Location is (2883, 949); drivepoint (7080, 955)
+[2026-03-06 10:34:04,515] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,516] [SUBPROCESS]    Location is (-1502, -900); drivepoint (7302, 769)
+[2026-03-06 10:34:04,516] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,517] [SUBPROCESS]    Location is (-1502, -900); drivepoint (6404, 790)
+[2026-03-06 10:34:04,518] [SUBPROCESS]    Port: name = vo exists, forcing drivepoint
+[2026-03-06 10:34:04,518] [SUBPROCESS]    Location is (12940, 393); drivepoint (6638, 395)
+[2026-03-06 10:34:04,519] [SUBPROCESS]    Port: name = Control exists, forcing drivepoint
+[2026-03-06 10:34:04,519] [SUBPROCESS]    Location is (1533, -190); drivepoint (7829, -184)
+[2026-03-06 10:34:04,520] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,521] [SUBPROCESS]    Location is (-1502, -900); drivepoint (8050, 768)
+[2026-03-06 10:34:04,521] [SUBPROCESS]    Port: name = !Control exists, forcing drivepoint
+[2026-03-06 10:34:04,522] [SUBPROCESS]    Location is (2883, 949); drivepoint (9179, 955)
+[2026-03-06 10:34:04,522] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,523] [SUBPROCESS]    Location is (-1502, -900); drivepoint (9401, 769)
+[2026-03-06 10:34:04,524] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,524] [SUBPROCESS]    Location is (-1502, -900); drivepoint (8503, 790)
+[2026-03-06 10:34:04,525] [SUBPROCESS]    Port: name = vo exists, forcing drivepoint
+[2026-03-06 10:34:04,525] [SUBPROCESS]    Location is (12940, 393); drivepoint (8737, 395)
+[2026-03-06 10:34:04,526] [SUBPROCESS]    Port: name = Control exists, forcing drivepoint
+[2026-03-06 10:34:04,526] [SUBPROCESS]    Location is (1533, -190); drivepoint (9935, -182)
+[2026-03-06 10:34:04,527] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,528] [SUBPROCESS]    Location is (-1502, -900); drivepoint (10156, 770)
+[2026-03-06 10:34:04,528] [SUBPROCESS]    Port: name = !Control exists, forcing drivepoint
+[2026-03-06 10:34:04,529] [SUBPROCESS]    Location is (2883, 949); drivepoint (11285, 957)
+[2026-03-06 10:34:04,529] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,530] [SUBPROCESS]    Location is (-1502, -900); drivepoint (11507, 771)
+[2026-03-06 10:34:04,531] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,531] [SUBPROCESS]    Location is (-1502, -900); drivepoint (10609, 792)
+[2026-03-06 10:34:04,532] [SUBPROCESS]    Port: name = vo exists, forcing drivepoint
+[2026-03-06 10:34:04,532] [SUBPROCESS]    Location is (12940, 393); drivepoint (10843, 397)
+[2026-03-06 10:34:04,533] [SUBPROCESS]    Port: name = Control exists, forcing drivepoint
+[2026-03-06 10:34:04,533] [SUBPROCESS]    Location is (1533, -190); drivepoint (12032, -186)
+[2026-03-06 10:34:04,534] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,535] [SUBPROCESS]    Location is (-1502, -900); drivepoint (12253, 766)
+[2026-03-06 10:34:04,535] [SUBPROCESS]    Port: name = !Control exists, forcing drivepoint
+[2026-03-06 10:34:04,536] [SUBPROCESS]    Location is (2883, 949); drivepoint (13382, 953)
+[2026-03-06 10:34:04,536] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,537] [SUBPROCESS]    Location is (-1502, -900); drivepoint (13604, 767)
+[2026-03-06 10:34:04,538] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,538] [SUBPROCESS]    Location is (-1502, -900); drivepoint (12706, 788)
+[2026-03-06 10:34:04,539] [SUBPROCESS]    Port: name = vo exists, forcing drivepoint
+[2026-03-06 10:34:04,539] [SUBPROCESS]    Location is (12940, 393); drivepoint (12940, 393)
+[2026-03-06 10:34:04,540] [SUBPROCESS]    Port: name = D_MSB exists, forcing drivepoint
+[2026-03-06 10:34:04,540] [SUBPROCESS]    Location is (-576, 2695); drivepoint (-577, 2695)
+[2026-03-06 10:34:04,541] [SUBPROCESS]    Port: name = D6 exists, forcing drivepoint
+[2026-03-06 10:34:04,542] [SUBPROCESS]    Location is (1524, 2686); drivepoint (1524, 2686)
+[2026-03-06 10:34:04,542] [SUBPROCESS]    Port: name = D5 exists, forcing drivepoint
+[2026-03-06 10:34:04,543] [SUBPROCESS]    Location is (3620, 2686); drivepoint (3620, 2686)
+[2026-03-06 10:34:04,543] [SUBPROCESS]    Port: name = D4 exists, forcing drivepoint
+[2026-03-06 10:34:04,544] [SUBPROCESS]    Location is (5720, 2687); drivepoint (5720, 2687)
+[2026-03-06 10:34:04,545] [SUBPROCESS]    Port: name = D3 exists, forcing drivepoint
+[2026-03-06 10:34:04,545] [SUBPROCESS]    Location is (7820, 2690); drivepoint (7820, 2690)
+[2026-03-06 10:34:04,546] [SUBPROCESS]    Port: name = D2 exists, forcing drivepoint
+[2026-03-06 10:34:04,546] [SUBPROCESS]    Location is (9925, 2690); drivepoint (9925, 2690)
+[2026-03-06 10:34:04,547] [SUBPROCESS]    Port: name = D1 exists, forcing drivepoint
+[2026-03-06 10:34:04,548] [SUBPROCESS]    Location is (12025, 2695); drivepoint (12025, 2695)
+[2026-03-06 10:34:04,548] [SUBPROCESS]    Port: name = vref exists, forcing drivepoint
+[2026-03-06 10:34:04,549] [SUBPROCESS]    Location is (11830, 256); drivepoint (-1039, 244)
+[2026-03-06 10:34:04,549] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 10:34:04,550] [SUBPROCESS]    Location is (-2288, -1690); drivepoint (1687, -298)
+[2026-03-06 10:34:04,551] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,551] [SUBPROCESS]    Location is (-1502, -900); drivepoint (3106, 1045)
+[2026-03-06 10:34:04,552] [SUBPROCESS]    Port: name = vref exists, forcing drivepoint
+[2026-03-06 10:34:04,552] [SUBPROCESS]    Location is (11830, 256); drivepoint (1331, 252)
+[2026-03-06 10:34:04,553] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 10:34:04,553] [SUBPROCESS]    Location is (-2288, -1690); drivepoint (3783, -292)
+[2026-03-06 10:34:04,554] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,555] [SUBPROCESS]    Location is (-1502, -900); drivepoint (5202, 1051)
+[2026-03-06 10:34:04,555] [SUBPROCESS]    Port: name = vref exists, forcing drivepoint
+[2026-03-06 10:34:04,556] [SUBPROCESS]    Location is (11830, 256); drivepoint (3427, 258)
+[2026-03-06 10:34:04,556] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 10:34:04,557] [SUBPROCESS]    Location is (-2288, -1690); drivepoint (5884, -292)
+[2026-03-06 10:34:04,558] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,558] [SUBPROCESS]    Location is (-1502, -900); drivepoint (7303, 1051)
+[2026-03-06 10:34:04,559] [SUBPROCESS]    Port: name = vref exists, forcing drivepoint
+[2026-03-06 10:34:04,559] [SUBPROCESS]    Location is (11830, 256); drivepoint (5528, 258)
+[2026-03-06 10:34:04,560] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 10:34:04,560] [SUBPROCESS]    Location is (-2288, -1690); drivepoint (7983, -292)
+[2026-03-06 10:34:04,561] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,562] [SUBPROCESS]    Location is (-1502, -900); drivepoint (9402, 1051)
+[2026-03-06 10:34:04,562] [SUBPROCESS]    Port: name = vref exists, forcing drivepoint
+[2026-03-06 10:34:04,563] [SUBPROCESS]    Location is (11830, 256); drivepoint (7627, 258)
+[2026-03-06 10:34:04,563] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 10:34:04,564] [SUBPROCESS]    Location is (-2288, -1690); drivepoint (10089, -290)
+[2026-03-06 10:34:04,565] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,565] [SUBPROCESS]    Location is (-1502, -900); drivepoint (11508, 1053)
+[2026-03-06 10:34:04,566] [SUBPROCESS]    Port: name = vref exists, forcing drivepoint
+[2026-03-06 10:34:04,566] [SUBPROCESS]    Location is (11830, 256); drivepoint (9733, 260)
+[2026-03-06 10:34:04,567] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 10:34:04,567] [SUBPROCESS]    Location is (-2288, -1690); drivepoint (12186, -294)
+[2026-03-06 10:34:04,568] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,569] [SUBPROCESS]    Location is (-1502, -900); drivepoint (13605, 1049)
+[2026-03-06 10:34:04,569] [SUBPROCESS]    Port: name = vref exists, forcing drivepoint
+[2026-03-06 10:34:04,570] [SUBPROCESS]    Location is (11830, 256); drivepoint (11830, 256)
+[2026-03-06 10:34:04,570] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 10:34:04,571] [SUBPROCESS]    Location is (-1502, -900); drivepoint (-1503, -901)
+[2026-03-06 10:34:04,572] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 10:34:04,572] [SUBPROCESS]    Location is (-2288, -1690); drivepoint (-2289, -1691)
+[2026-03-06 10:34:04,573] [SUBPROCESS]    Adding  vo; Tnew = 0.02ns, Told = 0.00ns
+[2026-03-06 10:34:04,573] [SUBPROCESS]    Missing terminal connection of device at (6505 557) on net vo
+[2026-03-06 10:34:04,574] [SUBPROCESS]    Missing terminal connection of device at (6505 259) on net vo
+[2026-03-06 10:34:04,575] [SUBPROCESS]    Missing terminal connection of device at (2308 253) on net vo
+[2026-03-06 10:34:04,575] [SUBPROCESS]    Missing terminal connection of device at (2308 551) on net vo
+[2026-03-06 10:34:04,576] [SUBPROCESS]    Missing terminal connection of device at (8604 259) on net vo
+[2026-03-06 10:34:04,576] [SUBPROCESS]    Missing terminal connection of device at (8604 557) on net vo
+[2026-03-06 10:34:04,577] [SUBPROCESS]    Missing terminal connection of device at (12807 257) on net vo
+[2026-03-06 10:34:04,578] [SUBPROCESS]    Missing terminal connection of device at (12807 555) on net vo
+[2026-03-06 10:34:04,578] [SUBPROCESS]    Missing terminal connection of device at (4404 557) on net vo
+[2026-03-06 10:34:04,579] [SUBPROCESS]    Missing terminal connection of device at (4404 259) on net vo
+[2026-03-06 10:34:04,580] [SUBPROCESS]    Missing gate connection of device at (7080 443) on net vo
+[2026-03-06 10:34:04,580] [SUBPROCESS]    Missing gate connection of device at (2883 437) on net vo
+[2026-03-06 10:34:04,581] [SUBPROCESS]    Missing gate connection of device at (5729 -56) on net vo
+[2026-03-06 10:34:04,582] [SUBPROCESS]    Missing gate connection of device at (7828 -56) on net vo
+[2026-03-06 10:34:04,582] [SUBPROCESS]    Missing gate connection of device at (9179 443) on net vo
+[2026-03-06 10:34:04,583] [SUBPROCESS]    Missing gate connection of device at (13382 441) on net vo
+[2026-03-06 10:34:04,584] [SUBPROCESS]    Missing gate connection of device at (12031 -58) on net vo
+[2026-03-06 10:34:04,584] [SUBPROCESS]    Missing gate connection of device at (1532 -62) on net vo
+[2026-03-06 10:34:04,585] [SUBPROCESS]    Missing gate connection of device at (3628 -56) on net vo
+[2026-03-06 10:34:04,585] [SUBPROCESS]    Missing gate connection of device at (4979 443) on net vo
+[2026-03-06 10:34:04,586] [SUBPROCESS]    Total Nets: 42
+[2026-03-06 10:34:04,587] [SUBPROCESS]    Nets extracted: 19 (0.452381)
+[2026-03-06 10:34:04,587] [SUBPROCESS]    Nets output: 19 (0.452381)
+[2026-03-06 10:34:04,588] [SUBPROCESS]    Devs merged: 0

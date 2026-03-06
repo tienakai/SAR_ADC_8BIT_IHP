@@ -1,0 +1,45 @@
+[2026-03-06 01:08:15,551] [INFO]    GDS input file passed, running in LVS mode
+[2026-03-06 01:08:15,552] [INFO]    No explicit top cell specified, using top cell 'nand_gate'
+[2026-03-06 01:08:15,561] [INFO]    Calling MAGIC
+[2026-03-06 01:08:15,562] [SUBPROCESS]    magic -dnull -noconsole -rcfile /home/dkits/ihp-sg13g2/2026.01.26.dev/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Script.tcl, output file: ./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Output.txt
+[2026-03-06 01:08:15,588] [SUBPROCESS]    
+[2026-03-06 01:08:15,589] [SUBPROCESS]    Magic 8.3 revision 581 - Compiled on Tue Jan 27 01:58:22 EST 2026.
+[2026-03-06 01:08:15,590] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-03-06 01:08:15,591] [SUBPROCESS]    Using the terminal as the console.
+[2026-03-06 01:08:15,592] [SUBPROCESS]    Using NULL graphics device.
+[2026-03-06 01:08:15,640] [SUBPROCESS]    Processing system .magicrc file
+[2026-03-06 01:08:15,668] [SUBPROCESS]    Switching to WIRING tool.
+[2026-03-06 01:08:15,669] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-03-06 01:08:15,670] [SUBPROCESS]    Switching to PICK tool.
+[2026-03-06 01:08:15,671] [SUBPROCESS]    Switching to BOX tool.
+[2026-03-06 01:08:15,672] [SUBPROCESS]    Sourcing design .magicrc for technology ihp-sg13g2 ...
+[2026-03-06 01:08:15,673] [SUBPROCESS]    2 Magic internal units = 1 Lambda
+[2026-03-06 01:08:15,713] [SUBPROCESS]    Input style sg13g2(): scaleFactor=2, multiplier=2
+[2026-03-06 01:08:15,884] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-03-06 01:08:15,885] [SUBPROCESS]        pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+[2026-03-06 01:08:15,891] [SUBPROCESS]    Scaled tech values by 2 / 1 to match internal grid scaling
+[2026-03-06 01:08:15,892] [SUBPROCESS]    Loading ihp-sg13g2 Device Generator Menu ...
+[2026-03-06 01:08:15,898] [SUBPROCESS]    Loading "./pex_output/nand_gate__nand_gate/magic_RC/nand_gate_MAGIC_RC_Script.tcl" from command line.
+[2026-03-06 01:08:15,899] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-03-06 01:08:15,900] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-03-06 01:08:15,901] [SUBPROCESS]    Library name: LIB
+[2026-03-06 01:08:15,902] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2026-03-06 01:08:15,903] [SUBPROCESS]    Reading "nmos$1".
+[2026-03-06 01:08:15,903] [SUBPROCESS]    Reading "pmos$1".
+[2026-03-06 01:08:15,904] [SUBPROCESS]    Reading "nand_gate".
+[2026-03-06 01:08:15,906] [SUBPROCESS]    Extracting nand_gate into /home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/pex_output/nand_gate__nand_gate/magic_RC/nand_gate.ext:
+[2026-03-06 01:08:15,908] [SUBPROCESS]    exttosim finished.
+[2026-03-06 01:08:15,908] [SUBPROCESS]    Port: name = gnd exists, forcing drivepoint
+[2026-03-06 01:08:15,909] [SUBPROCESS]    Location is (-181, -410); drivepoint (-182, -411)
+[2026-03-06 01:08:15,911] [SUBPROCESS]    Port: name = B exists, forcing drivepoint
+[2026-03-06 01:08:15,911] [SUBPROCESS]    Location is (-90, -54); drivepoint (-91, -55)
+[2026-03-06 01:08:15,913] [SUBPROCESS]    Port: name = A exists, forcing drivepoint
+[2026-03-06 01:08:15,914] [SUBPROCESS]    Location is (79, -53); drivepoint (79, -54)
+[2026-03-06 01:08:15,915] [SUBPROCESS]    Port: name = vdd exists, forcing drivepoint
+[2026-03-06 01:08:15,916] [SUBPROCESS]    Location is (-148, 257); drivepoint (-149, 257)
+[2026-03-06 01:08:15,917] [SUBPROCESS]    Port: name = Vo exists, forcing drivepoint
+[2026-03-06 01:08:15,918] [SUBPROCESS]    Location is (7, -124); drivepoint (7, -125)
+[2026-03-06 01:08:15,919] [SUBPROCESS]    Total Nets: 6
+[2026-03-06 01:08:15,920] [SUBPROCESS]    Nets extracted: 6 (1.000000)
+[2026-03-06 01:08:15,921] [SUBPROCESS]    Nets output: 6 (1.000000)
+[2026-03-06 01:08:15,922] [SUBPROCESS]    Devs merged: 0

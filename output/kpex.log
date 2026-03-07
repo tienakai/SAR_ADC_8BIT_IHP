@@ -1,0 +1,2 @@
+[2026-03-06 16:44:52,793] [INFO]    GDS input file passed, running in LVS mode
+[2026-03-06 16:44:52,794] [ERROR]    Can't read GDS file (LVS input) at path sar_logic.gds

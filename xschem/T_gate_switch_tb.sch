@@ -1,4 +1,5 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -139,6 +140,6 @@ value=7p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 570 -770 0 0 {name=l7 lab=GND}
-C {/home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/T_gate/schematic/T_gate.sym} 400 -1020 0 0 {name=x2}
-C {/home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/T_gate/schematic/T_gate.sym} 400 -690 0 0 {name=x3}
-C {/home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/bootstrap_switch/schematic/inverter.sym} 240 -850 0 0 {name=x1}
+C {/home/tien/SAR_ADC_8BIT_IHP/xschem/T_gate.sym} 400 -690 0 0 {name=x1}
+C {/home/tien/SAR_ADC_8BIT_IHP/xschem/T_gate.sym} 400 -1020 0 0 {name=x2}
+C {/home/tien/SAR_ADC_8BIT_IHP/xschem/inverter.sym} 240 -850 0 0 {name=x3}

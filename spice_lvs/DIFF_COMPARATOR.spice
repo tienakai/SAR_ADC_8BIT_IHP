@@ -15,5 +15,4 @@ M3 gnd gnd gnd sub sg13_lv_nmos w=4.0u l=0.200u ng=1 m=4
 M13 net1 clk net4 well sg13_lv_pmos w=18u l=0.3u ng=4 m=1
 M9 net4 vbias vdd well sg13_lv_pmos w=18u l=0.3u ng=4 m=1
 R1 vdd well ntap1 A=1.5376e-11 P=9.92e-05
-R2 gnd sub ptap1 A=1.1376e-11 P=7.584e-05
 .ends

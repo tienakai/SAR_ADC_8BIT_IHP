@@ -1,4 +1,4 @@
-** sch_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/SAR_ADC_tb.sch
+** sch_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/SAR_ADC_tb.sch
 **.subckt SAR_ADC_tb D6 D5 D4 D3 D2 D1 D0 D7 dac_clk
 *.iopin D6
 *.iopin D5
@@ -96,7 +96,7 @@ adut [ net17 net18 net19 net20 net21 ] [ net43 net42 net41 net40 net39 net38 net
 .param comparator_delay = 0.328*T
 
 .control
-tran 1u 320u
+tran 1n 4m
 let vin_diff = v(Vin_pos) - v(Vin_neg)
 let comp_diff = v(op)- v(om)
 set wr_singlescale
@@ -107,14 +107,14 @@ write SAR_ADC_tb.raw
 
 
  .lib cornerMOSlv.lib mos_tt
-.lib /home/cass/unic-cass/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+.lib /home/tien/unic-cass/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
 
 **** end user architecture code
 **.ends
 
 * expanding   symbol:  switch_array.sym # of pins=17
-** sym_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/switch_array.sym
-** sch_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/switch_array.sch
+** sym_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/switch_array.sym
+** sch_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/switch_array.sch
 .subckt switch_array vref vdd gnd S5 S6 D5 D6 S_MSB D_MSB S1 S2 D1 D2 S3 D3 S4 D4
 *.iopin S_MSB
 *.iopin S6
@@ -158,8 +158,8 @@ x21 vdd D1 net8 gnd inverter
 
 
 * expanding   symbol:  C-DAC.sym # of pins=10
-** sym_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/C-DAC.sym
-** sch_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/C-DAC.sch
+** sym_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/C-DAC.sym
+** sch_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/C-DAC.sch
 .subckt C-DAC vin vo C5 C6 C3 C4 C2 C1 vref C_MSB
 *.iopin vin
 *.iopin vo
@@ -187,8 +187,8 @@ XC9 net1 net2 cap_cmim w=5.71e-6 l=5.71e-6 m=40
 
 
 * expanding   symbol:  nand_gate.sym # of pins=5
-** sym_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/nand_gate.sym
-** sch_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/nand_gate.sch
+** sym_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/nand_gate.sym
+** sch_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/nand_gate.sch
 .subckt nand_gate vdd Vo B A gnd
 *.iopin vdd
 *.iopin gnd
@@ -203,8 +203,8 @@ XM2 Vo B vdd vdd sg13_lv_pmos w=0.5u l=0.13u ng=1 m=1
 
 
 * expanding   symbol:  bootstrap_switch.sym # of pins=5
-** sym_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/bootstrap_switch.sym
-** sch_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/bootstrap_switch.sch
+** sym_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/bootstrap_switch.sym
+** sch_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/bootstrap_switch.sch
 .subckt bootstrap_switch vdd vi vo clk gnd
 *.iopin gnd
 *.iopin vdd
@@ -233,8 +233,8 @@ x3 vdd clk_not net9 gnd inverter
 
 
 * expanding   symbol:  dynamic_comparator.sym # of pins=8
-** sym_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/dynamic_comparator.sym
-** sch_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/dynamic_comparator.sch
+** sym_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/dynamic_comparator.sym
+** sch_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/dynamic_comparator.sch
 .subckt dynamic_comparator vdd vbias v+ v- out- out+ clk gnd
 *.iopin vdd
 *.iopin gnd
@@ -260,8 +260,8 @@ XM8 gnd net4 net3 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
 
 
 * expanding   symbol:  T_gate.sym # of pins=6
-** sym_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/T_gate.sym
-** sch_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/T_gate.sch
+** sym_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/T_gate.sym
+** sch_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/T_gate.sch
 .subckt T_gate !Control Vin Vout gnd Control vdd
 *.iopin Vout
 *.iopin Vin
@@ -275,8 +275,8 @@ XM2 Vin !Control Vout vdd sg13_lv_pmos w=2u l=0.13u ng=1 m=1
 
 
 * expanding   symbol:  inverter.sym # of pins=4
-** sym_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/inverter.sym
-** sch_path: /home/cass/SAR_ADC_8BIT_IHP/xschem/inverter.sch
+** sym_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/inverter.sym
+** sch_path: /home/tien/SAR_ADC_8BIT_IHP/xschem/inverter.sch
 .subckt inverter vdd vi vo gnd
 *.iopin vi
 *.iopin vo

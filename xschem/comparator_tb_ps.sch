@@ -292,7 +292,7 @@ write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get curr
 xschem netlist
 simulate
 "}
-C {/home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/xschem_pex_symbol/dynamic_comparator.sym} -2310 2000 0 0 {name=x1
+C {xschem_pex_symbol/dynamic_comparator.sym} -2310 2000 0 0 {name=x1
 schematic=DIFF_COMPARATOR_pex
 spice_sym_def=
 "

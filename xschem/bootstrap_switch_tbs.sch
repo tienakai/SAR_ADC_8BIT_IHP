@@ -1,4 +1,5 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -101,4 +102,4 @@ value=7p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 500 -300 0 1 {name=l1 lab=GND}
-C {/home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/bootstrap_switch/schematic/bootstrap_switch.sym} 340 -430 0 0 {name=x1}
+C {/home/tien/SAR_ADC_8BIT_IHP/xschem/bootstrap_switch.sym} 340 -430 0 0 {name=x1}

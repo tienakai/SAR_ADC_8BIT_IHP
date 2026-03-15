@@ -5,1422 +5,294 @@ K {}
 V {}
 S {}
 E {}
-B 2 1065 80 1865 480 {flags=graph
-y1=-0.044
-y2=1.3
+B 2 580 -1015 1380 -615 {flags=graph
+y1=-1.754609
+y2=2.1271702
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=6.6838505e-05
-x2=7.5953506e-05
+x1=6.7671656e-07
+
 divx=5
-subdivx=1
+subdivx=4
 xlabmag=1.0
 ylabmag=1.0
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-color="12 7"
-node="cdac_v+
-cdac_v-"
-hilight_wave=0
-hcursor1_y=1.2502139}
-B 2 1065 -330 1865 70 {flags=graph
-y1=-0.36
-y2=0.84
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=6.6838505e-05
-x2=7.5953506e-05
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-dataset=-1
-unitx=1
-logx=0
-logy=0
+x2=9.6174965e-07
 color=4
-node=vin_diff
-hcursor1_y=1.0065781}
-N 620 -70 670 -70 {lab=bias}
-N 750 30 750 70 {lab=GND}
-N 380 -370 420 -370 {lab=vdd}
-N 360 -390 360 -370 {lab=GND}
-N 360 -390 480 -390 {lab=GND}
-N 150 230 150 250 {lab=BN_MSB}
-N 190 230 190 250 {lab=BN6}
-N 220 230 220 250 {lab=BN5}
-N 250 230 250 250 {lab=BN4}
-N 280 230 280 250 {lab=BN3}
-N 310 230 310 250 {lab=BN2}
-N 340 230 340 250 {lab=BN1}
-N 380 230 420 230 {lab=vdd}
-N 360 230 360 250 {lab=GND}
-N 360 250 480 250 {lab=GND}
-N 150 -400 150 -370 {lab=B_MSB}
-N 190 -400 190 -370 {lab=B6}
-N 220 -400 220 -370 {lab=B5}
-N 250 -400 250 -370 {lab=B4}
-N 280 -400 280 -370 {lab=B3}
-N 310 -400 310 -370 {lab=B2}
-N 340 -400 340 -370 {lab=B1}
-N -30 -10 90 -10 {lab=#net1}
-N -170 -60 -170 -50 {lab=GND}
-N -170 60 -170 70 {lab=GND}
-N -110 -60 -110 -40 {lab=vdd}
-N -110 60 -110 80 {lab=vdd}
-N -50 -60 -50 -40 {lab=clk_samp}
-N -250 -130 -200 -130 {lab=vin_pos}
-N -250 -10 -200 -10 {lab=vin_neg}
-N 750 -210 750 -170 {lab=vdd}
-N -650 -10 -650 10 {lab=clk_comp}
-N -650 50 -650 80 {lab=GND}
-N -690 -10 -690 10 {lab=vdd}
-N -690 70 -690 80 {lab=GND}
-N 800 10 800 40 {lab=clk_comp}
-N -690 -140 -690 -120 {lab=bias}
-N -690 -60 -690 -50 {lab=GND}
-N -50 60 -50 80 {lab=clk_samp}
-N 950 -80 1000 -80 {lab=Op}
-N 950 -60 1000 -60 {lab=Om}
-N -30 -130 90 -130 {lab=#net2}
-N 350 -230 350 -190 {lab=vdd}
-N 350 -230 420 -230 {lab=vdd}
-N 350 -250 350 -230 {lab=vdd}
-N 420 -370 420 -230 {lab=vdd}
-N 320 -250 320 -190 {lab=#net3}
-N 290 -250 290 -190 {lab=#net4}
-N 260 -250 260 -190 {lab=#net5}
-N 230 -250 230 -190 {lab=#net6}
-N 200 -250 200 -190 {lab=#net7}
-N 170 -250 170 -190 {lab=#net8}
-N 140 -250 140 -190 {lab=#net9}
-N 140 50 140 110 {lab=#net10}
-N 170 50 170 110 {lab=#net11}
-N 200 50 200 110 {lab=#net12}
-N 230 50 230 110 {lab=#net13}
-N 260 50 260 110 {lab=#net14}
-N 290 50 290 110 {lab=#net15}
-N 320 50 320 110 {lab=#net16}
-N 350 80 350 110 {lab=vdd}
-N 350 80 420 80 {lab=vdd}
-N 350 50 350 80 {lab=vdd}
-N 420 80 420 230 {lab=vdd}
-N 410 -130 670 -130 {lab=CDAC_v+}
-N 410 -10 670 -10 {lab=CDAC_v-}
-N -650 -140 -650 -120 {lab=clk_samp}
-N -650 -80 -650 -50 {lab=GND}
-N -650 120 -650 140 {lab=dac_clk}
-N -650 180 -650 210 {lab=GND}
-N -690 245 -690 275 {lab=vin_pos}
-N -690 335 -690 345 {lab=GND}
-N -690 200 -690 210 {lab=GND}
-N -690 120 -690 140 {lab=vin_neg}
-N -275 230 55 230 {
-lab=B1}
-N -275 250 55 250 {lab=B2}
-N -275 270 55 270 {lab=B3}
-N -275 290 55 290 {lab=B4}
-N -275 310 55 310 {lab=B5}
-N -275 330 55 330 {lab=B6}
-N -275 350 55 350 {lab=B_MSB}
-N -275 370 55 370 {lab=BN1}
-N -275 390 55 390 {lab=BN2}
-N -275 410 55 410 {lab=BN3}
-N -275 430 55 430 {lab=BN4}
-N -275 450 55 450 {lab=BN5}
-N -275 470 55 470 {lab=BN6}
-N -275 490 55 490 {lab=BN_MSB}
-N -275 510 55 510 {lab=D7}
-N -275 530 55 530 {lab=D6}
-N -275 550 55 550 {lab=D5}
-N -275 570 55 570 {lab=D4}
-N -275 590 55 590 {lab=D3}
-N -275 610 55 610 {lab=D2}
-N -275 630 55 630 {lab=D1}
-N -275 650 55 650 {lab=D0}
-N 610 -390 630 -390 {lab=Op}
-N 610 -330 630 -330 {lab=Om}
-N 720 -470 720 -440 {lab=vdd}
-N 720 -280 720 -260 {lab=GND}
-N 870 -360 880 -360 {lab=clk_algo}
-N 870 -360 870 -340 {lab=clk_algo}
-N 860 -360 870 -360 {lab=clk_algo}
-N 870 -280 870 -260 {lab=GND}
-N 720 -260 870 -260 {lab=GND}
-N -700 400 -670 400 {lab=clk_algo}
-N -610 400 -550 400 {lab=#net17}
-N -700 420 -670 420 {lab=Op}
-N -700 440 -670 440 {lab=vdd}
-N -700 460 -670 460 {lab=Om}
-N -700 480 -670 480 {lab=clk_samp}
-N -610 420 -550 420 {lab=#net18}
-N -610 440 -550 440 {lab=#net19}
-N -610 460 -550 460 {lab=#net20}
-N -610 480 -550 480 {lab=#net21}
-N -390 650 -330 650 {lab=#net22}
-N -390 630 -330 630 {lab=#net23}
-N -390 610 -330 610 {lab=#net24}
-N -390 590 -330 590 {lab=#net25}
-N -390 570 -330 570 {lab=#net26}
-N -390 550 -330 550 {lab=#net27}
-N -390 530 -330 530 {lab=#net28}
-N -390 510 -330 510 {lab=#net29}
-N -390 490 -330 490 {lab=#net30}
-N -390 470 -330 470 {lab=#net31}
-N -390 450 -330 450 {lab=#net32}
-N -390 430 -330 430 {lab=#net33}
-N -390 410 -330 410 {lab=#net34}
-N -390 390 -330 390 {lab=#net35}
-N -390 370 -330 370 {lab=#net36}
-N -390 350 -330 350 {lab=#net37}
-N -390 330 -330 330 {lab=#net38}
-N -390 310 -330 310 {lab=#net39}
-N -390 290 -330 290 {lab=#net40}
-N -390 270 -330 270 {lab=#net41}
-N -390 250 -330 250 {lab=#net42}
-N -390 230 -330 230 {lab=#net43}
-C {devices/code_shown.sym} -745 -610 0 0 {name=NGSPICE only_toplevel=true 
+node=clk}
+B 2 580 -645 1380 -245 {flags=graph
+y1=0.5937763
+y2=0.62614953
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=6.7671656e-07
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+x2=9.6174965e-07
+
+
+color=4
+node=vinp}
+B 2 1410 -1015 2210 -615 {flags=graph
+y1=-1.6758934
+y2=1.7650846
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=6.7671656e-07
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+x2=9.6174965e-07
+
+
+color=4
+node=vout}
+B 2 1410 -595 2210 -195 {flags=graph
+y1=-0.7953986
+y2=1.8309941
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+color=4
+node=outp
+x2=9.6174965e-07
+x1=6.7671656e-07
+hcursor1_y=0.11313234
+hcursor2_y=1.0706523}
+B 2 1410 -185 2210 215 {flags=graph
+y1=-0.17868922
+y2=1.1925281
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=6.7671656e-07
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+x2=9.6174965e-07
+
+
+color=4
+node=outm}
+N 20 30 20 50 {
+lab=vbias}
+N -50 30 -50 50 {
+lab=vdd}
+N -50 110 -50 130 {
+lab=GND}
+N -10 130 20 130 {
+lab=GND}
+N 140 30 140 50 {
+lab=clk}
+N 140 110 140 140 {
+lab=GND}
+N -10 130 -10 140 {
+lab=GND}
+N 140 140 350 140 {
+lab=GND}
+N 350 110 350 140 {
+lab=GND}
+N 350 30 350 50 {
+lab=vinp}
+N 620 -10 680 -10 {
+lab=vbias}
+N 760 90 760 120 {
+lab=GND}
+N 810 70 810 100 {
+lab=clk}
+N 760 -140 760 -110 {
+lab=vdd}
+N 960 0 1060 0 {
+lab=outm}
+N 960 -20 1060 -20 {
+lab=outp}
+N 640 50 680 50 {
+lab=vbias}
+N 640 -70 680 -70 {
+lab=vinp}
+N -50 130 -10 130 {
+lab=GND}
+N 20 110 20 130 {
+lab=GND}
+N 620 -70 640 -70 {
+lab=vinp}
+N 640 50 640 70 {
+lab=vbias}
+N 620 50 640 50 {
+lab=vbias}
+N 640 130 640 150 {
+lab=GND}
+N 1020 60 1020 70 {
+lab=GND}
+N 1020 -90 1020 -80 {
+lab=GND}
+N 640 -90 640 -70 {
+lab=vinp}
+N 640 -170 640 -150 {
+lab=GND}
+C {devices/code_shown.sym} -745 -470 0 0 {name=MODEL only_toplevel=false
+format="tcleval( @value )"
+value="
+.lib cornerMOSlv.lib mos_tt
+"}
+C {devices/code_shown.sym} -765 -970 0 0 {name=NGSPICE only_toplevel=false 
 value="
 .param temp=27
-.param T = 1u
-.param T_half = T/2
-.param T_algo = T/16
-.param T_algo_delay = T/10
-.param T_algo_PW = T/32
-.param DAC_delay = 0.99*T
-.param DAC_PW = T/20
-.param comparator_delay = 0.328*T
+.param clock = 100e6       ; 100 MHz clock
+.param period = \{1/clock\}
+.param num_cycles = 100
+.param tr = \{num_cycles * period\}
 
 .control
-tran 1u 320u 
-let vin_diff = v(Vin_pos) - v(Vin_neg)
-let comp_diff = v(op)- v(om)
-set wr_singlescale
-set wr_vecnames
-wrdata bit_data.txt D0 D1 D2 D3 D4 D5 D6 D7 vin_diff dac_clk
-write SAR_ADC_tb.raw
+save all
+* Operating point simulation
+op
+write comparator_tb.raw
+set appendwrite
+
+* Transient analysis
+.options meas_step_max=1e-10
+tran 500p 1u
+let vindiff = v(vinp) - v(vbias)
+let clk = v(clk)
+let vout = v(outp) - v(outm)
+
+meas TRAN rise_time TRIG v(outp) VAL=0.12  TD=9n RISE=4 TARG v(outp) VAL=1.08 TD=9n RISE=4
+meas TRAN fall_time TRIG v(outp) VAL=1.08  TD=9n RISE=4 TARG v(outp) VAL=0.12 TD=9n RISE=4
+noise v(outp) V2 dec 100 1 1G
+write comparator_tb.raw
 .endc
 "}
-C {devices/launcher.sym} 1122.5 510 0 0 {name=h1
-descr="load waves Ctrl + left click" 
-tclcommand="xschem raw_read $netlist_dir/SAR_ADC_tb.raw tran"
-}
-C {devices/lab_pin.sym} -650 -140 2 0 {name=p10 sig_type=std_logic lab=clk_samp}
-C {devices/lab_pin.sym} -695 480 2 1 {name=p2 sig_type=std_logic lab=clk_samp}
-C {devices/lab_pin.sym} 420 -370 2 0 {name=p12 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} -695 420 2 1 {name=p3 sig_type=std_logic lab=Op}
-C {devices/lab_pin.sym} -695 440 2 1 {name=p13 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} -695 460 2 1 {name=p14 sig_type=std_logic lab=Om}
-C {devices/lab_pin.sym} 1000 -80 2 0 {name=p36 sig_type=std_logic lab=Op}
-C {devices/lab_pin.sym} 1000 -60 2 0 {name=p37 sig_type=std_logic lab=Om}
-C {devices/lab_pin.sym} 620 -70 2 1 {name=p5 sig_type=std_logic lab=bias}
-C {gnd.sym} 480 -390 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 420 230 0 1 {name=p38 sig_type=std_logic lab=vdd}
-C {gnd.sym} 480 250 2 1 {name=l2 lab=GND}
-C {devices/lab_pin.sym} 150 -400 1 0 {name=p40 sig_type=std_logic lab=B_MSB}
-C {devices/lab_pin.sym} 220 -400 1 0 {name=p41 sig_type=std_logic lab=B5}
-C {devices/lab_pin.sym} 310 -400 1 0 {name=p42 sig_type=std_logic lab=B2}
-C {devices/lab_pin.sym} 280 -400 1 0 {name=p43 sig_type=std_logic lab=B3}
-C {devices/lab_pin.sym} 250 -400 1 0 {name=p44 sig_type=std_logic lab=B4}
-C {devices/lab_pin.sym} 340 -400 1 0 {name=p46 sig_type=std_logic lab=B1}
-C {devices/lab_pin.sym} 190 -400 1 0 {name=p45 sig_type=std_logic lab=B6}
-C {devices/lab_pin.sym} 150 250 1 1 {name=p48 sig_type=std_logic lab=BN_MSB}
-C {devices/lab_pin.sym} 220 250 1 1 {name=p49 sig_type=std_logic lab=BN5}
-C {devices/lab_pin.sym} 310 250 1 1 {name=p50 sig_type=std_logic lab=BN2}
-C {devices/lab_pin.sym} 280 250 1 1 {name=p51 sig_type=std_logic lab=BN3}
-C {devices/lab_pin.sym} 250 250 1 1 {name=p52 sig_type=std_logic lab=BN4}
-C {devices/lab_pin.sym} 340 250 1 1 {name=p53 sig_type=std_logic lab=BN1}
-C {devices/lab_pin.sym} 190 250 1 1 {name=p54 sig_type=std_logic lab=BN6}
-C {devices/lab_pin.sym} 55 330 0 1 {name=p55 sig_type=std_logic lab=B6}
-C {devices/lab_pin.sym} 55 350 0 1 {name=p56 sig_type=std_logic lab=B_MSB}
-C {devices/lab_pin.sym} 55 290 0 1 {name=p57 sig_type=std_logic lab=B4}
-C {devices/lab_pin.sym} 55 230 0 1 {name=p58 sig_type=std_logic lab=B1}
-C {devices/lab_pin.sym} 55 250 0 1 {name=p59 sig_type=std_logic lab=B2}
-C {devices/lab_pin.sym} 55 270 0 1 {name=p60 sig_type=std_logic lab=B3}
-C {devices/lab_pin.sym} 55 310 0 1 {name=p62 sig_type=std_logic lab=B5}
-C {devices/lab_pin.sym} 55 490 0 1 {name=p1 sig_type=std_logic lab=BN_MSB}
-C {devices/lab_pin.sym} 55 450 0 1 {name=p6 sig_type=std_logic lab=BN5}
-C {devices/lab_pin.sym} 55 390 0 1 {name=p7 sig_type=std_logic lab=BN2}
-C {devices/lab_pin.sym} 55 410 0 1 {name=p15 sig_type=std_logic lab=BN3}
-C {devices/lab_pin.sym} 55 430 0 1 {name=p16 sig_type=std_logic lab=BN4}
-C {devices/lab_pin.sym} 55 370 0 1 {name=p18 sig_type=std_logic lab=BN1}
-C {devices/lab_pin.sym} 55 470 0 1 {name=p19 sig_type=std_logic lab=BN6}
-C {gnd.sym} -170 -50 0 1 {name=l3 lab=GND}
-C {gnd.sym} -170 70 0 1 {name=l4 lab=GND}
-C {devices/lab_pin.sym} -110 -40 2 0 {name=p20 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} -650 -10 2 0 {name=p24 sig_type=std_logic lab=clk_comp}
-C {devices/gnd.sym} -650 80 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} -650 40 0 0 {name=V1 value="dc 0 ac 0 PULSE(0 1.2 comparator_delay 10p 10p T_algo_PW T_algo)"}
-C {devices/vsource.sym} -690 40 0 1 {name=V6 value=1.2}
-C {devices/gnd.sym} -690 80 0 1 {name=l11 lab=GND
-value=1.2}
-C {devices/lab_pin.sym} -690 -10 2 1 {name=p26 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} 750 -210 2 0 {name=p65 sig_type=std_logic lab=vdd}
-C {gnd.sym} 750 70 0 1 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 800 40 2 0 {name=p66 sig_type=std_logic lab=clk_comp}
-C {iopin.sym} 55 530 0 0 {name=p67 lab=D6}
-C {iopin.sym} 55 550 0 0 {name=p28 lab=D5}
-C {iopin.sym} 55 570 0 0 {name=p29 lab=D4}
-C {iopin.sym} 55 590 0 0 {name=p30 lab=D3}
-C {iopin.sym} 55 610 0 0 {name=p31 lab=D2}
-C {iopin.sym} 55 630 0 0 {name=p32 lab=D1}
-C {iopin.sym} 55 650 0 0 {name=p33 lab=D0}
-C {devices/vsource.sym} -690 -90 0 1 {name=V7 value=0.6}
-C {devices/gnd.sym} -690 -50 0 1 {name=l13 lab=GND
-value=1.2}
-C {devices/lab_pin.sym} -690 -140 2 1 {name=p68 sig_type=std_logic lab=bias}
-C {devices/lab_pin.sym} -50 -40 2 0 {name=p22 sig_type=std_logic lab=clk_samp}
-C {devices/lab_pin.sym} -110 80 2 0 {name=p21 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} -50 80 2 0 {name=p23 sig_type=std_logic lab=clk_samp}
-C {devices/lab_pin.sym} 450 -130 3 1 {name=p74 sig_type=std_logic lab=CDAC_v+}
-C {devices/lab_pin.sym} 450 -10 1 1 {name=p73 sig_type=std_logic lab=CDAC_v-}
-C {devices/lab_pin.sym} -250 -130 2 1 {name=p25 sig_type=std_logic lab=vin_pos}
-C {devices/lab_pin.sym} -250 -10 2 1 {name=p69 sig_type=std_logic lab=vin_neg}
-C {devices/lab_pin.sym} -690 245 2 1 {name=p75 sig_type=std_logic lab=vin_pos}
-C {iopin.sym} 55 510 0 0 {name=p4 lab=D7}
-C {devices/gnd.sym} -650 -50 0 0 {name=l9 lab=GND}
-C {devices/gnd.sym} -650 210 0 0 {name=l18 lab=GND}
-C {devices/vsource.sym} -650 170 0 0 {name=V12 value="dc 0 ac 0 PULSE(0 1.2 DAC_delay 10p 10p DAC_PW T)"}
-C {iopin.sym} -650 120 0 0 {name=p17 lab=dac_clk
-}
-C {devices/gnd.sym} -690 345 0 1 {name=l19 lab=GND}
-C {devices/gnd.sym} -690 210 0 1 {name=l20 lab=GND}
-C {devices/vsource.sym} -690 305 0 1 {name=V11 value="dc 0 ac 0 SIN(0.6 0.3 12.7k 0 0 0)"}
-C {devices/vsource.sym} -690 170 0 1 {name=V4 value="dc 0 ac 0 SIN(0.6 0.3 12.7k 0 0 180)"}
-C {devices/lab_pin.sym} -700 400 2 1 {name=p27 sig_type=std_logic lab=clk_algo}
-C {devices/lab_pin.sym} -690 120 2 1 {name=p8 sig_type=std_logic lab=vin_neg}
-C {devices/vsource.sym} -650 -90 0 0 {name=V5 value="dc 0 ac 0 PULSE(0 1.2 0 10p 10p T_half T)"}
-C {devices/lab_pin.sym} 610 -390 2 1 {name=p9 sig_type=std_logic lab=Op}
-C {devices/lab_pin.sym} 610 -330 2 1 {name=p11 sig_type=std_logic lab=Om}
-C {devices/lab_pin.sym} 720 -470 2 1 {name=p34 sig_type=std_logic lab=vdd}
-C {devices/gnd.sym} 720 -260 0 1 {name=l7 lab=GND
-value=1.2}
-C {capa.sym} 870 -310 0 0 {name=C3
+C {vsource.sym} -50 80 0 0 {name=V3 value="DC 1.2"}
+C {vsource.sym} 20 80 0 0 {name=V4 value="DC 0.6"}
+C {gnd.sym} 250 140 0 0 {name=l1 lab=GND}
+C {lab_pin.sym} 20 30 2 0 {name=p3 sig_type=std_logic lab=vbias}
+C {lab_pin.sym} -50 30 2 0 {name=p4 sig_type=std_logic lab=vdd}
+C {vsource.sym} 140 80 0 0 {name=V1 value="PULSE(0 1.2 0 0 0 5N \{period\})"}
+C {lab_pin.sym} 140 30 2 0 {name=p1 sig_type=std_logic lab=clk}
+C {gnd.sym} -10 140 0 0 {name=l2 lab=GND}
+C {vsource.sym} 350 80 0 0 {name=V2 value="PULSE(595e-3 605e-3 0 tr 1S 1S)"}
+C {lab_pin.sym} 350 30 2 0 {name=p2 sig_type=std_logic lab=vinp}
+C {lab_pin.sym} 620 -70 2 1 {name=p5 sig_type=std_logic lab=vinp}
+C {lab_pin.sym} 760 -140 2 0 {name=p6 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 620 -10 2 1 {name=p7 sig_type=std_logic lab=vbias}
+C {lab_pin.sym} 620 50 2 1 {name=p8 sig_type=std_logic lab=vbias}
+C {lab_pin.sym} 810 100 2 0 {name=p9 sig_type=std_logic lab=clk}
+C {gnd.sym} 760 120 0 0 {name=l3 lab=GND}
+C {lab_pin.sym} 1060 -20 2 0 {name=p10 sig_type=std_logic lab=outp}
+C {lab_pin.sym} 1060 0 2 0 {name=p11 sig_type=std_logic lab=outm}
+C {capa.sym} 640 100 0 0 {name=C1
 m=1
-value=20f
+value=6.4p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_pin.sym} 880 -360 2 0 {name=p35 sig_type=std_logic lab=clk_algo}
-C {C-DAC.sym} 240 -130 2 1 {name=x2}
-C {adc_bridge1.sym} -640 400 0 0 {name=A1
-adc=adc1
-adc_bridge_model=adc_bridge
-in_low=0.2
-in_high=0.8
+C {gnd.sym} 640 150 0 0 {name=l4 lab=GND}
+C {gnd.sym} 640 -170 2 0 {name=l5 lab=GND}
+C {capa.sym} 640 -120 2 0 {name=C2
+m=1
+value=6.4p
+footprint=1206
+device="ceramic capacitor"}
+C {capa.sym} 1020 -50 2 0 {name=C4
+m=1
+value=50f
+footprint=1206
+device="ceramic capacitor"}
+C {capa.sym} 1020 30 0 0 {name=C3
+m=1
+value=50f
+footprint=1206
+device="ceramic capacitor"}
+C {gnd.sym} 1020 70 0 0 {name=l6 lab=GND}
+C {gnd.sym} 1020 -90 2 0 {name=l7 lab=GND}
+C {devices/launcher.sym} 350 -600 0 0 {name=h1
+descr="OP annotate" 
+tclcommand="xschem annotate_op"
 }
-C {adc_bridge1.sym} -640 420 0 0 {name=A2
-adc=adc1
-adc_bridge_model=adc_bridge
-in_low=0.2
-in_high=0.8
+C {launcher.sym} 350 -640 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/comparator_tb.raw tran"
 }
-C {adc_bridge1.sym} -640 440 0 0 {name=A3
-adc=adc1
-adc_bridge_model=adc_bridge
-in_low=0.2
-in_high=0.8
-}
-C {adc_bridge1.sym} -640 460 0 0 {name=A4
-adc=adc1
-adc_bridge_model=adc_bridge
-in_low=0.2
-in_high=0.8
-}
-C {adc_bridge1.sym} -640 480 0 0 {name=A5
-adc=adc1
-adc_bridge_model=adc_bridge
-in_low=0.2
-in_high=0.8
-}
-C {dac_bridge1.sym} -300 230 0 0 {name=A6
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 250 0 0 {name=A7
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 270 0 0 {name=A8
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 290 0 0 {name=A9
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 310 0 0 {name=A10
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 330 0 0 {name=A11
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 350 0 0 {name=A12
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 370 0 0 {name=A13
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 390 0 0 {name=A14
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 410 0 0 {name=A15
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 430 0 0 {name=A16
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 450 0 0 {name=A17
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 470 0 0 {name=A18
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 490 0 0 {name=A19
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0.2
-out_high=0.8
-}
-C {dac_bridge1.sym} -300 510 0 0 {name=A20
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0
-out_high=1.2
-}
-C {dac_bridge1.sym} -300 530 0 0 {name=A21
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0
-out_high=1.2
-}
-C {dac_bridge1.sym} -300 550 0 0 {name=A22
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0
-out_high=1.2
-}
-C {dac_bridge1.sym} -300 570 0 0 {name=A23
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0
-out_high=1.2
-}
-C {dac_bridge1.sym} -300 590 0 0 {name=A24
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0
-out_high=1.2
-}
-C {dac_bridge1.sym} -300 610 0 0 {name=A25
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0
-out_high=1.2
-}
-C {dac_bridge1.sym} -300 630 0 0 {name=A26
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0
-out_high=1.2
-}
-C {dac_bridge1.sym} -300 650 0 0 {name=A27
-dac=dac1
-dac_bridge_model=dac_bridge
-out_low=0
-out_high=1.2
-}
-C {C-DAC.sym} 240 -10 0 0 {name=x9}
-C {devices/code_shown.sym} -755 -735 0 0 {name=MODEL1 only_toplevel=true
-format="tcleval( @value )"
-value=".lib cornerMOSlv.lib mos_tt
-.lib $::SG13G2_MODELS/cornerCAP.lib cap_typ
+C {launcher.sym} 350 -565 0 0 {name=h2
+descr=SimulateNGSPICE
+tclcommand="
+# Setup the default simulation commands if not already set up
+# for example by already launched simulations.
+set_sim_defaults
+puts $sim(spice,1,cmd) 
+
+# Change the Xyce command. In the spice category there are currently
+# 5 commands (0, 1, 2, 3, 4). Command 3 is the Xyce batch
+# you can get the number by querying $sim(spice,n)
+set sim(spice,1,cmd) \{ngspice  \\"$N\\" -a\}
+
+# change the simulator to be used (Xyce)
+set sim(spice,default) 0
+
+# Create FET and BIP .save file
+mkdir -p $netlist_dir
+write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+
+# run netlist and simulation
+xschem netlist
+simulate
 "}
-C {sar_logic.sym} -470 440 0 0 {name=adut
-dut=dut
-d_cosim_model= d_cosim
-model=./sar_logic.so}
-C {./switch_array.sym} 250 -310 2 1 {name=x3}
-C {./switch_array.sym} 250 170 0 0 {name=x4}
-C {/home/tien/SAR_ADC_8BIT_IHP/xschem/xschem_pex_symbol/bootstrap_switch.sym} -130 -10 0 0 {name=x1
-schematic=bootstrap_switch_pex
-spice_sym_def=
-"
-.subckt bootstrap_switch_pex vdd vi vo clk gnd
-X0 gnd.t12 a_1896_n484# a_1378_n288.t0 gnd.t11 sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
-X1 vi.t0 a_777_n1200.t2 vo.t0 gnd.t4 sg13_lv_nmos ad=0.85p pd=5.68u as=0.85p ps=5.68u w=2.5u l=0.13u
-X2 gnd.t15 a_1594_n1108.t3 a_2897_n1624.t0 gnd.t14 sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
-X3 a_1044_n1116.t0 a_1896_n484# vdd.t6 vdd.t4 sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
-X4 vdd.t3 clk.t0 a_1594_n1108.t2 vdd.t1 sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
-X5 vdd.t8 a_2905_n460.t1 w_1241_n212.t2 gnd.t17 sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
-X6 w_1241_n212.t3 a_1107_n1758.t0 cap_cmim l=6.99u w=9.39u
-X7 a_2217_n1270.t0 a_1594_n1108.t4 gnd.t3 gnd.t2 sg13_lv_nmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
-X8 a_777_n1200.t0 vdd.t9 a_2217_n1270.t1 gnd.t6 sg13_lv_nmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
-X9 gnd.t8 clk.t0 a_1594_n1108.t1 gnd.t7 sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
-X10 vdd.t5 a_1896_n484# a_1378_n288.t1 vdd.t4 sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
-X11 vdd.t2 a_1594_n1108.t3 a_2897_n1624.t1 vdd.t1 sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
-X12 a_2905_n460.t2 a_1594_n1108.t0 cap_cmim l=6.99u w=4.665u
-X13 gnd.t1 a_1594_n1108.t5 a_1426_n1756.t0 gnd.t0 sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
-X14 a_1107_n1758.t2 a_1044_n1116.t2 vi.t1 gnd.t16 sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
-X15 a_3245_n350.t1 a_2897_n1624.t2 cap_cmim l=6.99u w=4.665u
-X16 w_1241_n212.t1 a_1378_n288.t2 a_777_n1200.t1 w_1241_n212.t0 sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
-X17 a_1107_n1758.t1 a_1594_n1108.t6 gnd.t10 gnd.t9 sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.4u
-X18 a_3245_n350.t0 a_2905_n460.t3 vdd.t0 gnd.t5 sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
-X19 vdd.t7 a_3245_n350.t2 a_2905_n460.t0 gnd.t13 sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
-X20 a_1426_n1756.t1 vdd.t10 a_1044_n1116.t1 gnd.t0 sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
-C0 a_1896_n484# vdd 0.22188f
-C1 vdd vi 0.08373f
-C2 vdd clk 0.16174f
-C3 vo vi 0.61887f
-C4 vo vdd 0.04889f
-R0 a_1378_n288.t0 a_1378_n288.n0 17.2852
-R1 a_1378_n288.n0 a_1378_n288.t2 16.1733
-R2 a_1378_n288.n0 a_1378_n288.t1 9.11151
-R3 gnd.n47 gnd.t11 6064.32
-R4 gnd.t6 gnd.n18 5073.33
-R5 gnd.n58 gnd.n57 4035.37
-R6 gnd.n46 gnd.n45 2743.13
-R7 gnd.n47 gnd.n46 2249.79
-R8 gnd.n45 gnd.t6 1906.67
-R9 gnd.n58 gnd.n18 1486.67
-R10 gnd.n52 gnd.n51 1186.91
-R11 gnd.n55 gnd.n54 447.637
-R12 gnd.n63 gnd.n62 302.812
-R13 gnd.n59 gnd.n58 181.311
-R14 gnd.n63 gnd.t11 123.954
-R15 gnd.n52 gnd.t7 82.2655
-R16 gnd.n55 gnd.t14 82.2655
-R17 gnd.n48 gnd.n47 68.6012
-R18 gnd.t17 gnd.n48 65.5295
-R19 gnd.n50 gnd.t5 64.9886
-R20 gnd.t9 gnd.n59 57.7882
-R21 gnd.t13 gnd.n50 49.6349
-R22 gnd.t2 gnd.n61 49.0963
-R23 gnd.n62 gnd.t2 47.2961
-R24 gnd.t16 gnd.t4 40.5082
-R25 gnd.n61 gnd.t0 38.6369
-R26 gnd.n51 gnd.t13 35.3194
-R27 gnd.n60 gnd.t9 31.9293
-R28 gnd.n5 gnd.t3 30.9467
-R29 gnd.t5 gnd.n49 20.985
-R30 gnd.n22 gnd.t8 17.4482
-R31 gnd.n64 gnd.t12 17.3778
-R32 gnd.n20 gnd.t15 17.3608
-R33 gnd.n53 gnd.n52 17.0005
-R34 gnd.n56 gnd.n21 17.0005
-R35 gnd.n56 gnd.n55 17.0005
-R36 gnd.n33 gnd.n19 12.7958
-R37 gnd.t4 gnd.n60 12.4856
-R38 gnd.n49 gnd.t17 11.7634
-R39 gnd.n54 gnd.t7 11.7395
-R40 gnd.n57 gnd.t14 11.7395
-R41 gnd.n64 gnd.n63 11.3338
-R42 gnd.n8 gnd.n7 9.03042
-R43 gnd.n74 gnd.n73 9.03042
-R44 gnd.n36 gnd.n35 9.03042
-R45 gnd.n40 gnd.n39 9.03042
-R46 gnd.n72 gnd.n71 9.01861
-R47 gnd.n7 gnd.n6 9.0186
-R48 gnd.n35 gnd.n34 9.0186
-R49 gnd.n27 gnd.n23 9.01787
-R50 gnd.n4 gnd.n1 9.01787
-R51 gnd.n68 gnd.n10 9.01787
-R52 gnd.n32 gnd.n29 9.01787
-R53 gnd.n28 gnd.n27 9.01787
-R54 gnd.n5 gnd.n4 9.0005
-R55 gnd.n3 gnd.n2 9.0005
-R56 gnd.n12 gnd.n11 9.0005
-R57 gnd.n73 gnd.n72 9.0005
-R58 gnd.n13 gnd.n12 9.0005
-R59 gnd.n69 gnd.n68 9.0005
-R60 gnd.n70 gnd.n69 9.0005
-R61 gnd.n31 gnd.n30 9.0005
-R62 gnd.n33 gnd.n32 9.0005
-R63 gnd.n43 gnd.n42 9.0005
-R64 gnd.n25 gnd.n24 9.0005
-R65 gnd.n42 gnd.n41 9.0005
-R66 gnd.n26 gnd.n25 9.0005
-R67 gnd.n41 gnd.n40 9.0005
-R68 gnd.n56 gnd.n19 8.52716
-R69 gnd.n45 gnd.n17 8.501
-R70 gnd.n18 gnd.n16 8.5005
-R71 gnd.n48 gnd.n44 8.5005
-R72 gnd.n14 gnd.t10 5.65073
-R73 gnd.n53 gnd.n22 5.63152
-R74 gnd.n43 gnd.n23 4.5471
-R75 gnd.n71 gnd.n70 4.54536
-R76 gnd.n6 gnd.n5 4.53473
-R77 gnd.n34 gnd.n33 4.53473
-R78 gnd.n8 gnd.n1 4.50628
-R79 gnd.n74 gnd.n10 4.50628
-R80 gnd.n36 gnd.n29 4.50628
-R81 gnd.n39 gnd.n28 4.50628
-R82 gnd.n9 gnd.n8 3.3005
-R83 gnd.n39 gnd.n38 3.3005
-R84 gnd.n37 gnd.n36 3.3005
-R85 gnd.n75 gnd.n74 3.3005
-R86 gnd.n44 gnd.n43 2.86049
-R87 gnd.n60 gnd.n16 2.66376
-R88 gnd.n65 gnd.n17 2.64957
-R89 gnd.n57 gnd.n56 2.63175
-R90 gnd.n54 gnd.n53 2.63175
-R91 gnd.n14 gnd.t1 2.28269
-R92 gnd.n70 gnd.n67 2.02138
-R93 gnd.t0 gnd.t16 1.62081
-R94 gnd.n67 gnd.n66 1.15699
-R95 gnd.n67 gnd.n15 0.961754
-R96 gnd.n66 gnd.n65 0.859819
-R97 gnd.n15 gnd.n14 0.745431
-R98 gnd.n22 gnd.n21 0.712801
-R99 gnd.n38 gnd.n37 0.52124
-R100 gnd.n61 gnd.n16 0.515338
-R101 gnd.n16 gnd.n15 0.431601
-R102 gnd gnd.n0 0.270611
-R103 gnd.n66 gnd.n16 0.199062
-R104 gnd.n65 gnd.n64 0.176594
-R105 gnd gnd.n76 0.168643
-R106 gnd.n76 gnd.n75 0.108906
-R107 gnd.n38 gnd.n0 0.0950175
-R108 gnd.n20 gnd.n19 0.0773493
-R109 gnd gnd.n0 0.0583436
-R110 gnd.n75 gnd.n9 0.045325
-R111 gnd.n21 gnd.n20 0.0396781
-R112 gnd.n7 gnd.n2 0.0357
-R113 gnd.n73 gnd.n11 0.0357
-R114 gnd.n72 gnd.n12 0.0357
-R115 gnd.n35 gnd.n30 0.0357
-R116 gnd.n42 gnd.n24 0.0357
-R117 gnd.n41 gnd.n25 0.0357
-R118 gnd.n40 gnd.n26 0.0357
-R119 gnd.n4 gnd.n3 0.0342333
-R120 gnd.n68 gnd.n12 0.0342333
-R121 gnd.n69 gnd.n13 0.0342333
-R122 gnd.n32 gnd.n31 0.0342333
-R123 gnd.n27 gnd.n25 0.0342333
-R124 gnd.n76 gnd 0.0319332
-R125 gnd.n37 gnd.n9 0.0237925
-R126 gnd.n6 gnd.n3 0.0185314
-R127 gnd.n34 gnd.n31 0.0185314
-R128 gnd.n71 gnd.n13 0.0185229
-R129 gnd.n2 gnd.n1 0.0178037
-R130 gnd.n11 gnd.n10 0.0178037
-R131 gnd.n30 gnd.n29 0.0178037
-R132 gnd.n28 gnd.n26 0.0178037
-R133 gnd.n24 gnd.n23 0.0177958
-R134 gnd.n50 gnd.n44 0.00944882
-R135 gnd.n62 gnd.n16 0.00513002
-R136 gnd.n59 gnd.n16 0.00247443
-R137 gnd.n49 gnd.n44 0.00215079
-R138 gnd.n51 gnd.n44 0.00129651
-R139 gnd.n17 gnd.n16 0.00124999
-R140 gnd.n46 gnd.n44 0.00100002
-R141 a_777_n1200.t0 a_777_n1200.n0 30.6412
-R142 a_777_n1200.n0 a_777_n1200.t1 28.4911
-R143 a_777_n1200.n0 a_777_n1200.t2 24.8453
-R144 vo vo.t0 8.55687
-R145 vi vi.n2 8.03514
-R146 vi.n1 vi.t0 5.67075
-R147 vi.n1 vi.t1 5.66684
-R148 vi.t0 vi.n0 4.24477
-R149 vi.t1 vi.n0 3.42449
-R150 vi.n2 vi.n1 0.059708
-R151 vi.n2 vi.n0 0.042166
-R152 a_1594_n1108.n11 a_1594_n1108.n10 32.6771
-R153 a_1594_n1108.n7 a_1594_n1108.t1 17.2852
-R154 a_1594_n1108.n9 a_1594_n1108.t4 15.8888
-R155 a_1594_n1108.n9 a_1594_n1108.t6 15.8447
-R156 a_1594_n1108.n8 a_1594_n1108.t3 15.4458
-R157 a_1594_n1108.n10 a_1594_n1108.t5 15.0018
-R158 a_1594_n1108.n19 a_1594_n1108.n11 10.3793
-R159 a_1594_n1108.n11 a_1594_n1108.n8 10.3449
-R160 a_1594_n1108.n7 a_1594_n1108.t2 9.11151
-R161 a_1594_n1108.n18 a_1594_n1108.n12 9.0005
-R162 a_1594_n1108.n19 a_1594_n1108.n18 9.0005
-R163 a_1594_n1108.n4 a_1594_n1108.n3 9.0005
-R164 a_1594_n1108.n22 a_1594_n1108.n21 9.0005
-R165 a_1594_n1108.n14 a_1594_n1108.n6 4.52049
-R166 a_1594_n1108.n13 a_1594_n1108.n5 4.51458
-R167 a_1594_n1108.n23 a_1594_n1108.n1 4.50536
-R168 a_1594_n1108.n14 a_1594_n1108.n2 4.5005
-R169 a_1594_n1108.n25 a_1594_n1108.n24 4.5005
-R170 a_1594_n1108.n17 a_1594_n1108.n1 4.49517
-R171 a_1594_n1108.n26 a_1594_n1108.n0 4.49343
-R172 a_1594_n1108.n16 a_1594_n1108.n15 4.49343
-R173 a_1594_n1108.n20 a_1594_n1108.n19 4.4932
-R174 a_1594_n1108.n15 a_1594_n1108.n13 4.49154
-R175 a_1594_n1108.n19 a_1594_n1108.n6 4.49125
-R176 a_1594_n1108.n18 a_1594_n1108.n17 3.0005
-R177 a_1594_n1108.n24 a_1594_n1108.n2 3.0005
-R178 a_1594_n1108.t0 a_1594_n1108.n27 0.777833
-R179 a_1594_n1108.n10 a_1594_n1108.n9 0.59856
-R180 a_1594_n1108.n8 a_1594_n1108.n7 0.570828
-R181 a_1594_n1108.n27 a_1594_n1108.n26 0.106207
-R182 a_1594_n1108.n13 a_1594_n1108.n6 0.0402971
-R183 a_1594_n1108.n25 a_1594_n1108.n1 0.0239239
-R184 a_1594_n1108.n20 a_1594_n1108.n2 0.0166005
-R185 a_1594_n1108.n21 a_1594_n1108.n20 0.0166005
-R186 a_1594_n1108.n23 a_1594_n1108.n22 0.0166005
-R187 a_1594_n1108.n24 a_1594_n1108.n23 0.0166005
-R188 a_1594_n1108.n3 a_1594_n1108.n0 0.0161469
-R189 a_1594_n1108.n17 a_1594_n1108.n0 0.0161469
-R190 a_1594_n1108.n16 a_1594_n1108.n4 0.0161469
-R191 a_1594_n1108.n18 a_1594_n1108.n16 0.0161469
-R192 a_1594_n1108.t0 a_1594_n1108.n27 0.0129943
-R193 a_1594_n1108.n12 a_1594_n1108.n5 0.0126912
-R194 a_1594_n1108.n19 a_1594_n1108.n5 0.0126912
-R195 a_1594_n1108.n14 a_1594_n1108.n12 0.0118028
-R196 a_1594_n1108.n15 a_1594_n1108.n14 0.0115336
-R197 a_1594_n1108.n26 a_1594_n1108.n25 0.0115
-R198 a_1594_n1108.n21 a_1594_n1108.n4 0.000803448
-R199 a_1594_n1108.n22 a_1594_n1108.n3 0.000803448
-R200 a_2897_n1624.n22 a_2897_n1624.n21 31.0822
-R201 a_2897_n1624.t0 a_2897_n1624.n22 17.2852
-R202 a_2897_n1624.n22 a_2897_n1624.t1 9.11151
-R203 a_2897_n1624.n11 a_2897_n1624.n8 9.0005
-R204 a_2897_n1624.n5 a_2897_n1624.n3 9.0005
-R205 a_2897_n1624.n11 a_2897_n1624.n10 9.0005
-R206 a_2897_n1624.n9 a_2897_n1624.n3 9.0005
-R207 a_2897_n1624.n19 a_2897_n1624.n2 4.50722
-R208 a_2897_n1624.n15 a_2897_n1624.n14 4.50536
-R209 a_2897_n1624.n16 a_2897_n1624.n4 4.5005
-R210 a_2897_n1624.n19 a_2897_n1624.n18 4.5005
-R211 a_2897_n1624.n14 a_2897_n1624.n13 4.49517
-R212 a_2897_n1624.n20 a_2897_n1624.n1 4.4937
-R213 a_2897_n1624.n7 a_2897_n1624.n6 4.49343
-R214 a_2897_n1624.n21 a_2897_n1624.n0 4.4932
-R215 a_2897_n1624.n13 a_2897_n1624.n12 3.0005
-R216 a_2897_n1624.n17 a_2897_n1624.n16 3.0005
-R217 a_2897_n1624.n12 a_2897_n1624.n1 3.0005
-R218 a_2897_n1624.n18 a_2897_n1624.n17 3.0005
-R219 a_2897_n1624.n6 a_2897_n1624.t2 0.119227
-R220 a_2897_n1624.n17 a_2897_n1624.n3 0.0317552
-R221 a_2897_n1624.n12 a_2897_n1624.n11 0.0308448
-R222 a_2897_n1624.n20 a_2897_n1624.n19 0.0297377
-R223 a_2897_n1624.n14 a_2897_n1624.n4 0.0239239
-R224 a_2897_n1624.n15 a_2897_n1624.n5 0.0166005
-R225 a_2897_n1624.n16 a_2897_n1624.n15 0.0166005
-R226 a_2897_n1624.n18 a_2897_n1624.n0 0.0166005
-R227 a_2897_n1624.n9 a_2897_n1624.n0 0.0166005
-R228 a_2897_n1624.n10 a_2897_n1624.n2 0.0161469
-R229 a_2897_n1624.n2 a_2897_n1624.n1 0.0161469
-R230 a_2897_n1624.n8 a_2897_n1624.n7 0.0161469
-R231 a_2897_n1624.n13 a_2897_n1624.n7 0.0161469
-R232 a_2897_n1624.n21 a_2897_n1624.n20 0.0156093
-R233 a_2897_n1624.n6 a_2897_n1624.n4 0.0115
-R234 a_2897_n1624.n8 a_2897_n1624.n5 0.000803448
-R235 a_2897_n1624.n11 a_2897_n1624.n3 0.000803448
-R236 a_2897_n1624.n10 a_2897_n1624.n9 0.000803448
-R237 vdd.n22 vdd.t10 37.129
-R238 vdd.n21 vdd.t7 21.2951
-R239 vdd.n6 vdd.t6 17.5186
-R240 vdd.n2 vdd.n0 17.0005
-R241 vdd.t0 vdd.n15 17.0005
-R242 vdd.n17 vdd.t0 17.0005
-R243 vdd.n16 vdd.t0 17.0005
-R244 vdd.t8 vdd.n15 17.0005
-R245 vdd.n17 vdd.t8 17.0005
-R246 vdd.t8 vdd.n16 17.0005
-R247 vdd.n5 vdd.t9 15.4454
-R248 vdd.n13 vdd.n12 15.1399
-R249 vdd.n20 vdd.n19 12.5536
-R250 vdd.n1 vdd.t1 11.2968
-R251 vdd.n1 vdd.t3 9.01184
-R252 vdd.n19 vdd.n18 9.0005
-R253 vdd.n3 vdd.t2 8.91901
-R254 vdd.n9 vdd.t5 8.91901
-R255 vdd.n10 vdd.n9 8.60851
-R256 vdd.n12 vdd.n11 8.501
-R257 vdd.n4 vdd.n0 8.46974
-R258 vdd.n8 vdd.n7 8.46936
-R259 vdd.n11 vdd.t4 5.66842
-R260 vdd.t4 vdd.n10 5.66778
-R261 vdd.t1 vdd.n0 5.66717
-R262 vdd.n19 vdd.n14 4.648
-R263 vdd.n6 vdd.n5 3.95314
-R264 vdd.n22 vdd.n21 0.908402
-R265 vdd.n2 vdd.n1 0.717193
-R266 vdd.n5 vdd.n4 0.370276
-R267 vdd vdd.n22 0.23247
-R268 vdd vdd.n13 0.168921
-R269 vdd.n8 vdd.n6 0.164989
-R270 vdd.n4 vdd.n3 0.139431
-R271 vdd.n9 vdd.n8 0.116961
-R272 vdd.n3 vdd.n2 0.0531761
-R273 vdd.n20 vdd.n13 0.0498354
-R274 vdd.n18 vdd.n17 0.0452964
-R275 vdd.n21 vdd.n20 0.0287622
-R276 vdd.n16 vdd.n14 0.0274732
-R277 vdd.n17 vdd.n14 0.024195
-R278 vdd.n18 vdd.n15 0.00547738
-R279 vdd.n12 vdd.n6 0.00173596
-R280 vdd.n10 vdd.n7 0.00166667
-R281 vdd.n11 vdd.n7 0.00124999
-R282 a_1044_n1116.t0 a_1044_n1116.n0 57.304
-R283 a_1044_n1116.n0 a_1044_n1116.t2 15.0005
-R284 a_1044_n1116.n0 a_1044_n1116.t1 3.77826
-R285 clk clk.t0 39.2421
-R286 a_2905_n460.n20 a_2905_n460.n19 21.2719
-R287 a_2905_n460.n20 a_2905_n460.t1 15.858
-R288 a_2905_n460.n21 a_2905_n460.t3 15.0005
-R289 a_2905_n460.n13 a_2905_n460.n12 9.0005
-R290 a_2905_n460.n13 a_2905_n460.n7 9.0005
-R291 a_2905_n460.n15 a_2905_n460.n14 9.0005
-R292 a_2905_n460.n5 a_2905_n460.n3 9.0005
-R293 a_2905_n460.n6 a_2905_n460.n5 9.0005
-R294 a_2905_n460.t0 a_2905_n460.n21 6.95387
-R295 a_2905_n460.n18 a_2905_n460.n2 4.52049
-R296 a_2905_n460.n18 a_2905_n460.n17 4.5005
-R297 a_2905_n460.n9 a_2905_n460.n8 4.49515
-R298 a_2905_n460.n19 a_2905_n460.n0 4.49343
-R299 a_2905_n460.n16 a_2905_n460.n6 4.4932
-R300 a_2905_n460.n19 a_2905_n460.n1 4.49154
-R301 a_2905_n460.n6 a_2905_n460.n2 4.49125
-R302 a_2905_n460.n11 a_2905_n460.n10 3.03054
-R303 a_2905_n460.n17 a_2905_n460.n4 3.00885
-R304 a_2905_n460.n10 a_2905_n460.n9 3.0005
-R305 a_2905_n460.n12 a_2905_n460.n4 2.26296
-R306 a_2905_n460.n11 a_2905_n460.t2 2.24339
-R307 a_2905_n460.n2 a_2905_n460.n1 0.0402971
-R308 a_2905_n460.n13 a_2905_n460.n10 0.0308448
-R309 a_2905_n460.n14 a_2905_n460.n4 0.0243199
-R310 a_2905_n460.n5 a_2905_n460.n1 0.0199256
-R311 a_2905_n460.n16 a_2905_n460.n15 0.0166005
-R312 a_2905_n460.n17 a_2905_n460.n16 0.0166005
-R313 a_2905_n460.n7 a_2905_n460.n0 0.0161469
-R314 a_2905_n460.n9 a_2905_n460.n0 0.0161469
-R315 a_2905_n460.n8 a_2905_n460.n6 0.0126912
-R316 a_2905_n460.n8 a_2905_n460.n3 0.0126912
-R317 a_2905_n460.n18 a_2905_n460.n3 0.0118028
-R318 a_2905_n460.n19 a_2905_n460.n18 0.0115336
-R319 a_2905_n460.n21 a_2905_n460.n20 0.00521429
-R320 a_2905_n460.n12 a_2905_n460.n11 0.000803448
-R321 a_2905_n460.n14 a_2905_n460.n13 0.000803448
-R322 a_2905_n460.n15 a_2905_n460.n7 0.000803448
-R323 w_1241_n212.t1 w_1241_n212.n16 17.0005
-R324 w_1241_n212.n15 w_1241_n212.n14 13.8861
-R325 w_1241_n212.n16 w_1241_n212.n15 12.959
-R326 w_1241_n212.n16 w_1241_n212.t0 11.815
-R327 w_1241_n212.n15 w_1241_n212.t2 9.40506
-R328 w_1241_n212.n8 w_1241_n212.n7 9.0005
-R329 w_1241_n212.n3 w_1241_n212.n2 9.0005
-R330 w_1241_n212.n7 w_1241_n212.n6 9.0005
-R331 w_1241_n212.n2 w_1241_n212.n1 9.0005
-R332 w_1241_n212.n1 w_1241_n212.n0 9.0005
-R333 w_1241_n212.n12 w_1241_n212.n11 3.00885
-R334 w_1241_n212.n5 w_1241_n212.n4 3.00864
-R335 w_1241_n212.n9 w_1241_n212.n4 3.00862
-R336 w_1241_n212.n13 w_1241_n212.n12 3.0005
-R337 w_1241_n212.n14 w_1241_n212.n13 3.0005
-R338 w_1241_n212.n5 w_1241_n212.n0 2.26694
-R339 w_1241_n212.n11 w_1241_n212.n10 2.26266
-R340 w_1241_n212.n10 w_1241_n212.n9 2.26263
-R341 w_1241_n212.n10 w_1241_n212.t3 2.23387
-R342 w_1241_n212.n14 w_1241_n212.n0 0.039569
-R343 w_1241_n212.n12 w_1241_n212.n2 0.0317552
-R344 w_1241_n212.n13 w_1241_n212.n1 0.0317552
-R345 w_1241_n212.n7 w_1241_n212.n4 0.0308448
-R346 w_1241_n212.n11 w_1241_n212.n3 0.0243199
-R347 w_1241_n212.n9 w_1241_n212.n8 0.0236441
-R348 w_1241_n212.n6 w_1241_n212.n5 0.0236299
-R349 w_1241_n212.n8 w_1241_n212.n3 0.000803448
-R350 w_1241_n212.n7 w_1241_n212.n2 0.000803448
-R351 w_1241_n212.n6 w_1241_n212.n1 0.000803448
-R352 a_1107_n1758.n15 a_1107_n1758.t1 17.0517
-R353 a_1107_n1758.n14 a_1107_n1758.n13 9.14174
-R354 a_1107_n1758.n15 a_1107_n1758.n14 9.04245
-R355 a_1107_n1758.n12 a_1107_n1758.n4 9.0005
-R356 a_1107_n1758.n10 a_1107_n1758.n9 9.0005
-R357 a_1107_n1758.n4 a_1107_n1758.n3 9.0005
-R358 a_1107_n1758.n9 a_1107_n1758.n8 9.0005
-R359 a_1107_n1758.n7 a_1107_n1758.n3 9.0005
-R360 a_1107_n1758.n17 a_1107_n1758.n16 8.92852
-R361 a_1107_n1758.t1 a_1107_n1758.n13 8.48635
-R362 a_1107_n1758.n14 a_1107_n1758.t2 5.34524
-R363 a_1107_n1758.n2 a_1107_n1758.n1 4.50536
-R364 a_1107_n1758.n21 a_1107_n1758.n20 4.5005
-R365 a_1107_n1758.n5 a_1107_n1758.n1 4.49517
-R366 a_1107_n1758.n22 a_1107_n1758.n0 4.49343
-R367 a_1107_n1758.n11 a_1107_n1758.n6 3.00864
-R368 a_1107_n1758.n18 a_1107_n1758.n17 3.0005
-R369 a_1107_n1758.n19 a_1107_n1758.n18 3.0005
-R370 a_1107_n1758.n6 a_1107_n1758.n5 3.0005
-R371 a_1107_n1758.n20 a_1107_n1758.n19 3.0005
-R372 a_1107_n1758.n12 a_1107_n1758.n11 2.26694
-R373 a_1107_n1758.t0 a_1107_n1758.n23 1.06017
-R374 a_1107_n1758.n23 a_1107_n1758.n22 0.104061
-R375 a_1107_n1758.n16 a_1107_n1758.n13 0.0718134
-R376 a_1107_n1758.n16 a_1107_n1758.n15 0.0529419
-R377 a_1107_n1758.n17 a_1107_n1758.n12 0.039569
-R378 a_1107_n1758.n18 a_1107_n1758.n4 0.0317552
-R379 a_1107_n1758.n19 a_1107_n1758.n3 0.0317552
-R380 a_1107_n1758.n9 a_1107_n1758.n6 0.0308448
-R381 a_1107_n1758.n21 a_1107_n1758.n1 0.0239239
-R382 a_1107_n1758.n11 a_1107_n1758.n10 0.0236299
-R383 a_1107_n1758.n7 a_1107_n1758.n2 0.0166005
-R384 a_1107_n1758.n20 a_1107_n1758.n2 0.0166005
-R385 a_1107_n1758.n5 a_1107_n1758.n0 0.0161469
-R386 a_1107_n1758.n8 a_1107_n1758.n0 0.0161469
-R387 a_1107_n1758.t0 a_1107_n1758.n23 0.0120563
-R388 a_1107_n1758.n22 a_1107_n1758.n21 0.0115
-R389 a_1107_n1758.n10 a_1107_n1758.n4 0.000803448
-R390 a_1107_n1758.n9 a_1107_n1758.n3 0.000803448
-R391 a_1107_n1758.n8 a_1107_n1758.n7 0.000803448
-R392 a_2217_n1270.t0 a_2217_n1270.t1 34.1149
-R393 a_1426_n1756.t0 a_1426_n1756.t1 4.25425
-R394 a_3245_n350.n20 a_3245_n350.n19 22.1589
-R395 a_3245_n350.t0 a_3245_n350.n0 17.0005
-R396 a_3245_n350.n0 a_3245_n350.t2 16.0463
-R397 a_3245_n350.n14 a_3245_n350.n13 9.0005
-R398 a_3245_n350.n13 a_3245_n350.n12 9.0005
-R399 a_3245_n350.n5 a_3245_n350.n4 9.0005
-R400 a_3245_n350.n12 a_3245_n350.n11 9.0005
-R401 a_3245_n350.n10 a_3245_n350.n4 9.0005
-R402 a_3245_n350.t0 a_3245_n350.n20 8.5689
-R403 a_3245_n350.n3 a_3245_n350.n2 4.50831
-R404 a_3245_n350.n18 a_3245_n350.n17 4.5005
-R405 a_3245_n350.n8 a_3245_n350.n2 4.4937
-R406 a_3245_n350.n19 a_3245_n350.n1 4.49343
-R407 a_3245_n350.n7 a_3245_n350.n6 3.02902
-R408 a_3245_n350.n16 a_3245_n350.n15 3.00885
-R409 a_3245_n350.n9 a_3245_n350.n7 3.0005
-R410 a_3245_n350.n9 a_3245_n350.n8 3.0005
-R411 a_3245_n350.n17 a_3245_n350.n16 3.0005
-R412 a_3245_n350.n15 a_3245_n350.n14 2.26296
-R413 a_3245_n350.n6 a_3245_n350.t1 2.243
-R414 a_3245_n350.n20 a_3245_n350.n0 0.142709
-R415 a_3245_n350.n16 a_3245_n350.n4 0.0317552
-R416 a_3245_n350.n13 a_3245_n350.n7 0.0308448
-R417 a_3245_n350.n12 a_3245_n350.n9 0.0308448
-R418 a_3245_n350.n18 a_3245_n350.n2 0.0297377
-R419 a_3245_n350.n15 a_3245_n350.n5 0.0243199
-R420 a_3245_n350.n17 a_3245_n350.n3 0.0166005
-R421 a_3245_n350.n10 a_3245_n350.n3 0.0166005
-R422 a_3245_n350.n11 a_3245_n350.n1 0.0161469
-R423 a_3245_n350.n8 a_3245_n350.n1 0.0161469
-R424 a_3245_n350.n19 a_3245_n350.n18 0.014292
-R425 a_3245_n350.n14 a_3245_n350.n6 0.00232069
-R426 a_3245_n350.n13 a_3245_n350.n5 0.000803448
-R427 a_3245_n350.n12 a_3245_n350.n4 0.000803448
-R428 a_3245_n350.n11 a_3245_n350.n10 0.000803448
-C5 clk gnd 1.31453f
-C6 vo gnd 1.08409f
-C7 vi gnd 1.01467f
-C8 vdd gnd 17.3224f
-C9 a_1896_n484# gnd 0.5027f $ **FLOATING
-.ends
-"
-}
-C {/home/tien/SAR_ADC_8BIT_IHP/xschem/xschem_pex_symbol/bootstrap_switch.sym} -130 -130 0 0 {name=x6
-schematic=bootstrap_switch_pex
-spice_sym_def=
-"
-.subckt bootstrap_switch_pex vdd vi vo clk gnd
-X0 gnd.t12 a_1896_n484# a_1378_n288.t0 gnd.t11 sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
-X1 vi.t0 a_777_n1200.t2 vo.t0 gnd.t4 sg13_lv_nmos ad=0.85p pd=5.68u as=0.85p ps=5.68u w=2.5u l=0.13u
-X2 gnd.t15 a_1594_n1108.t3 a_2897_n1624.t0 gnd.t14 sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
-X3 a_1044_n1116.t0 a_1896_n484# vdd.t6 vdd.t4 sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
-X4 vdd.t3 clk.t0 a_1594_n1108.t2 vdd.t1 sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
-X5 vdd.t8 a_2905_n460.t1 w_1241_n212.t2 gnd.t17 sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
-X6 w_1241_n212.t3 a_1107_n1758.t0 cap_cmim l=6.99u w=9.39u
-X7 a_2217_n1270.t0 a_1594_n1108.t4 gnd.t3 gnd.t2 sg13_lv_nmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
-X8 a_777_n1200.t0 vdd.t9 a_2217_n1270.t1 gnd.t6 sg13_lv_nmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
-X9 gnd.t8 clk.t0 a_1594_n1108.t1 gnd.t7 sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
-X10 vdd.t5 a_1896_n484# a_1378_n288.t1 vdd.t4 sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
-X11 vdd.t2 a_1594_n1108.t3 a_2897_n1624.t1 vdd.t1 sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
-X12 a_2905_n460.t2 a_1594_n1108.t0 cap_cmim l=6.99u w=4.665u
-X13 gnd.t1 a_1594_n1108.t5 a_1426_n1756.t0 gnd.t0 sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
-X14 a_1107_n1758.t2 a_1044_n1116.t2 vi.t1 gnd.t16 sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
-X15 a_3245_n350.t1 a_2897_n1624.t2 cap_cmim l=6.99u w=4.665u
-X16 w_1241_n212.t1 a_1378_n288.t2 a_777_n1200.t1 w_1241_n212.t0 sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
-X17 a_1107_n1758.t1 a_1594_n1108.t6 gnd.t10 gnd.t9 sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.4u
-X18 a_3245_n350.t0 a_2905_n460.t3 vdd.t0 gnd.t5 sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
-X19 vdd.t7 a_3245_n350.t2 a_2905_n460.t0 gnd.t13 sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
-X20 a_1426_n1756.t1 vdd.t10 a_1044_n1116.t1 gnd.t0 sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
-C0 a_1896_n484# vdd 0.22188f
-C1 vdd vi 0.08373f
-C2 vdd clk 0.16174f
-C3 vo vi 0.61887f
-C4 vo vdd 0.04889f
-R0 a_1378_n288.t0 a_1378_n288.n0 17.2852
-R1 a_1378_n288.n0 a_1378_n288.t2 16.1733
-R2 a_1378_n288.n0 a_1378_n288.t1 9.11151
-R3 gnd.n47 gnd.t11 6064.32
-R4 gnd.t6 gnd.n18 5073.33
-R5 gnd.n58 gnd.n57 4035.37
-R6 gnd.n46 gnd.n45 2743.13
-R7 gnd.n47 gnd.n46 2249.79
-R8 gnd.n45 gnd.t6 1906.67
-R9 gnd.n58 gnd.n18 1486.67
-R10 gnd.n52 gnd.n51 1186.91
-R11 gnd.n55 gnd.n54 447.637
-R12 gnd.n63 gnd.n62 302.812
-R13 gnd.n59 gnd.n58 181.311
-R14 gnd.n63 gnd.t11 123.954
-R15 gnd.n52 gnd.t7 82.2655
-R16 gnd.n55 gnd.t14 82.2655
-R17 gnd.n48 gnd.n47 68.6012
-R18 gnd.t17 gnd.n48 65.5295
-R19 gnd.n50 gnd.t5 64.9886
-R20 gnd.t9 gnd.n59 57.7882
-R21 gnd.t13 gnd.n50 49.6349
-R22 gnd.t2 gnd.n61 49.0963
-R23 gnd.n62 gnd.t2 47.2961
-R24 gnd.t16 gnd.t4 40.5082
-R25 gnd.n61 gnd.t0 38.6369
-R26 gnd.n51 gnd.t13 35.3194
-R27 gnd.n60 gnd.t9 31.9293
-R28 gnd.n5 gnd.t3 30.9467
-R29 gnd.t5 gnd.n49 20.985
-R30 gnd.n22 gnd.t8 17.4482
-R31 gnd.n64 gnd.t12 17.3778
-R32 gnd.n20 gnd.t15 17.3608
-R33 gnd.n53 gnd.n52 17.0005
-R34 gnd.n56 gnd.n21 17.0005
-R35 gnd.n56 gnd.n55 17.0005
-R36 gnd.n33 gnd.n19 12.7958
-R37 gnd.t4 gnd.n60 12.4856
-R38 gnd.n49 gnd.t17 11.7634
-R39 gnd.n54 gnd.t7 11.7395
-R40 gnd.n57 gnd.t14 11.7395
-R41 gnd.n64 gnd.n63 11.3338
-R42 gnd.n8 gnd.n7 9.03042
-R43 gnd.n74 gnd.n73 9.03042
-R44 gnd.n36 gnd.n35 9.03042
-R45 gnd.n40 gnd.n39 9.03042
-R46 gnd.n72 gnd.n71 9.01861
-R47 gnd.n7 gnd.n6 9.0186
-R48 gnd.n35 gnd.n34 9.0186
-R49 gnd.n27 gnd.n23 9.01787
-R50 gnd.n4 gnd.n1 9.01787
-R51 gnd.n68 gnd.n10 9.01787
-R52 gnd.n32 gnd.n29 9.01787
-R53 gnd.n28 gnd.n27 9.01787
-R54 gnd.n5 gnd.n4 9.0005
-R55 gnd.n3 gnd.n2 9.0005
-R56 gnd.n12 gnd.n11 9.0005
-R57 gnd.n73 gnd.n72 9.0005
-R58 gnd.n13 gnd.n12 9.0005
-R59 gnd.n69 gnd.n68 9.0005
-R60 gnd.n70 gnd.n69 9.0005
-R61 gnd.n31 gnd.n30 9.0005
-R62 gnd.n33 gnd.n32 9.0005
-R63 gnd.n43 gnd.n42 9.0005
-R64 gnd.n25 gnd.n24 9.0005
-R65 gnd.n42 gnd.n41 9.0005
-R66 gnd.n26 gnd.n25 9.0005
-R67 gnd.n41 gnd.n40 9.0005
-R68 gnd.n56 gnd.n19 8.52716
-R69 gnd.n45 gnd.n17 8.501
-R70 gnd.n18 gnd.n16 8.5005
-R71 gnd.n48 gnd.n44 8.5005
-R72 gnd.n14 gnd.t10 5.65073
-R73 gnd.n53 gnd.n22 5.63152
-R74 gnd.n43 gnd.n23 4.5471
-R75 gnd.n71 gnd.n70 4.54536
-R76 gnd.n6 gnd.n5 4.53473
-R77 gnd.n34 gnd.n33 4.53473
-R78 gnd.n8 gnd.n1 4.50628
-R79 gnd.n74 gnd.n10 4.50628
-R80 gnd.n36 gnd.n29 4.50628
-R81 gnd.n39 gnd.n28 4.50628
-R82 gnd.n9 gnd.n8 3.3005
-R83 gnd.n39 gnd.n38 3.3005
-R84 gnd.n37 gnd.n36 3.3005
-R85 gnd.n75 gnd.n74 3.3005
-R86 gnd.n44 gnd.n43 2.86049
-R87 gnd.n60 gnd.n16 2.66376
-R88 gnd.n65 gnd.n17 2.64957
-R89 gnd.n57 gnd.n56 2.63175
-R90 gnd.n54 gnd.n53 2.63175
-R91 gnd.n14 gnd.t1 2.28269
-R92 gnd.n70 gnd.n67 2.02138
-R93 gnd.t0 gnd.t16 1.62081
-R94 gnd.n67 gnd.n66 1.15699
-R95 gnd.n67 gnd.n15 0.961754
-R96 gnd.n66 gnd.n65 0.859819
-R97 gnd.n15 gnd.n14 0.745431
-R98 gnd.n22 gnd.n21 0.712801
-R99 gnd.n38 gnd.n37 0.52124
-R100 gnd.n61 gnd.n16 0.515338
-R101 gnd.n16 gnd.n15 0.431601
-R102 gnd gnd.n0 0.270611
-R103 gnd.n66 gnd.n16 0.199062
-R104 gnd.n65 gnd.n64 0.176594
-R105 gnd gnd.n76 0.168643
-R106 gnd.n76 gnd.n75 0.108906
-R107 gnd.n38 gnd.n0 0.0950175
-R108 gnd.n20 gnd.n19 0.0773493
-R109 gnd gnd.n0 0.0583436
-R110 gnd.n75 gnd.n9 0.045325
-R111 gnd.n21 gnd.n20 0.0396781
-R112 gnd.n7 gnd.n2 0.0357
-R113 gnd.n73 gnd.n11 0.0357
-R114 gnd.n72 gnd.n12 0.0357
-R115 gnd.n35 gnd.n30 0.0357
-R116 gnd.n42 gnd.n24 0.0357
-R117 gnd.n41 gnd.n25 0.0357
-R118 gnd.n40 gnd.n26 0.0357
-R119 gnd.n4 gnd.n3 0.0342333
-R120 gnd.n68 gnd.n12 0.0342333
-R121 gnd.n69 gnd.n13 0.0342333
-R122 gnd.n32 gnd.n31 0.0342333
-R123 gnd.n27 gnd.n25 0.0342333
-R124 gnd.n76 gnd 0.0319332
-R125 gnd.n37 gnd.n9 0.0237925
-R126 gnd.n6 gnd.n3 0.0185314
-R127 gnd.n34 gnd.n31 0.0185314
-R128 gnd.n71 gnd.n13 0.0185229
-R129 gnd.n2 gnd.n1 0.0178037
-R130 gnd.n11 gnd.n10 0.0178037
-R131 gnd.n30 gnd.n29 0.0178037
-R132 gnd.n28 gnd.n26 0.0178037
-R133 gnd.n24 gnd.n23 0.0177958
-R134 gnd.n50 gnd.n44 0.00944882
-R135 gnd.n62 gnd.n16 0.00513002
-R136 gnd.n59 gnd.n16 0.00247443
-R137 gnd.n49 gnd.n44 0.00215079
-R138 gnd.n51 gnd.n44 0.00129651
-R139 gnd.n17 gnd.n16 0.00124999
-R140 gnd.n46 gnd.n44 0.00100002
-R141 a_777_n1200.t0 a_777_n1200.n0 30.6412
-R142 a_777_n1200.n0 a_777_n1200.t1 28.4911
-R143 a_777_n1200.n0 a_777_n1200.t2 24.8453
-R144 vo vo.t0 8.55687
-R145 vi vi.n2 8.03514
-R146 vi.n1 vi.t0 5.67075
-R147 vi.n1 vi.t1 5.66684
-R148 vi.t0 vi.n0 4.24477
-R149 vi.t1 vi.n0 3.42449
-R150 vi.n2 vi.n1 0.059708
-R151 vi.n2 vi.n0 0.042166
-R152 a_1594_n1108.n11 a_1594_n1108.n10 32.6771
-R153 a_1594_n1108.n7 a_1594_n1108.t1 17.2852
-R154 a_1594_n1108.n9 a_1594_n1108.t4 15.8888
-R155 a_1594_n1108.n9 a_1594_n1108.t6 15.8447
-R156 a_1594_n1108.n8 a_1594_n1108.t3 15.4458
-R157 a_1594_n1108.n10 a_1594_n1108.t5 15.0018
-R158 a_1594_n1108.n19 a_1594_n1108.n11 10.3793
-R159 a_1594_n1108.n11 a_1594_n1108.n8 10.3449
-R160 a_1594_n1108.n7 a_1594_n1108.t2 9.11151
-R161 a_1594_n1108.n18 a_1594_n1108.n12 9.0005
-R162 a_1594_n1108.n19 a_1594_n1108.n18 9.0005
-R163 a_1594_n1108.n4 a_1594_n1108.n3 9.0005
-R164 a_1594_n1108.n22 a_1594_n1108.n21 9.0005
-R165 a_1594_n1108.n14 a_1594_n1108.n6 4.52049
-R166 a_1594_n1108.n13 a_1594_n1108.n5 4.51458
-R167 a_1594_n1108.n23 a_1594_n1108.n1 4.50536
-R168 a_1594_n1108.n14 a_1594_n1108.n2 4.5005
-R169 a_1594_n1108.n25 a_1594_n1108.n24 4.5005
-R170 a_1594_n1108.n17 a_1594_n1108.n1 4.49517
-R171 a_1594_n1108.n26 a_1594_n1108.n0 4.49343
-R172 a_1594_n1108.n16 a_1594_n1108.n15 4.49343
-R173 a_1594_n1108.n20 a_1594_n1108.n19 4.4932
-R174 a_1594_n1108.n15 a_1594_n1108.n13 4.49154
-R175 a_1594_n1108.n19 a_1594_n1108.n6 4.49125
-R176 a_1594_n1108.n18 a_1594_n1108.n17 3.0005
-R177 a_1594_n1108.n24 a_1594_n1108.n2 3.0005
-R178 a_1594_n1108.t0 a_1594_n1108.n27 0.777833
-R179 a_1594_n1108.n10 a_1594_n1108.n9 0.59856
-R180 a_1594_n1108.n8 a_1594_n1108.n7 0.570828
-R181 a_1594_n1108.n27 a_1594_n1108.n26 0.106207
-R182 a_1594_n1108.n13 a_1594_n1108.n6 0.0402971
-R183 a_1594_n1108.n25 a_1594_n1108.n1 0.0239239
-R184 a_1594_n1108.n20 a_1594_n1108.n2 0.0166005
-R185 a_1594_n1108.n21 a_1594_n1108.n20 0.0166005
-R186 a_1594_n1108.n23 a_1594_n1108.n22 0.0166005
-R187 a_1594_n1108.n24 a_1594_n1108.n23 0.0166005
-R188 a_1594_n1108.n3 a_1594_n1108.n0 0.0161469
-R189 a_1594_n1108.n17 a_1594_n1108.n0 0.0161469
-R190 a_1594_n1108.n16 a_1594_n1108.n4 0.0161469
-R191 a_1594_n1108.n18 a_1594_n1108.n16 0.0161469
-R192 a_1594_n1108.t0 a_1594_n1108.n27 0.0129943
-R193 a_1594_n1108.n12 a_1594_n1108.n5 0.0126912
-R194 a_1594_n1108.n19 a_1594_n1108.n5 0.0126912
-R195 a_1594_n1108.n14 a_1594_n1108.n12 0.0118028
-R196 a_1594_n1108.n15 a_1594_n1108.n14 0.0115336
-R197 a_1594_n1108.n26 a_1594_n1108.n25 0.0115
-R198 a_1594_n1108.n21 a_1594_n1108.n4 0.000803448
-R199 a_1594_n1108.n22 a_1594_n1108.n3 0.000803448
-R200 a_2897_n1624.n22 a_2897_n1624.n21 31.0822
-R201 a_2897_n1624.t0 a_2897_n1624.n22 17.2852
-R202 a_2897_n1624.n22 a_2897_n1624.t1 9.11151
-R203 a_2897_n1624.n11 a_2897_n1624.n8 9.0005
-R204 a_2897_n1624.n5 a_2897_n1624.n3 9.0005
-R205 a_2897_n1624.n11 a_2897_n1624.n10 9.0005
-R206 a_2897_n1624.n9 a_2897_n1624.n3 9.0005
-R207 a_2897_n1624.n19 a_2897_n1624.n2 4.50722
-R208 a_2897_n1624.n15 a_2897_n1624.n14 4.50536
-R209 a_2897_n1624.n16 a_2897_n1624.n4 4.5005
-R210 a_2897_n1624.n19 a_2897_n1624.n18 4.5005
-R211 a_2897_n1624.n14 a_2897_n1624.n13 4.49517
-R212 a_2897_n1624.n20 a_2897_n1624.n1 4.4937
-R213 a_2897_n1624.n7 a_2897_n1624.n6 4.49343
-R214 a_2897_n1624.n21 a_2897_n1624.n0 4.4932
-R215 a_2897_n1624.n13 a_2897_n1624.n12 3.0005
-R216 a_2897_n1624.n17 a_2897_n1624.n16 3.0005
-R217 a_2897_n1624.n12 a_2897_n1624.n1 3.0005
-R218 a_2897_n1624.n18 a_2897_n1624.n17 3.0005
-R219 a_2897_n1624.n6 a_2897_n1624.t2 0.119227
-R220 a_2897_n1624.n17 a_2897_n1624.n3 0.0317552
-R221 a_2897_n1624.n12 a_2897_n1624.n11 0.0308448
-R222 a_2897_n1624.n20 a_2897_n1624.n19 0.0297377
-R223 a_2897_n1624.n14 a_2897_n1624.n4 0.0239239
-R224 a_2897_n1624.n15 a_2897_n1624.n5 0.0166005
-R225 a_2897_n1624.n16 a_2897_n1624.n15 0.0166005
-R226 a_2897_n1624.n18 a_2897_n1624.n0 0.0166005
-R227 a_2897_n1624.n9 a_2897_n1624.n0 0.0166005
-R228 a_2897_n1624.n10 a_2897_n1624.n2 0.0161469
-R229 a_2897_n1624.n2 a_2897_n1624.n1 0.0161469
-R230 a_2897_n1624.n8 a_2897_n1624.n7 0.0161469
-R231 a_2897_n1624.n13 a_2897_n1624.n7 0.0161469
-R232 a_2897_n1624.n21 a_2897_n1624.n20 0.0156093
-R233 a_2897_n1624.n6 a_2897_n1624.n4 0.0115
-R234 a_2897_n1624.n8 a_2897_n1624.n5 0.000803448
-R235 a_2897_n1624.n11 a_2897_n1624.n3 0.000803448
-R236 a_2897_n1624.n10 a_2897_n1624.n9 0.000803448
-R237 vdd.n22 vdd.t10 37.129
-R238 vdd.n21 vdd.t7 21.2951
-R239 vdd.n6 vdd.t6 17.5186
-R240 vdd.n2 vdd.n0 17.0005
-R241 vdd.t0 vdd.n15 17.0005
-R242 vdd.n17 vdd.t0 17.0005
-R243 vdd.n16 vdd.t0 17.0005
-R244 vdd.t8 vdd.n15 17.0005
-R245 vdd.n17 vdd.t8 17.0005
-R246 vdd.t8 vdd.n16 17.0005
-R247 vdd.n5 vdd.t9 15.4454
-R248 vdd.n13 vdd.n12 15.1399
-R249 vdd.n20 vdd.n19 12.5536
-R250 vdd.n1 vdd.t1 11.2968
-R251 vdd.n1 vdd.t3 9.01184
-R252 vdd.n19 vdd.n18 9.0005
-R253 vdd.n3 vdd.t2 8.91901
-R254 vdd.n9 vdd.t5 8.91901
-R255 vdd.n10 vdd.n9 8.60851
-R256 vdd.n12 vdd.n11 8.501
-R257 vdd.n4 vdd.n0 8.46974
-R258 vdd.n8 vdd.n7 8.46936
-R259 vdd.n11 vdd.t4 5.66842
-R260 vdd.t4 vdd.n10 5.66778
-R261 vdd.t1 vdd.n0 5.66717
-R262 vdd.n19 vdd.n14 4.648
-R263 vdd.n6 vdd.n5 3.95314
-R264 vdd.n22 vdd.n21 0.908402
-R265 vdd.n2 vdd.n1 0.717193
-R266 vdd.n5 vdd.n4 0.370276
-R267 vdd vdd.n22 0.23247
-R268 vdd vdd.n13 0.168921
-R269 vdd.n8 vdd.n6 0.164989
-R270 vdd.n4 vdd.n3 0.139431
-R271 vdd.n9 vdd.n8 0.116961
-R272 vdd.n3 vdd.n2 0.0531761
-R273 vdd.n20 vdd.n13 0.0498354
-R274 vdd.n18 vdd.n17 0.0452964
-R275 vdd.n21 vdd.n20 0.0287622
-R276 vdd.n16 vdd.n14 0.0274732
-R277 vdd.n17 vdd.n14 0.024195
-R278 vdd.n18 vdd.n15 0.00547738
-R279 vdd.n12 vdd.n6 0.00173596
-R280 vdd.n10 vdd.n7 0.00166667
-R281 vdd.n11 vdd.n7 0.00124999
-R282 a_1044_n1116.t0 a_1044_n1116.n0 57.304
-R283 a_1044_n1116.n0 a_1044_n1116.t2 15.0005
-R284 a_1044_n1116.n0 a_1044_n1116.t1 3.77826
-R285 clk clk.t0 39.2421
-R286 a_2905_n460.n20 a_2905_n460.n19 21.2719
-R287 a_2905_n460.n20 a_2905_n460.t1 15.858
-R288 a_2905_n460.n21 a_2905_n460.t3 15.0005
-R289 a_2905_n460.n13 a_2905_n460.n12 9.0005
-R290 a_2905_n460.n13 a_2905_n460.n7 9.0005
-R291 a_2905_n460.n15 a_2905_n460.n14 9.0005
-R292 a_2905_n460.n5 a_2905_n460.n3 9.0005
-R293 a_2905_n460.n6 a_2905_n460.n5 9.0005
-R294 a_2905_n460.t0 a_2905_n460.n21 6.95387
-R295 a_2905_n460.n18 a_2905_n460.n2 4.52049
-R296 a_2905_n460.n18 a_2905_n460.n17 4.5005
-R297 a_2905_n460.n9 a_2905_n460.n8 4.49515
-R298 a_2905_n460.n19 a_2905_n460.n0 4.49343
-R299 a_2905_n460.n16 a_2905_n460.n6 4.4932
-R300 a_2905_n460.n19 a_2905_n460.n1 4.49154
-R301 a_2905_n460.n6 a_2905_n460.n2 4.49125
-R302 a_2905_n460.n11 a_2905_n460.n10 3.03054
-R303 a_2905_n460.n17 a_2905_n460.n4 3.00885
-R304 a_2905_n460.n10 a_2905_n460.n9 3.0005
-R305 a_2905_n460.n12 a_2905_n460.n4 2.26296
-R306 a_2905_n460.n11 a_2905_n460.t2 2.24339
-R307 a_2905_n460.n2 a_2905_n460.n1 0.0402971
-R308 a_2905_n460.n13 a_2905_n460.n10 0.0308448
-R309 a_2905_n460.n14 a_2905_n460.n4 0.0243199
-R310 a_2905_n460.n5 a_2905_n460.n1 0.0199256
-R311 a_2905_n460.n16 a_2905_n460.n15 0.0166005
-R312 a_2905_n460.n17 a_2905_n460.n16 0.0166005
-R313 a_2905_n460.n7 a_2905_n460.n0 0.0161469
-R314 a_2905_n460.n9 a_2905_n460.n0 0.0161469
-R315 a_2905_n460.n8 a_2905_n460.n6 0.0126912
-R316 a_2905_n460.n8 a_2905_n460.n3 0.0126912
-R317 a_2905_n460.n18 a_2905_n460.n3 0.0118028
-R318 a_2905_n460.n19 a_2905_n460.n18 0.0115336
-R319 a_2905_n460.n21 a_2905_n460.n20 0.00521429
-R320 a_2905_n460.n12 a_2905_n460.n11 0.000803448
-R321 a_2905_n460.n14 a_2905_n460.n13 0.000803448
-R322 a_2905_n460.n15 a_2905_n460.n7 0.000803448
-R323 w_1241_n212.t1 w_1241_n212.n16 17.0005
-R324 w_1241_n212.n15 w_1241_n212.n14 13.8861
-R325 w_1241_n212.n16 w_1241_n212.n15 12.959
-R326 w_1241_n212.n16 w_1241_n212.t0 11.815
-R327 w_1241_n212.n15 w_1241_n212.t2 9.40506
-R328 w_1241_n212.n8 w_1241_n212.n7 9.0005
-R329 w_1241_n212.n3 w_1241_n212.n2 9.0005
-R330 w_1241_n212.n7 w_1241_n212.n6 9.0005
-R331 w_1241_n212.n2 w_1241_n212.n1 9.0005
-R332 w_1241_n212.n1 w_1241_n212.n0 9.0005
-R333 w_1241_n212.n12 w_1241_n212.n11 3.00885
-R334 w_1241_n212.n5 w_1241_n212.n4 3.00864
-R335 w_1241_n212.n9 w_1241_n212.n4 3.00862
-R336 w_1241_n212.n13 w_1241_n212.n12 3.0005
-R337 w_1241_n212.n14 w_1241_n212.n13 3.0005
-R338 w_1241_n212.n5 w_1241_n212.n0 2.26694
-R339 w_1241_n212.n11 w_1241_n212.n10 2.26266
-R340 w_1241_n212.n10 w_1241_n212.n9 2.26263
-R341 w_1241_n212.n10 w_1241_n212.t3 2.23387
-R342 w_1241_n212.n14 w_1241_n212.n0 0.039569
-R343 w_1241_n212.n12 w_1241_n212.n2 0.0317552
-R344 w_1241_n212.n13 w_1241_n212.n1 0.0317552
-R345 w_1241_n212.n7 w_1241_n212.n4 0.0308448
-R346 w_1241_n212.n11 w_1241_n212.n3 0.0243199
-R347 w_1241_n212.n9 w_1241_n212.n8 0.0236441
-R348 w_1241_n212.n6 w_1241_n212.n5 0.0236299
-R349 w_1241_n212.n8 w_1241_n212.n3 0.000803448
-R350 w_1241_n212.n7 w_1241_n212.n2 0.000803448
-R351 w_1241_n212.n6 w_1241_n212.n1 0.000803448
-R352 a_1107_n1758.n15 a_1107_n1758.t1 17.0517
-R353 a_1107_n1758.n14 a_1107_n1758.n13 9.14174
-R354 a_1107_n1758.n15 a_1107_n1758.n14 9.04245
-R355 a_1107_n1758.n12 a_1107_n1758.n4 9.0005
-R356 a_1107_n1758.n10 a_1107_n1758.n9 9.0005
-R357 a_1107_n1758.n4 a_1107_n1758.n3 9.0005
-R358 a_1107_n1758.n9 a_1107_n1758.n8 9.0005
-R359 a_1107_n1758.n7 a_1107_n1758.n3 9.0005
-R360 a_1107_n1758.n17 a_1107_n1758.n16 8.92852
-R361 a_1107_n1758.t1 a_1107_n1758.n13 8.48635
-R362 a_1107_n1758.n14 a_1107_n1758.t2 5.34524
-R363 a_1107_n1758.n2 a_1107_n1758.n1 4.50536
-R364 a_1107_n1758.n21 a_1107_n1758.n20 4.5005
-R365 a_1107_n1758.n5 a_1107_n1758.n1 4.49517
-R366 a_1107_n1758.n22 a_1107_n1758.n0 4.49343
-R367 a_1107_n1758.n11 a_1107_n1758.n6 3.00864
-R368 a_1107_n1758.n18 a_1107_n1758.n17 3.0005
-R369 a_1107_n1758.n19 a_1107_n1758.n18 3.0005
-R370 a_1107_n1758.n6 a_1107_n1758.n5 3.0005
-R371 a_1107_n1758.n20 a_1107_n1758.n19 3.0005
-R372 a_1107_n1758.n12 a_1107_n1758.n11 2.26694
-R373 a_1107_n1758.t0 a_1107_n1758.n23 1.06017
-R374 a_1107_n1758.n23 a_1107_n1758.n22 0.104061
-R375 a_1107_n1758.n16 a_1107_n1758.n13 0.0718134
-R376 a_1107_n1758.n16 a_1107_n1758.n15 0.0529419
-R377 a_1107_n1758.n17 a_1107_n1758.n12 0.039569
-R378 a_1107_n1758.n18 a_1107_n1758.n4 0.0317552
-R379 a_1107_n1758.n19 a_1107_n1758.n3 0.0317552
-R380 a_1107_n1758.n9 a_1107_n1758.n6 0.0308448
-R381 a_1107_n1758.n21 a_1107_n1758.n1 0.0239239
-R382 a_1107_n1758.n11 a_1107_n1758.n10 0.0236299
-R383 a_1107_n1758.n7 a_1107_n1758.n2 0.0166005
-R384 a_1107_n1758.n20 a_1107_n1758.n2 0.0166005
-R385 a_1107_n1758.n5 a_1107_n1758.n0 0.0161469
-R386 a_1107_n1758.n8 a_1107_n1758.n0 0.0161469
-R387 a_1107_n1758.t0 a_1107_n1758.n23 0.0120563
-R388 a_1107_n1758.n22 a_1107_n1758.n21 0.0115
-R389 a_1107_n1758.n10 a_1107_n1758.n4 0.000803448
-R390 a_1107_n1758.n9 a_1107_n1758.n3 0.000803448
-R391 a_1107_n1758.n8 a_1107_n1758.n7 0.000803448
-R392 a_2217_n1270.t0 a_2217_n1270.t1 34.1149
-R393 a_1426_n1756.t0 a_1426_n1756.t1 4.25425
-R394 a_3245_n350.n20 a_3245_n350.n19 22.1589
-R395 a_3245_n350.t0 a_3245_n350.n0 17.0005
-R396 a_3245_n350.n0 a_3245_n350.t2 16.0463
-R397 a_3245_n350.n14 a_3245_n350.n13 9.0005
-R398 a_3245_n350.n13 a_3245_n350.n12 9.0005
-R399 a_3245_n350.n5 a_3245_n350.n4 9.0005
-R400 a_3245_n350.n12 a_3245_n350.n11 9.0005
-R401 a_3245_n350.n10 a_3245_n350.n4 9.0005
-R402 a_3245_n350.t0 a_3245_n350.n20 8.5689
-R403 a_3245_n350.n3 a_3245_n350.n2 4.50831
-R404 a_3245_n350.n18 a_3245_n350.n17 4.5005
-R405 a_3245_n350.n8 a_3245_n350.n2 4.4937
-R406 a_3245_n350.n19 a_3245_n350.n1 4.49343
-R407 a_3245_n350.n7 a_3245_n350.n6 3.02902
-R408 a_3245_n350.n16 a_3245_n350.n15 3.00885
-R409 a_3245_n350.n9 a_3245_n350.n7 3.0005
-R410 a_3245_n350.n9 a_3245_n350.n8 3.0005
-R411 a_3245_n350.n17 a_3245_n350.n16 3.0005
-R412 a_3245_n350.n15 a_3245_n350.n14 2.26296
-R413 a_3245_n350.n6 a_3245_n350.t1 2.243
-R414 a_3245_n350.n20 a_3245_n350.n0 0.142709
-R415 a_3245_n350.n16 a_3245_n350.n4 0.0317552
-R416 a_3245_n350.n13 a_3245_n350.n7 0.0308448
-R417 a_3245_n350.n12 a_3245_n350.n9 0.0308448
-R418 a_3245_n350.n18 a_3245_n350.n2 0.0297377
-R419 a_3245_n350.n15 a_3245_n350.n5 0.0243199
-R420 a_3245_n350.n17 a_3245_n350.n3 0.0166005
-R421 a_3245_n350.n10 a_3245_n350.n3 0.0166005
-R422 a_3245_n350.n11 a_3245_n350.n1 0.0161469
-R423 a_3245_n350.n8 a_3245_n350.n1 0.0161469
-R424 a_3245_n350.n19 a_3245_n350.n18 0.014292
-R425 a_3245_n350.n14 a_3245_n350.n6 0.00232069
-R426 a_3245_n350.n13 a_3245_n350.n5 0.000803448
-R427 a_3245_n350.n12 a_3245_n350.n4 0.000803448
-R428 a_3245_n350.n11 a_3245_n350.n10 0.000803448
-C5 clk gnd 1.31453f
-C6 vo gnd 1.08409f
-C7 vi gnd 1.01467f
-C8 vdd gnd 17.3224f
-C9 a_1896_n484# gnd 0.5027f $ **FLOATING
-.ends
-"
-}
-C {/home/tien/SAR_ADC_8BIT_IHP/xschem/xschem_pex_symbol/dynamic_comparator.sym} 820 -70 0 0 {name=x5
+C {xschem_pex_symbol/dynamic_comparator.sym} 830 -10 0 0 {name=x1
 schematic=DIFF_COMPARATOR_pex
 spice_sym_def=
 "
@@ -3456,47 +2328,6 @@ C510 V+.n0 gnd 0.24725f $ **FLOATING
 C511 V+.n1 gnd 0.24712f $ **FLOATING
 C512 V+.t2 gnd 0.34769f $ **FLOATING
 C513 V+.n2 gnd 1.19179f $ **FLOATING
-.ends
-"
-}
-C {/home/tien/SAR_ADC_8BIT_IHP/xschem/xschem_pex_symbol/nand_gate.sym} 780 -350 0 0 {name=x7
-schematic=nand_gate_pex
-spice_sym_def=
-"
-.subckt nand_gate_pex vdd Vo B A gnd
-X0 a_n15_n246.t0 B.t0 gnd.t2 gnd.t1 sg13_lv_nmos ad=62.5f pd=0.74u as=0.1075p ps=1.34u w=0.25u l=0.13u
-X1 vdd.t1 A.t0 Vo.t1 vdd.t0 sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
-X2 Vo.t1 B.t0 vdd.t2 vdd.t0 sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
-X3 Vo.t0 A.t0 a_n15_n246.t0 gnd.t0 sg13_lv_nmos ad=0.1075p pd=1.34u as=62.5f ps=0.74u w=0.25u l=0.13u
-C0 A Vo 0.15477f
-C1 B Vo 0.07214f
-C2 A B 0.05121f
-C3 vdd Vo 0.13452f
-C4 A vdd 0.08588f
-C5 B vdd 0.09489f
-R0 B B.t0 15.0687
-R1 gnd.n0 gnd.t1 149.24
-R2 gnd.n0 gnd.t0 125.602
-R3 gnd.n1 gnd.t2 17.2409
-R4 gnd.n1 gnd.n0 6.88979
-R5 gnd gnd.n1 0.0923197
-R6 A A.t0 15.0665
-R7 Vo.n0 Vo.t1 17.7224
-R8 Vo.n0 Vo.t0 17.6641
-R9 Vo Vo.n0 0.117375
-R10 Vo.n0 Vo 0.0468158
-R11 vdd.n1 vdd.t1 17.5381
-R12 vdd.n0 vdd.t2 17.4749
-R13 vdd.n3 vdd.n2 17.0005
-R14 vdd.n2 vdd.n1 5.64075
-R15 vdd.n2 vdd.t0 4.2505
-R16 vdd.n1 vdd.n0 0.137308
-R17 vdd vdd.n3 0.0569602
-R18 vdd.n3 vdd.n0 0.0121814
-C6 Vo gnd 0.12333f
-C7 A gnd 0.20741f
-C8 B gnd 0.23365f
-C9 vdd gnd 0.17173f
 .ends
 "
 }

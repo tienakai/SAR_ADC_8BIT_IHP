@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00033037352
-x2=0.000860334
+x1=1.2397261e-05
+x2=0.00054235773
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -34,8 +34,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00033037352
-x2=0.000860334
+x1=1.2397261e-05
+x2=0.00054235773
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -92,7 +92,7 @@ C {lab_pin.sym} -690 -250 0 0 {name=p5 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -330 170 0 0 {name=p6 sig_type=std_logic lab=clk}
 C {lab_pin.sym} -390 170 0 0 {name=p7 sig_type=std_logic lab=vdd}
 C {gnd.sym} -450 160 0 1 {name=l5 lab=GND}
-C {launcher.sym} -280 300 0 0 {name=h5
+C {launcher.sym} -290 300 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/test_bootstrap.raw tran"
 }
@@ -102,7 +102,7 @@ value=7p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} -250 160 0 1 {name=l1 lab=GND}
-C {/home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/xschem_pex_symbol/bootstrap_switch.sym} -410 30 0 0 {name=x2
+C {/home/tien/SAR_ADC_8BIT_IHP/xschem/xschem_pex_symbol/bootstrap_switch.sym} -410 30 0 0 {name=x1
 schematic=bootstrap_switch_pex
 spice_sym_def=
 "

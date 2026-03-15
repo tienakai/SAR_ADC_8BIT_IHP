@@ -208,25 +208,25 @@ adc_bridge_model=adc_bridge
 in_low=0.4
 in_high=0.6
 }
-C {part_2_digital_comps/algorithm/xschem/adc_bridge1.sym} 240 -340 0 0 {name=A2
+C {adc_bridge1.sym} 240 -340 0 0 {name=A2
 adc=adc1
 adc_bridge_model=adc_bridge
 in_low=0.4
 in_high=0.6
 }
-C {part_2_digital_comps/algorithm/xschem/adc_bridge1.sym} 240 -320 0 0 {name=A3
+C {adc_bridge1.sym} 240 -320 0 0 {name=A3
 adc=adc1
 adc_bridge_model=adc_bridge
 in_low=0.4
 in_high=0.6
 }
-C {part_2_digital_comps/algorithm/xschem/adc_bridge1.sym} 240 -300 0 0 {name=A4
+C {adc_bridge1.sym} 240 -300 0 0 {name=A4
 adc=adc1
 adc_bridge_model=adc_bridge
 in_low=0.4
 in_high=0.6
 }
-C {part_2_digital_comps/algorithm/xschem/adc_bridge1.sym} 240 -280 0 0 {name=A5
+C {adc_bridge1.sym} 240 -280 0 0 {name=A5
 adc=adc1
 adc_bridge_model=adc_bridge
 in_low=0.4
@@ -238,7 +238,7 @@ dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -510 0 0 {name=A7
+C {dac_bridge1.sym} 580 -510 0 0 {name=A7
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
@@ -256,109 +256,109 @@ dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -450 0 0 {name=A10
+C {dac_bridge1.sym} 580 -450 0 0 {name=A10
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -430 0 0 {name=A11
+C {dac_bridge1.sym} 580 -430 0 0 {name=A11
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -410 0 0 {name=A12
+C {dac_bridge1.sym} 580 -410 0 0 {name=A12
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -390 0 0 {name=A13
+C {dac_bridge1.sym} 580 -390 0 0 {name=A13
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -370 0 0 {name=A14
+C {dac_bridge1.sym} 580 -370 0 0 {name=A14
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -350 0 0 {name=A15
+C {dac_bridge1.sym} 580 -350 0 0 {name=A15
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -330 0 0 {name=A16
+C {dac_bridge1.sym} 580 -330 0 0 {name=A16
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -310 0 0 {name=A17
+C {dac_bridge1.sym} 580 -310 0 0 {name=A17
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -290 0 0 {name=A18
+C {dac_bridge1.sym} 580 -290 0 0 {name=A18
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -270 0 0 {name=A19
+C {dac_bridge1.sym} 580 -270 0 0 {name=A19
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -250 0 0 {name=A20
+C {dac_bridge1.sym} 580 -250 0 0 {name=A20
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -230 0 0 {name=A21
+C {dac_bridge1.sym} 580 -230 0 0 {name=A21
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -210 0 0 {name=A22
+C {dac_bridge1.sym} 580 -210 0 0 {name=A22
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -190 0 0 {name=A23
+C {dac_bridge1.sym} 580 -190 0 0 {name=A23
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -170 0 0 {name=A24
+C {dac_bridge1.sym} 580 -170 0 0 {name=A24
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -150 0 0 {name=A25
+C {dac_bridge1.sym} 580 -150 0 0 {name=A25
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -130 0 0 {name=A26
+C {dac_bridge1.sym} 580 -130 0 0 {name=A26
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0
 out_high=1.2
 }
-C {part_2_digital_comps/algorithm/xschem/dac_bridge1.sym} 580 -110 0 0 {name=A27
+C {dac_bridge1.sym} 580 -110 0 0 {name=A27
 dac=dac1
 dac_bridge_model=dac_bridge
 out_low=0

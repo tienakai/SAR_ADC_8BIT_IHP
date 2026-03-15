@@ -1,0 +1,214 @@
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/SAR_ADC_TOP/schematic/SAR_ADC.sch
+**.subckt SAR_ADC vin_pos vin_neg VDD VSS bias clk_comp clk_samp D6 D5 D4 D3 D2 D1 D0 D7
+*.ipin vin_pos
+*.ipin vin_neg
+*.iopin VDD
+*.iopin VSS
+*.ipin bias
+*.ipin clk_comp
+*.ipin clk_samp
+*.iopin D6
+*.iopin D5
+*.iopin D4
+*.iopin D3
+*.iopin D2
+*.iopin D1
+*.iopin D0
+*.iopin D7
+x7 VDD VDD VSS net12 net11 BN5 BN6 net10 BN_MSB net16 net15 BN1 BN2 net14 BN3 net13 BN4 switch_array
+x4 VDD VDD VSS net7 net8 B5 B6 net9 B_MSB net3 net4 B1 B2 net5 B3 net6 B4 switch_array
+x8 VDD clk_algo Om Op VSS nand_gate
+x1 VDD vin_pos net2 clk_samp VSS bootstrap_switch
+x6 VDD vin_neg net1 clk_samp VSS bootstrap_switch
+x9 VDD bias CDAC_v+ CDAC_v- Om Op clk_comp VSS DIFF_COMPARATOR
+x3 net2 CDAC_v+ net7 net8 net5 net6 net4 net3 VDD net9 CDAC
+x2 net1 CDAC_v- net12 net11 net14 net13 net15 net16 VDD net10 CDAC
+XC1 clk_algo VSS cap_cmim w=3.60e-6 l=3.60e-6 m=1
+adut [ clk_algo Op VDD Om clk_samp ] [ B1 B2 B3 B4 B5 B6 B_MSB BN1 BN2 BN3 BN4 BN5 BN6 BN_MSB D7 D6 D5 D4 D3 D2 D1 D0 ] null dut
+.model dut d_cosim simulation=./sar_logic.so
+**.ends
+
+* expanding   symbol:
+*+  /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/switch_array.sym # of pins=17
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/switch_array.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/switch_array.sch
+.subckt switch_array vref vdd gnd S5 S6 D5 D6 S_MSB D_MSB S1 S2 D1 D2 S3 D3 S4 D4
+*.iopin S_MSB
+*.iopin S6
+*.iopin D_MSB
+*.iopin D6
+*.iopin S5
+*.iopin D5
+*.iopin S4
+*.iopin S3
+*.iopin S2
+*.iopin D4
+*.iopin D3
+*.iopin D2
+*.iopin S1
+*.iopin D1
+*.iopin vdd
+*.iopin vref
+*.iopin gnd
+x22 D_MSB vref S_MSB gnd net1 vdd T_gate
+x1 net1 gnd S_MSB gnd D_MSB vdd T_gate
+x7 vdd D_MSB net1 gnd inverter
+x2 D6 vref S6 gnd net2 vdd T_gate
+x3 net2 gnd S6 gnd D6 vdd T_gate
+x4 vdd D6 net2 gnd inverter
+x5 D5 vref S5 gnd net3 vdd T_gate
+x6 net3 gnd S5 gnd D5 vdd T_gate
+x8 vdd D5 net3 gnd inverter
+x9 D4 vref S4 gnd net4 vdd T_gate
+x10 net4 gnd S4 gnd D4 vdd T_gate
+x11 vdd D4 net4 gnd inverter
+x12 net5 gnd S3 gnd D3 vdd T_gate
+x13 D3 vref S3 gnd net5 vdd T_gate
+x14 vdd D3 net5 gnd inverter
+x15 D2 vref S2 gnd net6 vdd T_gate
+x16 net6 gnd S2 gnd D2 vdd T_gate
+x17 vdd D2 net6 gnd inverter
+x18 D1 vref S1 gnd net7 vdd T_gate
+x19 net7 gnd S1 gnd D1 vdd T_gate
+x20 vdd D1 net7 gnd inverter
+.ends
+
+
+* expanding   symbol:
+*+  /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/nand_gate/schematic/nand_gate.sym # of pins=5
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/nand_gate/schematic/nand_gate.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/nand_gate/schematic/nand_gate.sch
+.subckt nand_gate vdd Vo B A gnd
+*.iopin vdd
+*.iopin gnd
+*.ipin A
+*.opin Vo
+*.ipin B
+XM5 Vo A vdd vdd sg13_lv_pmos w=0.5u l=0.13u ng=1 m=1
+XM6 Vo A net1 gnd sg13_lv_nmos w=0.25u l=0.13u ng=1 m=1
+XM1 net1 B gnd gnd sg13_lv_nmos w=0.25u l=0.13u ng=1 m=1
+XM2 Vo B vdd vdd sg13_lv_pmos w=0.5u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/bootstrap_switch/schematic/bootstrap_switch.sym # of pins=5
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/bootstrap_switch/schematic/bootstrap_switch.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_2_digital_comps/bootstrap_switch/schematic/bootstrap_switch.sch
+.subckt bootstrap_switch vdd vi vo clk gnd
+*.iopin gnd
+*.iopin vdd
+*.iopin vi
+*.iopin vo
+*.iopin clk
+XM1 vdd net2 net1 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+XM3 vdd net1 net2 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+XM4 net7 net10 net3 net3 sg13_lv_pmos w=500n l=0.13u ng=1 m=1
+XM2 vdd net2 net3 gnd sg13_lv_nmos w=1.3u l=0.13u ng=1 m=1
+XM6 net5 gp vdd vdd sg13_lv_pmos w=500n l=130n ng=1 m=1
+XM5 net5 vdd net4 gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+XM7 net4 clk_not gnd gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+XC5 net2 clk_not cap_cmim w=4.665e-6 l=6.99e-6 m=1
+XC6 net3 net6 cap_cmim w=9.39e-6 l=6.99e-6 m=1
+XM8 net6 net5 vi gnd sg13_lv_nmos w=3u l=0.13u ng=1 m=1
+XM9 vo net7 vi gnd sg13_lv_nmos w=2.5u l=0.13u ng=1 m=1
+XM10 net8 vdd net7 gnd sg13_lv_nmos w=500n l=0.13u ng=1 m=1
+XM11 gnd clk_not net8 gnd sg13_lv_nmos w=500n l=0.13u ng=1 m=1
+XM12 net6 clk_not gnd gnd sg13_lv_nmos w=1.3u l=0.4u ng=1 m=1
+XC1 net1 net9 cap_cmim w=4.665e-6 l=6.99e-6 m=1
+x1 vdd clk clk_not gnd inverter
+x2 vdd gp net10 gnd inverter
+x3 vdd clk_not net9 gnd inverter
+.ends
+
+
+* expanding   symbol:
+*+  /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/comparator/layout/schematic/DIFF_COMPARATOR.sym # of pins=8
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/comparator/layout/schematic/DIFF_COMPARATOR.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/comparator/layout/schematic/DIFF_COMPARATOR.sch
+.subckt DIFF_COMPARATOR vdd vbias v+ v- out- out+ clk gnd
+*.iopin vdd
+*.iopin gnd
+*.ipin v+
+*.ipin v-
+*.ipin clk
+*.opin out-
+*.opin out+
+*.ipin vbias
+XM2 net3 v+ net1 well sg13_lv_pmos w=8u l=200n ng=2 m=4
+XM1 net2 v- net1 well sg13_lv_pmos w=8u l=200n ng=2 m=4
+XM4 out- net2 vdd well sg13_lv_pmos w=8u l=0.200u ng=2 m=1
+XM5 out+ net3 vdd well sg13_lv_pmos w=8u l=0.200u ng=2 m=1
+XM11 gnd net3 out+ gnd sg13_lv_nmos w=4.0u l=0.200u ng=2 m=1
+XM12 gnd net2 out- gnd sg13_lv_nmos w=4.0u l=0.200u ng=2 m=1
+XM6 gnd net2 net3 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM10 gnd clk net3 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM7 gnd clk net2 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM8 gnd net3 net2 gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=1
+XM3 gnd gnd gnd gnd sg13_lv_nmos w=4.0u l=0.200u ng=1 m=4
+XM13 net1 clk net4 well sg13_lv_pmos w=18u l=0.3u ng=4 m=1
+XM9 net4 vbias vdd well sg13_lv_pmos w=18u l=0.3u ng=4 m=1
+XR1 vdd well ntap1 R=8.553 w=49.2880405e-6 l=0.3119595e-6
+.ends
+
+
+* expanding   symbol:
+*+  /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/CDAC/schematic/CDAC.sym # of pins=10
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/CDAC/schematic/CDAC.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/CDAC/schematic/CDAC.sch
+.subckt CDAC vin vo C5 C6 C3 C4 C2 C1 vref C_MSB
+*.iopin vin
+*.iopin vo
+*.iopin C6
+*.iopin C5
+*.iopin C4
+*.iopin C3
+*.iopin C2
+*.iopin C1
+*.iopin vref
+*.iopin C_MSB
+XC1 vo vref cap_cmim w=5.71e-6 l=5.71e-6 m=1
+XC2 vo C1 cap_cmim w=5.71e-6 l=5.71e-6 m=1
+XC3 vo C2 cap_cmim w=5.71e-6 l=5.71e-6 m=2
+XC4 vo C3 cap_cmim w=5.71e-6 l=5.71e-6 m=4
+XC5 vo C4 cap_cmim w=5.71e-6 l=5.71e-6 m=8
+XC6 vo C5 cap_cmim w=5.71e-6 l=5.71e-6 m=16
+XC7 vo C6 cap_cmim w=5.71e-6 l=5.71e-6 m=32
+XC8 vo C_MSB cap_cmim w=5.71e-6 l=5.71e-6 m=64
+XC9 net1 net2 cap_cmim w=5.71e-6 l=5.71e-6 m=40
+* noconn #net1
+* noconn #net2
+XC10 vin vo cap_cmim w=1.5e-6 l=1.50e-6 m=1
+.ends
+
+
+* expanding   symbol:
+*+  /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/T_gate.sym # of pins=6
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/T_gate.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/T_gate.sch
+.subckt T_gate !Control Vin Vout gnd Control vdd
+*.iopin Vout
+*.iopin Vin
+*.iopin !Control
+*.iopin Control
+*.iopin gnd
+*.iopin vdd
+XM1 Vin Control Vout gnd sg13_lv_nmos w=1u l=0.13u ng=1 m=1
+XM2 Vin !Control Vout vdd sg13_lv_pmos w=2u l=0.13u ng=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/inverter.sym # of pins=4
+** sym_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/inverter.sym
+** sch_path: /home/designer/shared/IHP-AnalogAcademy/modules/module_3_8_bit_SAR_ADC/part_5_analog_layout/switch_array/schematic/inverter.sch
+.subckt inverter vdd vi vo gnd
+*.iopin vi
+*.iopin vo
+*.iopin gnd
+*.iopin vdd
+XM5 vo vi vdd vdd sg13_lv_pmos w=800n l=130n ng=1 m=1
+XM7 vo vi gnd gnd sg13_lv_nmos w=400n l=130n ng=1 m=1
+.ends
+
+.end

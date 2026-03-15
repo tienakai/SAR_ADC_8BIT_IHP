@@ -140,93 +140,55 @@ value=7p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} -370 -100 0 0 {name=l7 lab=GND}
-C {/home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/xschem_pex_symbol/inverter.sym} -700 -180 0 0 {name=x4
+C {/home/tien/SAR_ADC_8BIT_IHP/xschem/xschem_pex_symbol/inverter.sym} -700 -180 0 0 {name=x1
 schematic=inverter_pex
 spice_sym_def=
 "
 .subckt inverter_pex vdd vi vo gnd
-X0 vo.t0 vi.t0 vdd.t1 vdd.t0 sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
-X1 vo.t1 vi.t0 gnd.t1 gnd.t0 sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
-C0 vdd vi 0.09004f
-C1 vdd vo 0.12375f
-C2 vi vo 0.06195f
-R0 vi vi.t0 15.0294
-R1 vdd.n0 vdd.t0 11.3708
-R2 vdd.n0 vdd.t1 8.93718
-R3 vdd vdd.n0 0.0808279
-R4 vo.n0 vo.t1 17.2852
-R5 vo.n0 vo.t0 9.11151
-R6 vo vo.n0 0.19025
-R7 gnd.n0 gnd.t0 1381.52
-R8 gnd.n0 gnd.t1 17.3745
-R9 gnd gnd.n0 0.079713
+X0 vo vi vdd vdd sg13_lv_pmos ad=0.272p pd=2.28u as=0.272p ps=2.28u w=0.8u l=0.13u
+X1 vo vi gnd gnd sg13_lv_nmos ad=0.136p pd=1.48u as=0.136p ps=1.48u w=0.4u l=0.13u
+C0 vo vdd 0.12375f
+C1 vo vi 0.06195f
+C2 vi vdd 0.09004f
 C3 vo gnd 0.20432f
 C4 vi gnd 0.35463f
 C5 vdd gnd 0.1104f
 .ends
 "
 }
-C {/home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/xschem_pex_symbol/T_gate.sym} -540 -350 0 0 {name=x1
-schematic=T_gate
+C {/home/tien/SAR_ADC_8BIT_IHP/xschem/xschem_pex_symbol/T_gate.sym} -540 -20 0 0 {name=x2
+schematic=T_gate_pex
 spice_sym_def=
 "
-.subckt T_gate Vin Vout Control gnd vdd
-X0 Vout.t1 Control.t0 Vin.t1 gnd.t0 sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
-X1 Vout.t0 Control.t0 Vin.t0 vdd.t0 sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
-C0 Control Vin 0.01009f
-C1 Control vdd 0.06532f
-C2 Vin Vout 0.44023f
-C3 Vin vdd 0.01888f
-C4 Vout vdd 0.19552f
-R0 Control Control.t0 15.0225
-R1 Vin.n0 Vin.t1 6.32304
-R2 Vin.n0 Vin.t0 3.74651
-R3 Vin Vin.n0 0.255378
-R4 Vout.n0 Vout.t1 6.32648
-R5 Vout.n0 Vout.t0 3.74651
-R6 Vout Vout.n0 0.71275
-R7 gnd gnd.t0 810.898
-R8 Control Control.t0 15.0243
-R9 vdd vdd.n0 17.0173
-R10 vdd vdd.n0 5.79683
-R11 vdd.n0 vdd.t0 4.25112
-C5 Control gnd 0.26277f
-C6 Vout gnd 0.30897f
-C7 Vin gnd 0.22881f
-C8 Control gnd 0.30202f
-C9 vdd gnd 0.09029f
+.subckt T_gate_pex Vin Vout Control gnd vdd
+X0 Vout Control Vin gnd sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X1 Vout Control Vin vdd sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+C0 Control vdd 0.06532f
+C1 Vin Vout 0.44023f
+C2 vdd Vout 0.19552f
+C3 Control gnd 0.26277f
+C4 Vout gnd 0.30897f
+C5 Vin gnd 0.22881f
+C6 Control gnd 0.30202f
+C7 vdd gnd 0.09029f
 .ends
 "
 }
-C {/home/userdata/k67D/duynk_67d/SAR_ADC_8BIT_IHP/pex/xschem_pex_symbol/T_gate.sym} -540 -20 0 0 {name=x2
-schematic=T_gate
+C {/home/tien/SAR_ADC_8BIT_IHP/xschem/xschem_pex_symbol/T_gate.sym} -540 -350 0 0 {name=x3
+schematic=T_gate_pex
 spice_sym_def=
 "
-.subckt T_gate Vin Vout Control gnd vdd
-X0 Vout.t1 Control.t0 Vin.t1 gnd.t0 sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
-X1 Vout.t0 Control.t0 Vin.t0 vdd.t0 sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
-C0 Control Vin 0.01009f
-C1 Control vdd 0.06532f
-C2 Vin Vout 0.44023f
-C3 Vin vdd 0.01888f
-C4 Vout vdd 0.19552f
-R0 Control Control.t0 15.0225
-R1 Vin.n0 Vin.t1 6.32304
-R2 Vin.n0 Vin.t0 3.74651
-R3 Vin Vin.n0 0.255378
-R4 Vout.n0 Vout.t1 6.32648
-R5 Vout.n0 Vout.t0 3.74651
-R6 Vout Vout.n0 0.71275
-R7 gnd gnd.t0 810.898
-R8 Control Control.t0 15.0243
-R9 vdd vdd.n0 17.0173
-R10 vdd vdd.n0 5.79683
-R11 vdd.n0 vdd.t0 4.25112
-C5 Control gnd 0.26277f
-C6 Vout gnd 0.30897f
-C7 Vin gnd 0.22881f
-C8 Control gnd 0.30202f
-C9 vdd gnd 0.09029f
+.subckt T_gate_pex Vin Vout Control gnd vdd
+X0 Vout Control Vin gnd sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X1 Vout Control Vin vdd sg13_lv_pmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=0.13u
+C0 Control vdd 0.06532f
+C1 Vin Vout 0.44023f
+C2 vdd Vout 0.19552f
+C3 Control gnd 0.26277f
+C4 Vout gnd 0.30897f
+C5 Vin gnd 0.22881f
+C6 Control gnd 0.30202f
+C7 vdd gnd 0.09029f
 .ends
 "
 }

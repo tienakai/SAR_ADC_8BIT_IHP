@@ -1,0 +1,1318 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.60 (git sha1 5bafeb77dc71e054fa331ab9efa613e6fb0a1c49, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Liberty frontend: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+Imported 84 cell types from liberty file.
+
+2. Executing Liberty frontend: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib
+Imported 15 cell types from liberty file.
+[INFO] Using SDC file '/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/06-yosys-synthesis/synthesis.abc.sdc' for ABC…wtaf
+
+3. Executing Verilog-2005 frontend: /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v
+Parsing SystemVerilog input from `/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v' to AST representation.
+verilog frontend filename /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v
+Storing AST representation for module `$abstract\sar_algo'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+5. Executing AST frontend in derive mode using pre-parsed AST for module `\sar_algo'.
+Generating RTLIL representation for module `\sar_algo'.
+
+5.1. Analyzing design hierarchy..
+Top module:  \sar_algo
+
+5.2. Analyzing design hierarchy..
+Top module:  \sar_algo
+Removing unused module `$abstract\sar_algo'.
+Removed 1 unused modules.
+Renaming module sar_algo to sar_algo.
+
+6. Executing ATTRMAP pass (move or copy attributes).
+
+7. Executing TRIBUF pass.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \sar_algo
+
+8.2. Analyzing design hierarchy..
+Top module:  \sar_algo
+Removed 0 unused modules.
+
+9. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:63$76 in module sar_algo.
+Marked 5 switch rules as full_case in process $proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12 in module sar_algo.
+Marked 2 switch rules as full_case in process $proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:21$4 in module sar_algo.
+Removed a total of 0 dead cases.
+
+11. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 11 assignments to connections.
+
+12. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:18$82'.
+  Set init value: \counter = 4'0000
+Found init rule in `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:17$81'.
+  Set init value: \cnt = 4'0000
+
+13. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:63$76'.
+Found async reset \rst in `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+Found async reset \rst in `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:21$4'.
+
+14. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~6 debug messages>
+
+15. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:18$82'.
+Creating decoders for process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:17$81'.
+Creating decoders for process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:63$76'.
+     1/1: $0\fdac_clk[0:0]
+Creating decoders for process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+     1/29: $5$lookahead\BN$11[6:0]$57
+     2/29: $5$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:51$3[31:0]$55
+     3/29: $5$lookahead\B$10[6:0]$56
+     4/29: $5$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$2[31:0]$54
+     5/29: $4$lookahead\BN$11[6:0]$44
+     6/29: $4$lookahead\B$10[6:0]$43
+     7/29: $4$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:51$3[31:0]$41
+     8/29: $4$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$2[31:0]$40
+     9/29: $4$lookahead\D$9[7:0]$42
+    10/29: $4$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$1[31:0]$39
+    11/29: $3$lookahead\BN$11[6:0]$37
+    12/29: $3$lookahead\B$10[6:0]$36
+    13/29: $3$lookahead\D$9[7:0]$35
+    14/29: $3$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:51$3[31:0]$34
+    15/29: $3$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$2[31:0]$33
+    16/29: $3$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$1[31:0]$32
+    17/29: $2$lookahead\BN$11[6:0]$30
+    18/29: $2$lookahead\B$10[6:0]$29
+    19/29: $2$lookahead\D$9[7:0]$28
+    20/29: $2$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:51$3[31:0]$27
+    21/29: $2$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$2[31:0]$26
+    22/29: $2$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$1[31:0]$25
+    23/29: $1$lookahead\BN$11[6:0]$24
+    24/29: $1$lookahead\B$10[6:0]$23
+    25/29: $1$lookahead\D$9[7:0]$22
+    26/29: $1$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:51$3[31:0]$21
+    27/29: $1$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$2[31:0]$20
+    28/29: $1$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$1[31:0]$19
+    29/29: $0\counter[3:0]
+Creating decoders for process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:21$4'.
+     1/2: $0\cnt[3:0]
+     2/2: $0\fclk_samp[0:0]
+
+16. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+17. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\sar_algo.\fdac_clk' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:63$76'.
+  created $adff cell `$procdff$260' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.\B' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$263' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.\D' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$266' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.\BN' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$269' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.\counter' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$272' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$1' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$275' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$2' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$278' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.$bitselwrite$pos$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:51$3' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$281' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.$lookahead\D$9' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$284' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.$lookahead\B$10' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$287' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.$lookahead\BN$11' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+  created $adff cell `$procdff$290' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.\fclk_samp' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:21$4'.
+  created $adff cell `$procdff$293' with positive edge clock and positive level reset.
+Creating register for signal `\sar_algo.\cnt' using process `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:21$4'.
+  created $adff cell `$procdff$296' with positive edge clock and positive level reset.
+
+18. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+19. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:18$82'.
+Removing empty process `sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:17$81'.
+Removing empty process `sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:63$76'.
+Found and cleaned up 4 empty switches in `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+Removing empty process `sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:40$12'.
+Found and cleaned up 2 empty switches in `\sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:21$4'.
+Removing empty process `sar_algo.$proc$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:21$4'.
+Cleaned up 6 empty switches.
+
+20. Executing CHECK pass (checking for obvious problems).
+Checking module sar_algo...
+Found and reported 0 problems.
+
+21. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+<suppressed ~31 debug messages>
+
+22. Executing FLATTEN pass (flatten design).
+
+23. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 33 unused cells and 149 unused wires.
+<suppressed ~34 debug messages>
+
+25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+26. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+<suppressed ~27 debug messages>
+Removed a total of 9 cells.
+
+27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$113.
+    dead port 1/2 on $mux $procmux$115.
+    dead port 2/2 on $mux $procmux$117.
+    dead port 1/2 on $mux $procmux$136.
+    dead port 2/2 on $mux $procmux$138.
+    dead port 1/2 on $mux $procmux$145.
+    dead port 2/2 on $mux $procmux$147.
+    dead port 1/2 on $mux $procmux$172.
+    dead port 2/2 on $mux $procmux$174.
+    dead port 2/2 on $mux $procmux$189.
+    dead port 2/2 on $mux $procmux$195.
+    dead port 2/2 on $mux $procmux$201.
+    dead port 2/2 on $mux $procmux$89.
+    dead port 1/2 on $mux $procmux$91.
+    dead port 2/2 on $mux $procmux$93.
+Removed 15 multiplexer ports.
+<suppressed ~39 debug messages>
+
+28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_algo.
+Performed a total of 0 changes.
+
+29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+30. Executing OPT_DFF pass (perform DFF optimizations).
+
+31. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 0 unused cells and 24 unused wires.
+<suppressed ~1 debug messages>
+
+32. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+33. Rerunning OPT passes. (Maybe there is more to do…)
+
+34. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~24 debug messages>
+
+35. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_algo.
+Performed a total of 0 changes.
+
+36. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+37. Executing OPT_DFF pass (perform DFF optimizations).
+
+38. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+39. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+40. Executing FSM pass (extract and optimize FSM).
+
+40.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+40.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+40.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+40.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+40.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+40.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+40.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+40.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+41. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+42. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+43. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~24 debug messages>
+
+44. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_algo.
+Performed a total of 0 changes.
+
+45. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+46. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$296 ($adff) from module sar_algo (D = $procmux$249_Y, Q = \cnt).
+Adding EN signal on $procdff$293 ($adff) from module sar_algo (D = $eq$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:68$78_Y, Q = \fclk_samp).
+Adding EN signal on $procdff$272 ($adff) from module sar_algo (D = $procmux$244_Y, Q = \counter).
+Adding EN signal on $procdff$269 ($adff) from module sar_algo (D = $or$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:51$74_Y, Q = \BN).
+Adding EN signal on $procdff$266 ($adff) from module sar_algo (D = $or$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$52_Y, Q = \D).
+Adding EN signal on $procdff$263 ($adff) from module sar_algo (D = $or$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$65_Y, Q = \B).
+
+47. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 15 unused cells and 15 unused wires.
+<suppressed ~16 debug messages>
+
+48. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+<suppressed ~1 debug messages>
+
+49. Rerunning OPT passes. (Maybe there is more to do…)
+
+50. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+51. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_algo.
+Performed a total of 0 changes.
+
+52. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+<suppressed ~12 debug messages>
+Removed a total of 4 cells.
+
+53. Executing OPT_DFF pass (perform DFF optimizations).
+
+54. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+55. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+56. Rerunning OPT passes. (Maybe there is more to do…)
+
+57. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+58. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_algo.
+Performed a total of 0 changes.
+
+59. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+60. Executing OPT_DFF pass (perform DFF optimizations).
+
+61. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+62. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+63. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 4) from port B of cell sar_algo.$eq$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:26$5 ($eq).
+Removed top 28 bits (of 32) from port B of cell sar_algo.$lt$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:46$38 ($lt).
+Removed top 29 bits (of 32) from port A of cell sar_algo.$sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$45 ($sub).
+Removed top 28 bits (of 32) from port Y of cell sar_algo.$sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$45 ($sub).
+Converting cell sar_algo.$neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$46 ($neg) from signed to unsigned.
+Removed top 1 bits (of 33) from port A of cell sar_algo.$neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$46 ($neg).
+Removed top 29 bits (of 32) from port B of cell sar_algo.$lt$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:49$53 ($lt).
+Removed top 29 bits (of 32) from port A of cell sar_algo.$sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$58 ($sub).
+Removed top 28 bits (of 32) from port Y of cell sar_algo.$sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$58 ($sub).
+Converting cell sar_algo.$neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$59 ($neg) from signed to unsigned.
+Removed top 1 bits (of 33) from port A of cell sar_algo.$neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$59 ($neg).
+
+64. Executing PEEPOPT pass (run peephole optimizers).
+
+65. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+66. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module sar_algo:
+  creating $macc model for $add$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:30$7 ($add).
+  creating $macc model for $add$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:53$75 ($add).
+  creating $macc model for $neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$46 ($neg).
+  creating $macc model for $neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$59 ($neg).
+  creating $macc model for $sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$45 ($sub).
+  creating $macc model for $sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$58 ($sub).
+  creating $alu model for $macc $sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$58.
+  creating $alu model for $macc $sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$45.
+  creating $alu model for $macc $neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$59.
+  creating $alu model for $macc $neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$46.
+  creating $alu model for $macc $add$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:53$75.
+  creating $alu model for $macc $add$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:30$7.
+  creating $alu model for $gt$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:38$8 ($gt): new $alu
+  creating $alu model for $lt$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:46$38 ($lt): new $alu
+  creating $alu model for $lt$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:49$53 ($lt): new $alu
+  creating $alu cell for $lt$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:49$53: $auto$alumacc.cc:512:replace_alu$324
+  creating $alu cell for $lt$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:46$38: $auto$alumacc.cc:512:replace_alu$329
+  creating $alu cell for $gt$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:38$8: $auto$alumacc.cc:512:replace_alu$334
+  creating $alu cell for $add$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:30$7: $auto$alumacc.cc:512:replace_alu$345
+  creating $alu cell for $add$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:53$75: $auto$alumacc.cc:512:replace_alu$348
+  creating $alu cell for $neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$46: $auto$alumacc.cc:512:replace_alu$351
+  creating $alu cell for $neg$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$59: $auto$alumacc.cc:512:replace_alu$354
+  creating $alu cell for $sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:47$45: $auto$alumacc.cc:512:replace_alu$357
+  creating $alu cell for $sub$/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:50$58: $auto$alumacc.cc:512:replace_alu$360
+  created 9 $alu and 0 $macc cells.
+
+67. Executing SHARE pass (SAT-based resource sharing).
+
+68. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+<suppressed ~3 debug messages>
+
+69. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+70. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+71. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_algo.
+Performed a total of 0 changes.
+
+72. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+73. Executing OPT_DFF pass (perform DFF optimizations).
+
+74. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+75. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+76. Rerunning OPT passes. (Maybe there is more to do…)
+
+77. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+78. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_algo.
+Performed a total of 0 changes.
+
+79. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+80. Executing OPT_DFF pass (perform DFF optimizations).
+
+81. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+82. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+83. Executing MEMORY pass.
+
+83.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+83.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+83.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+83.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+83.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+83.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+83.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+83.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+83.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+83.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+84. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+85. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+<suppressed ~6 debug messages>
+
+86. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+87. Executing OPT_DFF pass (perform DFF optimizations).
+
+88. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 0 unused cells and 11 unused wires.
+<suppressed ~1 debug messages>
+
+89. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+90. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+91. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+92. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+93. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_algo.
+Performed a total of 0 changes.
+
+94. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+95. Executing OPT_SHARE pass.
+
+96. Executing OPT_DFF pass (perform DFF optimizations).
+
+97. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+98. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+99. Executing TECHMAP pass (map to technology primitives).
+
+99.1. Executing Verilog-2005 frontend: /nix/store/zlx8k2adfi2x3iglj8r5wkb3fg9k6s2f-yosys-0.60/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/zlx8k2adfi2x3iglj8r5wkb3fg9k6s2f-yosys-0.60/bin/../share/yosys/techmap.v' to AST representation.
+verilog frontend filename /nix/store/zlx8k2adfi2x3iglj8r5wkb3fg9k6s2f-yosys-0.60/bin/../share/yosys/techmap.v
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `\$connect'.
+Generating RTLIL representation for module `\$input_port'.
+Successfully finished Verilog frontend.
+
+99.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$0563fff2c395e9892f21c131fa33d5e0ad144e72\_90_alu for cells of type $alu.
+Using template $paramod$99501223b6f7e5af250351eeb57edb5403a5ad0b\_90_alu for cells of type $alu.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $or.
+Using template $paramod$fc972a7a46956c1788f3cb5257b53c8f1df2d0cc\_90_alu for cells of type $alu.
+Using template $paramod$f956edc9fe4df758d9fdb10bfc518a364c99e75e\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$constmap:51fb3526f3621c6ba109a6fa670766d42e57f474$paramod$3a55d5cb0043d442f8310a0b82c3ba1d6d3f1032\_90_shift_shiftx for cells of type $shift.
+Using extmapper simplemap for cells of type $and.
+Analyzing pattern of constant bits for this cell:
+Creating constmapped module `$paramod$constmap:92b06b5a8b86d5cecb92c0600747e371f589a4a3$paramod$3a55d5cb0043d442f8310a0b82c3ba1d6d3f1032\_90_shift_shiftx'.
+
+99.18. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:92b06b5a8b86d5cecb92c0600747e371f589a4a3$paramod$3a55d5cb0043d442f8310a0b82c3ba1d6d3f1032\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$586.
+    dead port 2/2 on $mux $procmux$580.
+    dead port 2/2 on $mux $procmux$574.
+    dead port 2/2 on $mux $procmux$568.
+Removed 4 multiplexer ports.
+<suppressed ~693 debug messages>
+
+99.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:92b06b5a8b86d5cecb92c0600747e371f589a4a3$paramod$3a55d5cb0043d442f8310a0b82c3ba1d6d3f1032\_90_shift_shiftx.
+<suppressed ~30 debug messages>
+Removed 0 unused cells and 9 unused wires.
+Using template $paramod$constmap:92b06b5a8b86d5cecb92c0600747e371f589a4a3$paramod$3a55d5cb0043d442f8310a0b82c3ba1d6d3f1032\_90_shift_shiftx for cells of type $shift.
+Using template $paramod$constmap:d5cef534503bb5585896238eec2c5fa65eeb5211$paramod$97cc8a1bdd943c352e360b0a7c8d5f6bee091418\_90_shift_shiftx for cells of type $shift.
+Analyzing pattern of constant bits for this cell:
+Creating constmapped module `$paramod$constmap:d1f1f5be790496f47cd40eb19747d521a0c542d5$paramod$97cc8a1bdd943c352e360b0a7c8d5f6bee091418\_90_shift_shiftx'.
+
+99.25. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:d1f1f5be790496f47cd40eb19747d521a0c542d5$paramod$97cc8a1bdd943c352e360b0a7c8d5f6bee091418\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$758.
+    dead port 2/2 on $mux $procmux$752.
+    dead port 2/2 on $mux $procmux$746.
+    dead port 2/2 on $mux $procmux$740.
+Removed 4 multiplexer ports.
+<suppressed ~494 debug messages>
+
+99.26. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:d1f1f5be790496f47cd40eb19747d521a0c542d5$paramod$97cc8a1bdd943c352e360b0a7c8d5f6bee091418\_90_shift_shiftx.
+<suppressed ~30 debug messages>
+Removed 0 unused cells and 9 unused wires.
+Using template $paramod$constmap:d1f1f5be790496f47cd40eb19747d521a0c542d5$paramod$97cc8a1bdd943c352e360b0a7c8d5f6bee091418\_90_shift_shiftx for cells of type $shift.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000100 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100001 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100001 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000001 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000001 for cells of type $lcu.
+Using extmapper simplemap for cells of type $ne.
+No more expansions possible.
+<suppressed ~1133 debug messages>
+
+100. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+<suppressed ~1505 debug messages>
+
+101. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+<suppressed ~939 debug messages>
+Removed a total of 313 cells.
+
+102. Executing OPT_DFF pass (perform DFF optimizations).
+
+103. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 64 unused cells and 1030 unused wires.
+<suppressed ~65 debug messages>
+
+104. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+<suppressed ~32 debug messages>
+
+105. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+106. Executing OPT_DFF pass (perform DFF optimizations).
+
+107. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 0 unused cells and 32 unused wires.
+<suppressed ~1 debug messages>
+
+108. Executing ABC pass (technology mapping using ABC).
+
+108.1. Extracting gate netlist of module `\sar_algo' to `<abc-temp-dir>/input.blif'..
+
+108.1.1. Executed ABC.
+Extracted 298 gates and 333 wires to a netlist network with 34 inputs and 36 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Jan  1 1980 00:00:00)
+ABC: abc 01> abc 01> + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library /tmp/yosys-abc-IRzK5i/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+
+108.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:        5
+ABC RESULTS:            ANDNOT cells:       82
+ABC RESULTS:              NAND cells:        4
+ABC RESULTS:               NOR cells:        4
+ABC RESULTS:               NOT cells:       10
+ABC RESULTS:                OR cells:       92
+ABC RESULTS:             ORNOT cells:       13
+ABC RESULTS:               XOR cells:       14
+ABC RESULTS:        internal signals:      263
+ABC RESULTS:           input signals:       34
+ABC RESULTS:          output signals:       36
+Removing temp directory.
+** cmd error: unknown command 'abc'
+(this is likely caused by using an alias defined in "abc.rc"
+without having this file in the current or parent directory)
+Removing global temp directory.
+
+109. Executing OPT pass (performing simple optimizations).
+
+109.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+109.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+<suppressed ~36 debug messages>
+Removed a total of 12 cells.
+
+109.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+109.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 0 unused cells and 163 unused wires.
+<suppressed ~2 debug messages>
+
+109.5. Finished fast OPT passes.
+
+110. Executing HIERARCHY pass (managing design hierarchy).
+
+110.1. Analyzing design hierarchy..
+Top module:  \sar_algo
+
+110.2. Analyzing design hierarchy..
+Top module:  \sar_algo
+Removed 0 unused modules.
+
+111. Executing CHECK pass (checking for obvious problems).
+Checking module sar_algo...
+Found and reported 0 problems.
+
+112. Printing statistics.
+
+=== sar_algo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      228 wires
+      253 wire bits
+       16 public wires
+       41 public wire bits
+       14 ports
+       33 port bits
+      244 cells
+       79   $_ANDNOT_
+        4   $_AND_
+       30   $_DFFE_PP0P_
+        1   $_DFFE_PP1P_
+        1   $_DFF_PP0_
+        4   $_NAND_
+        4   $_NOR_
+       10   $_NOT_
+       11   $_ORNOT_
+       89   $_OR_
+       11   $_XOR_
+
+113. Executing OPT pass (performing simple optimizations).
+
+113.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+113.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+113.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sar_algo..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+113.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sar_algo.
+Performed a total of 0 changes.
+
+113.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sar_algo'.
+Removed a total of 0 cells.
+
+113.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+113.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+
+113.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sar_algo.
+
+113.9. Finished fast OPT passes. (There is nothing left to do.)
+
+114. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+{
+   "creator": "Yosys 0.60 (git sha1 5bafeb77dc71e054fa331ab9efa613e6fb0a1c49, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/733a5952249942559b60f3101b1e2590.lib -liberty /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/06e581f06feb45a99411fce6ff293608.lib ",
+   "modules": {
+      "\\sar_algo": {
+         "num_wires":         228,
+         "num_wire_bits":     253,
+         "num_pub_wires":     16,
+         "num_pub_wire_bits": 41,
+         "num_ports":         14,
+         "num_port_bits":     33,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         244,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 79,
+            "$_AND_": 4,
+            "$_DFFE_PP0P_": 30,
+            "$_DFFE_PP1P_": 1,
+            "$_DFF_PP0_": 1,
+            "$_NAND_": 4,
+            "$_NOR_": 4,
+            "$_NOT_": 10,
+            "$_ORNOT_": 11,
+            "$_OR_": 89,
+            "$_XOR_": 11
+         }
+      }
+   },
+      "design": {
+         "num_wires":         228,
+         "num_wire_bits":     253,
+         "num_pub_wires":     16,
+         "num_pub_wire_bits": 41,
+         "num_ports":         14,
+         "num_port_bits":     33,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         244,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 79,
+            "$_AND_": 4,
+            "$_DFFE_PP0P_": 30,
+            "$_DFFE_PP1P_": 1,
+            "$_DFF_PP0_": 1,
+            "$_NAND_": 4,
+            "$_NOR_": 4,
+            "$_NOT_": 10,
+            "$_ORNOT_": 11,
+            "$_OR_": 89,
+            "$_XOR_": 11
+         }
+      }
+}
+
+115. Printing statistics.
+
+=== sar_algo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      228 wires
+      253 wire bits
+       16 public wires
+       41 public wire bits
+       14 ports
+       33 port bits
+      244 cells
+       79   $_ANDNOT_
+        4   $_AND_
+       30   $_DFFE_PP0P_
+        1   $_DFFE_PP1P_
+        1   $_DFF_PP0_
+        4   $_NAND_
+        4   $_NOR_
+       10   $_NOT_
+       11   $_ORNOT_
+       89   $_OR_
+       11   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PP0P_ is unknown!
+   Area for cell type $_DFFE_PP1P_ is unknown!
+   Area for cell type $_DFF_PP0_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/opt/pdks/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v'…
+
+116. Executing TECHMAP pass (map to technology primitives).
+
+116.1. Executing Verilog-2005 frontend: /opt/pdks/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v
+Parsing Verilog input from `/opt/pdks/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v' to AST representation.
+verilog frontend filename /opt/pdks/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+116.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+117. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/opt/pdks/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v'…
+
+118. Executing TECHMAP pass (map to technology primitives).
+
+118.1. Executing Verilog-2005 frontend: /opt/pdks/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v
+Parsing Verilog input from `/opt/pdks/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v' to AST representation.
+verilog frontend filename /opt/pdks/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_PN0_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Generating RTLIL representation for module `\$_DLATCH_NN0_'.
+Successfully finished Verilog frontend.
+
+118.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+119. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+120. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sg13g2_dfrbpq_1 (noninv, pins=4, area=48.99) is a direct match for cell type $_DFF_PN0_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    unmapped dff cell: $_DFF_P_
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sg13g2_dfrbpq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff cell: $_DFF_PN1_
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+120.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~4 debug messages>
+Mapping DFF cells in module `\sar_algo':
+  mapped 32 $_DFF_PN0_ cells to \sg13g2_dfrbpq_1 cells.
+{
+   "creator": "Yosys 0.60 (git sha1 5bafeb77dc71e054fa331ab9efa613e6fb0a1c49, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/733a5952249942559b60f3101b1e2590.lib -liberty /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/06e581f06feb45a99411fce6ff293608.lib ",
+   "modules": {
+      "\\sar_algo": {
+         "num_wires":         293,
+         "num_wire_bits":     318,
+         "num_pub_wires":     16,
+         "num_pub_wire_bits": 41,
+         "num_ports":         14,
+         "num_port_bits":     33,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         309,
+         "num_submodules":       0,
+         "area":              1567.641600,
+         "sequential_area":    1567.641600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 79,
+            "$_AND_": 4,
+            "$_MUX_": 31,
+            "$_NAND_": 4,
+            "$_NOR_": 4,
+            "$_NOT_": 44,
+            "$_ORNOT_": 11,
+            "$_OR_": 89,
+            "$_XOR_": 11,
+            "sg13g2_dfrbpq_1": 32
+         }
+      }
+   },
+      "design": {
+         "num_wires":         293,
+         "num_wire_bits":     318,
+         "num_pub_wires":     16,
+         "num_pub_wire_bits": 41,
+         "num_ports":         14,
+         "num_port_bits":     33,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         309,
+         "num_submodules":       0,
+         "area":              1567.641600,
+         "sequential_area":    1567.641600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 79,
+            "$_AND_": 4,
+            "$_MUX_": 31,
+            "$_NAND_": 4,
+            "$_NOR_": 4,
+            "$_NOT_": 44,
+            "$_ORNOT_": 11,
+            "$_OR_": 89,
+            "$_XOR_": 11,
+            "sg13g2_dfrbpq_1": 32
+         }
+      }
+}
+
+121. Printing statistics.
+
+=== sar_algo ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      293        - wires
+      318        - wire bits
+       16        - public wires
+       41        - public wire bits
+       14        - ports
+       33        - port bits
+      309 1.57E+03 cells
+       79        -   $_ANDNOT_
+        4        -   $_AND_
+       31        -   $_MUX_
+        4        -   $_NAND_
+        4        -   $_NOR_
+       44        -   $_NOT_
+       11        -   $_ORNOT_
+       89        -   $_OR_
+       11        -   $_XOR_
+       32 1.57E+03   sg13g2_dfrbpq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\sar_algo': 1567.641600
+     of which used for sequential elements: 1567.641600 (100.00%)
+
+[INFO] Using generated ABC script '/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/06-yosys-synthesis/AREA_0.abc'…
+
+122. Executing ABC pass (technology mapping using ABC).
+
+122.1. Extracting gate netlist of module `\sar_algo' to `/tmp/yosys-abc-wR6p56/input.blif'..
+Library with only 0 cell classes cannot be used.
+
+122.1.1. Executed ABC.
+Extracted 277 gates and 312 wires to a netlist network with 35 inputs and 65 outputs.
+Running ABC script: /tmp/yosys-abc-wR6p56/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Jan  1 1980 00:00:00)
+ABC: abc 01> abc 01> + read_blif /tmp/yosys-abc-wR6p56/input.blif 
+ABC: + read_lib -w /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/733a5952249942559b60f3101b1e2590.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVss" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIn" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadInOut16mA" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadInOut30mA" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadInOut4mA" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadOut16mA" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadOut30mA" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadOut4mA" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadTriOut16mA" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadTriOut30mA" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadTriOut4mA" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVss" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadAnalog" due to dont_use attribute.
+ABC: Library "sg13g2_io_typ_1p2V_3p3V_25C" from "/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/733a5952249942559b60f3101b1e2590.lib" has 0 cells (15 skipped: 0 seq; 0 tri-state; 4 no func; 11 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.00 sec
+ABC: Memory =    0.38 MB. Time =     0.00 sec
+ABC: + read_lib -m -w /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/06e581f06feb45a99411fce6ff293608.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.01 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_antennanp" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhrq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllrq_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_8".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_8".
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_2" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_2".
+ABC: Library "sg13g2_stdcell_typ_1p20V_25C" from "/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/06e581f06feb45a99411fce6ff293608.lib" has 54 cells (25 skipped: 12 seq; 6 tri-state; 0 no func; 7 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.02 sec
+ABC: Memory =    2.63 MB. Time =     0.02 sec
+ABC: + read_constr -v /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sg13g2_buf_4/X".
+ABC: Setting output load to be 6.000000.
+ABC: + source /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sg13g2_buf_4/X) in the library.
+ABC: WireLoad = "none"  Gates =    104 ( 35.6 %)   Cap =  7.6 ff (  7.7 %)   Area =      952.52 ( 84.6 %)   Delay =   788.22 ps  ( 11.5 %)               
+ABC: Path  0 --       7 : 0    3 pi              A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   7.9 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     118 : 3    9 sg13g2_nand3b_1 A =  12.70  Df = 220.8 -100.0 ps  S = 233.4 ps  Cin =  2.7 ff  Cout =  26.8 ff  Cmax = 300.0 ff  G =  963  
+ABC: Path  2 --     134 : 3    3 sg13g2_nor3_1   A =   9.07  Df = 411.7 -210.6 ps  S = 180.2 ps  Cin =  3.0 ff  Cout =   9.2 ff  Cmax = 300.0 ff  G =  302  
+ABC: Path  3 --     135 : 2    3 sg13g2_nor2b_1  A =   9.07  Df = 614.7 -309.2 ps  S = 130.9 ps  Cin =  2.6 ff  Cout =  13.7 ff  Cmax = 300.0 ff  G =  518  
+ABC: Path  4 --     155 : 3    1 sg13g2_mux2_1   A =  18.14  Df = 788.2 -314.1 ps  S =  56.8 ps  Cin =  3.6 ff  Cout =   6.0 ff  Cmax = 300.0 ff  G =  167  
+ABC: Start-point = pi6 (\counter [3]).  End-point = po17 ($auto$rtlil.cc:3580:MuxGate$3965).
+ABC: netlist                       : i/o =   35/   65  lat =    0  nd =   104  edge =    216  area =952.32  delay = 4.00  lev = 4
+ABC: + write_blif /tmp/yosys-abc-wR6p56/output.blif 
+ABC:                                                                                
+
+122.1.2. Re-integrating ABC results.
+ABC RESULTS:     sg13g2_a21o_1 cells:        3
+ABC RESULTS:    sg13g2_a21oi_1 cells:        6
+ABC RESULTS:    sg13g2_a22oi_1 cells:        1
+ABC RESULTS:     sg13g2_and2_1 cells:        2
+ABC RESULTS:      sg13g2_inv_1 cells:       37
+ABC RESULTS:     sg13g2_mux2_1 cells:       15
+ABC RESULTS:    sg13g2_nand2_1 cells:        3
+ABC RESULTS:   sg13g2_nand2b_1 cells:        4
+ABC RESULTS:    sg13g2_nand3_1 cells:        1
+ABC RESULTS:   sg13g2_nand3b_1 cells:        1
+ABC RESULTS:    sg13g2_nand4_1 cells:        1
+ABC RESULTS:     sg13g2_nor2_1 cells:        9
+ABC RESULTS:    sg13g2_nor2b_1 cells:        3
+ABC RESULTS:     sg13g2_nor3_1 cells:        8
+ABC RESULTS:    sg13g2_o21ai_1 cells:        7
+ABC RESULTS:      sg13g2_or2_1 cells:        1
+ABC RESULTS:    sg13g2_xnor2_1 cells:        1
+ABC RESULTS:     sg13g2_xor2_1 cells:        1
+ABC RESULTS:        internal signals:      212
+ABC RESULTS:           input signals:       35
+ABC RESULTS:          output signals:       65
+Removing temp directory.
+** cmd error: unknown command 'abc'
+(this is likely caused by using an alias defined in "abc.rc"
+without having this file in the current or parent directory)
+Removing global temp directory.
+
+123. Executing SETUNDEF pass (replace undef values with defined constants).
+
+124. Executing HILOMAP pass (mapping to constant drivers).
+
+125. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+126. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sar_algo..
+Removed 0 unused cells and 312 unused wires.
+<suppressed ~1 debug messages>
+
+127. Executing INSBUF pass (insert buffer cells for connected wires).
+Add sar_algo/$auto$insbuf.cc:97:execute$4143: \fclk_in -> \fclk_comp
+
+128. Executing CHECK pass (checking for obvious problems).
+Checking module sar_algo...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.60 (git sha1 5bafeb77dc71e054fa331ab9efa613e6fb0a1c49, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/733a5952249942559b60f3101b1e2590.lib -liberty /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/06e581f06feb45a99411fce6ff293608.lib ",
+   "modules": {
+      "\\sar_algo": {
+         "num_wires":         126,
+         "num_wire_bits":     145,
+         "num_pub_wires":     22,
+         "num_pub_wire_bits": 41,
+         "num_ports":         14,
+         "num_port_bits":     33,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         137,
+         "num_submodules":       0,
+         "area":              2527.421400,
+         "sequential_area":    1567.641600,
+         "num_cells_by_type": {
+            "sg13g2_a21o_1": 3,
+            "sg13g2_a21oi_1": 6,
+            "sg13g2_a22oi_1": 1,
+            "sg13g2_and2_1": 2,
+            "sg13g2_buf_1": 1,
+            "sg13g2_dfrbpq_1": 32,
+            "sg13g2_inv_1": 37,
+            "sg13g2_mux2_1": 15,
+            "sg13g2_nand2_1": 3,
+            "sg13g2_nand2b_1": 4,
+            "sg13g2_nand3_1": 1,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 1,
+            "sg13g2_nor2_1": 9,
+            "sg13g2_nor2b_1": 3,
+            "sg13g2_nor3_1": 8,
+            "sg13g2_o21ai_1": 7,
+            "sg13g2_or2_1": 1,
+            "sg13g2_xnor2_1": 1,
+            "sg13g2_xor2_1": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         126,
+         "num_wire_bits":     145,
+         "num_pub_wires":     22,
+         "num_pub_wire_bits": 41,
+         "num_ports":         14,
+         "num_port_bits":     33,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         137,
+         "num_submodules":       0,
+         "area":              2527.421400,
+         "sequential_area":    1567.641600,
+         "num_cells_by_type": {
+            "sg13g2_a21o_1": 3,
+            "sg13g2_a21oi_1": 6,
+            "sg13g2_a22oi_1": 1,
+            "sg13g2_and2_1": 2,
+            "sg13g2_buf_1": 1,
+            "sg13g2_dfrbpq_1": 32,
+            "sg13g2_inv_1": 37,
+            "sg13g2_mux2_1": 15,
+            "sg13g2_nand2_1": 3,
+            "sg13g2_nand2b_1": 4,
+            "sg13g2_nand3_1": 1,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 1,
+            "sg13g2_nor2_1": 9,
+            "sg13g2_nor2b_1": 3,
+            "sg13g2_nor3_1": 8,
+            "sg13g2_o21ai_1": 7,
+            "sg13g2_or2_1": 1,
+            "sg13g2_xnor2_1": 1,
+            "sg13g2_xor2_1": 1
+         }
+      }
+}
+
+129. Printing statistics.
+
+=== sar_algo ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      126        - wires
+      145        - wire bits
+       22        - public wires
+       41        - public wire bits
+       14        - ports
+       33        - port bits
+      137 2.53E+03 cells
+        3   38.102   sg13g2_a21o_1
+        6   54.432   sg13g2_a21oi_1
+        1   10.849   sg13g2_a22oi_1
+        2   18.144   sg13g2_and2_1
+        1    7.258   sg13g2_buf_1
+       32 1.57E+03   sg13g2_dfrbpq_1
+       37  201.398   sg13g2_inv_1
+       15   272.16   sg13g2_mux2_1
+        3   21.773   sg13g2_nand2_1
+        4   36.288   sg13g2_nand2b_1
+        1    9.072   sg13g2_nand3_1
+        1   12.701   sg13g2_nand3b_1
+        1   10.886   sg13g2_nand4_1
+        9   65.318   sg13g2_nor2_1
+        3   27.216   sg13g2_nor2b_1
+        8   72.576   sg13g2_nor3_1
+        7   63.504   sg13g2_o21ai_1
+        1    9.072   sg13g2_or2_1
+        1   14.515   sg13g2_xnor2_1
+        1   14.515   sg13g2_xor2_1
+
+   Chip area for module '\sar_algo': 2527.421400
+     of which used for sequential elements: 1567.641600 (62.03%)
+
+130. Executing Verilog backend.
+Dumping module `\sar_algo'.
+
+131. Executing JSON backend.

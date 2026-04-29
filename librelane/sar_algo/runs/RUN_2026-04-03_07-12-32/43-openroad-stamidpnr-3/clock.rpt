@@ -1,0 +1,51 @@
+Clock: fclk_in
+Sources: fclk_in 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 62.500000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+fclk_in              62.500000    0.000000 31.250000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock fclk_in
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+0.257178         network latency _235_/CLK
+        13.055656 network latency _215_/CLK
+---------------
+0.257178 13.055656 latency
+        12.798479 skew
+
+rise -> fall
+    min     max
+0.000000 0.000000 source latency
+12.737637         network latency _221_/CLK
+        12.973388 network latency _215_/CLK
+---------------
+12.737637 12.973388 latency
+        0.235752 skew
+
+fall -> fall
+    min     max
+0.000000 0.000000 source latency
+0.261817         network latency _235_/CLK
+        0.262286 network latency _234_/CLK
+---------------
+0.261817 0.262286 latency
+        0.000469 skew
+
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+fclk_in period_min = 1.82 fmax = 549.14

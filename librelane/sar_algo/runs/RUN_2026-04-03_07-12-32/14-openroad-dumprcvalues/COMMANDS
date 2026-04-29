@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/14-openroad-dumprcvalues/or_metrics_out.json /nix/store/8h87vsa3wlidvqi062p0312chxkh8ihd-python3.13-librelane-3.0.0.dev47/lib/python3.13/site-packages/librelane/scripts/openroad/dump_rc.tcl

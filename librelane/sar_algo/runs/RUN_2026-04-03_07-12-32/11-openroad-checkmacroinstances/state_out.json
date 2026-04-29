@@ -1,0 +1,14 @@
+{
+    "json_h": "/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/05-yosys-jsonheader/sar_algo.h.json",
+    "nl": "/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/06-yosys-synthesis/sar_algo.nl.v",
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 4,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 137,
+        "design__instance__area": 2527.4214,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}

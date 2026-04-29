@@ -1,0 +1,78 @@
+###############################################################################
+# Created by write_sdc
+###############################################################################
+current_design sar_algo
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name fclk_in -period 62.5000 [get_ports {fclk_in}]
+set_clock_transition 0.1500 [get_clocks {fclk_in}]
+set_clock_uncertainty 0.2500 fclk_in
+set_input_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {En}]
+set_input_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {Om}]
+set_input_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {Op}]
+set_input_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {clk_algo}]
+set_input_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {rst}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {BN[0]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {BN[1]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {BN[2]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {BN[3]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {BN[4]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {BN[5]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {BN[6]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {B[0]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {B[1]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {B[2]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {B[3]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {B[4]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {B[5]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {B[6]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {D[0]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {D[1]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {D[2]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {D[3]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {D[4]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {D[5]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {D[6]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {D[7]}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {fclk_comp}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {fclk_samp}]
+set_output_delay 12.5000 -clock [get_clocks {fclk_in}] -add_delay [get_ports {fdac_clk}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0060 [get_ports {fclk_comp}]
+set_load -pin_load 0.0060 [get_ports {fclk_samp}]
+set_load -pin_load 0.0060 [get_ports {fdac_clk}]
+set_load -pin_load 0.0060 [get_ports {B[6]}]
+set_load -pin_load 0.0060 [get_ports {B[5]}]
+set_load -pin_load 0.0060 [get_ports {B[4]}]
+set_load -pin_load 0.0060 [get_ports {B[3]}]
+set_load -pin_load 0.0060 [get_ports {B[2]}]
+set_load -pin_load 0.0060 [get_ports {B[1]}]
+set_load -pin_load 0.0060 [get_ports {B[0]}]
+set_load -pin_load 0.0060 [get_ports {BN[6]}]
+set_load -pin_load 0.0060 [get_ports {BN[5]}]
+set_load -pin_load 0.0060 [get_ports {BN[4]}]
+set_load -pin_load 0.0060 [get_ports {BN[3]}]
+set_load -pin_load 0.0060 [get_ports {BN[2]}]
+set_load -pin_load 0.0060 [get_ports {BN[1]}]
+set_load -pin_load 0.0060 [get_ports {BN[0]}]
+set_load -pin_load 0.0060 [get_ports {D[7]}]
+set_load -pin_load 0.0060 [get_ports {D[6]}]
+set_load -pin_load 0.0060 [get_ports {D[5]}]
+set_load -pin_load 0.0060 [get_ports {D[4]}]
+set_load -pin_load 0.0060 [get_ports {D[3]}]
+set_load -pin_load 0.0060 [get_ports {D[2]}]
+set_load -pin_load 0.0060 [get_ports {D[1]}]
+set_load -pin_load 0.0060 [get_ports {D[0]}]
+set_driving_cell -lib_cell sg13g2_buf_4 -pin {X} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {En}]
+set_driving_cell -lib_cell sg13g2_buf_4 -pin {X} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {Om}]
+set_driving_cell -lib_cell sg13g2_buf_4 -pin {X} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {Op}]
+set_driving_cell -lib_cell sg13g2_buf_4 -pin {X} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clk_algo}]
+set_driving_cell -lib_cell sg13g2_buf_4 -pin {X} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {fclk_in}]
+set_driving_cell -lib_cell sg13g2_buf_4 -pin {X} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {rst}]
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 10.0000 [current_design]

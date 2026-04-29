@@ -1,0 +1,41 @@
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/53-odb-cellfrequencytables/sar_algo.odb'…
+Reading design constraints file at '/nix/store/8h87vsa3wlidvqi062p0312chxkh8ihd-python3.13-librelane-3.0.0.dev47/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock fclk_in…
+[INFO] Setting output delay to: 12.5
+[INFO] Setting input delay to: 12.5
+[INFO] Setting load to: 0.006
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5%
+[INFO] Using voltage extracted from lib (1.2V) for power nets and 0V for ground nets…
+%OL_CREATE_REPORT irdrop.rpt
++ analyze_power_grid -net VDD -voltage_file /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/56-openroad-irdropreport/net-VDD.csv
+[INFO PSM-0040] All shapes on net VDD are connected.
+########## IR report #################
+Net              : VDD
+Corner           : nom_typ_1p20V_25C
+Total power      : 5.56e-05 W
+Supply voltage   : 1.20e+00 V
+Worstcase voltage: 1.20e+00 V
+Average voltage  : 1.20e+00 V
+Average IR drop  : 2.94e-05 V
+Worstcase IR drop: 1.52e-04 V
+Percentage drop  : 0.01 %
+######################################
++ analyze_power_grid -net VSS -voltage_file /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/56-openroad-irdropreport/net-VSS.csv
+[INFO PSM-0040] All shapes on net VSS are connected.
+########## IR report #################
+Net              : VSS
+Corner           : nom_typ_1p20V_25C
+Total power      : 5.56e-05 W
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 2.87e-04 V
+Average voltage  : 3.30e-05 V
+Average IR drop  : 3.30e-05 V
+Worstcase IR drop: 2.87e-04 V
+Percentage drop  : 0.02 %
+######################################
+%OL_END_REPORT

@@ -1,0 +1,33 @@
+%Warning-UNUSEDSIGNAL: /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:3:17: Signal is not used: 'VDD'
+                                                                                                : ... note: In instance 'sar_algo'
+    3 |     input  wire VDD, VSS,
+      |                 ^~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.042
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:3:22: Signal is not used: 'VSS'
+                                                                                                : ... note: In instance 'sar_algo'
+    3 |     input  wire VDD, VSS,
+      |                      ^~~
+%Warning-PROCASSINIT: /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:17:21: Procedural assignment to declaration with initial value: 'cnt'
+                                                                                                : ... note: In instance 'sar_algo'
+                                                                                                : ... Location of variable initialization
+   17 |     reg [3:0] cnt = 4'd0;
+      |                     ^~~~
+                      /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:23:13: ... Location of variable process write
+                                                                                                : ... Perhaps should initialize instead using a reset in this process
+   23 |             cnt <= 4'd0;
+      |             ^~~
+                      ... For warning description see https://verilator.org/warn/PROCASSINIT?v=5.042
+                      ... Use "/* verilator lint_off PROCASSINIT */" and lint_on around source to disable this message.
+%Warning-PROCASSINIT: /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:18:25: Procedural assignment to declaration with initial value: 'counter'
+                                                                                                : ... note: In instance 'sar_algo'
+                                                                                                : ... Location of variable initialization
+   18 |     reg [3:0] counter = 4'd0;
+      |                         ^~~~
+                      /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v:43:13: ... Location of variable process write
+                                                                                                : ... Perhaps should initialize instead using a reset in this process
+   43 |             counter <= 4'b0;
+      |             ^~~~~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.042 2025-11-02 rev v5.040
+- Verilator: Built from 0.148 MB sources in 108 modules, into 0.020 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.055 s (elab=0.012, cvt=0.023, bld=0.000); cpu 0.020 s on 1 threads; alloced 21.332 MB

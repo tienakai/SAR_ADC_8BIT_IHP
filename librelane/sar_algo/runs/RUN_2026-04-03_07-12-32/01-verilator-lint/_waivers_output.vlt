@@ -1,0 +1,17 @@
+// DESCRIPTION: Verilator output: Waivers generated with --waiver-output
+
+`verilator_config
+
+// Below are suggested waivers. You have three options:
+//   1. Fix the reason for the linter warning in the Verilog sources
+//   2. Keep the waiver permanently if you are sure it is okay
+//   3. Keep the waiver temporarily to suppress the output
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v" -match "Signal is not used: 'VDD'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v" -match "Signal is not used: 'VSS'*"
+
+// lint_off -rule PROCASSINIT -file "*/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v" -match "Procedural assignment to declaration with initial value: 'cnt'*"
+
+// lint_off -rule PROCASSINIT -file "*/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/sar_algo.v" -match "Procedural assignment to declaration with initial value: 'counter'*"
+

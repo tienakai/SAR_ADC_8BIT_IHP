@@ -1,0 +1,61 @@
+{
+   "creator": "Yosys 0.60 (git sha1 5bafeb77dc71e054fa331ab9efa613e6fb0a1c49, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/733a5952249942559b60f3101b1e2590.lib -liberty /home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/06e581f06feb45a99411fce6ff293608.lib ",
+   "modules": {
+      "\\sar_algo": {
+         "num_wires":         293,
+         "num_wire_bits":     318,
+         "num_pub_wires":     16,
+         "num_pub_wire_bits": 41,
+         "num_ports":         14,
+         "num_port_bits":     33,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         309,
+         "num_submodules":       0,
+         "area":              1567.641600,
+         "sequential_area":    1567.641600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 79,
+            "$_AND_": 4,
+            "$_MUX_": 31,
+            "$_NAND_": 4,
+            "$_NOR_": 4,
+            "$_NOT_": 44,
+            "$_ORNOT_": 11,
+            "$_OR_": 89,
+            "$_XOR_": 11,
+            "sg13g2_dfrbpq_1": 32
+         }
+      }
+   },
+      "design": {
+         "num_wires":         293,
+         "num_wire_bits":     318,
+         "num_pub_wires":     16,
+         "num_pub_wire_bits": 41,
+         "num_ports":         14,
+         "num_port_bits":     33,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         309,
+         "num_submodules":       0,
+         "area":              1567.641600,
+         "sequential_area":    1567.641600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 79,
+            "$_AND_": 4,
+            "$_MUX_": 31,
+            "$_NAND_": 4,
+            "$_NOR_": 4,
+            "$_NOT_": 44,
+            "$_ORNOT_": 11,
+            "$_OR_": 89,
+            "$_XOR_": 11,
+            "sg13g2_dfrbpq_1": 32
+         }
+      }
+}
+

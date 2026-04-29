@@ -1,0 +1,7 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/88951eee081447a3868cccdef0aab787.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/88951eee081447a3868cccdef0aab787.bb.v"
+lint_off -rule UNDRIVEN -file "/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/0901d2b91aec4451b22c71d74595a97f.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/designer/shared/SAR_ADC_8BIT_IHP/librelane/sar_algo/runs/RUN_2026-04-03_07-12-32/tmp/0901d2b91aec4451b22c71d74595a97f.bb.v"
